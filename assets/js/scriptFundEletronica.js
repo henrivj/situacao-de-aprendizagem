@@ -1,93 +1,63 @@
-// lei de ohm
+hljs.highlightAll()
 
-// V = I * R
-document.getElementById('input1a').addEventListener('input', (event) => {
-    const I = parseFloat(event.target.value) || 0;
-    const R = parseFloat(document.getElementById('input1b').value) || 0;
-    const V = I * R;
-    document.getElementById('resTensao').textContent = V.toFixed(2) + ' V';
+let btnCalc1 = document.getElementById('btnCalc1');
+let btnCalc2 = document.getElementById('btnCalc2');
+
+let input1a = document.getElementById('input1a');
+let input1b = document.getElementById('input1b');
+let input2a = document.getElementById('input2a');
+let input2b = document.getElementById('input2b');
+let input3a = document.getElementById('input3a');
+let input3b = document.getElementById('input3b');
+
+let resTensao = document.getElementById('resTensao');
+let resCorrente = document.getElementById('resCorrente');
+let resResistencia = document.getElementById('resResistencia');
+
+let input4a = document.getElementById('input4a');
+let input4b = document.getElementById('input4b');
+let input5a = document.getElementById('input5a');
+let input5b = document.getElementById('input5b');
+let input6a = document.getElementById('input6a');
+let input6b = document.getElementById('input6b');
+
+let resPotencia1 = document.getElementById('resPotencia1');
+let resPotencia2 = document.getElementById('resPotencia2');
+let resPotencia3 = document.getElementById('resPotencia3');
+
+function filtrarNaN(valor) {
+    if (isNaN(valor) || !isFinite(valor)) {
+        return 0;
+    } else {
+        return Number(valor);
+    }
+}
+
+// calc. Lei de Ohm
+btnCalc1.addEventListener('click', () => {
+    // V = I × R
+    const tensao = Number(input1a.value) * Number(input1b.value);
+    resTensao.innerHTML = filtrarNaN(Number(tensao.toFixed(2))) + ' V';
+
+    // I = V ÷ R
+    const corrente = Number(input2a.value) / Number(input2b.value);
+    resCorrente.innerHTML = filtrarNaN(Number(corrente.toFixed(2))) + ' A';
+
+    // R = V ÷ I
+    const resistencia = Number(input3a.value) / Number(input3b.value);
+    resResistencia.innerHTML = filtrarNaN(Number(resistencia.toFixed(2))) + ' Ω';
 });
 
-document.getElementById('input1b').addEventListener('input', (event) => {
-    const I = parseFloat(document.getElementById('input1a').value) || 0;
-    const R = parseFloat(event.target.value) || 0;
-    const V = I * R;
-    document.getElementById('resTensao').textContent = V.toFixed(2) + ' V';
-});
+btnCalc2.addEventListener('click', () => {
+    // P = V × I
+    const potencia1 = Number(input4a.value) * Number(input4b.value);
+    if (resPotencia1) resPotencia1.innerHTML = filtrarNaN(Number(potencia1.toFixed(2))) + ' W';
 
-// I = V / R
-document.getElementById('input2a').addEventListener('input', (event) => {
-    const V = parseFloat(event.target.value) || 0;
-    const R = parseFloat(document.getElementById('input2b').value) || 0;
-    const I = R !== 0 ? V / R : 0;
-    document.getElementById('resCorrente').textContent = I.toFixed(2) + ' A';
-});
+    // P = I^2 × R
+    const potencia2 = (Number(input5a.value) ** 2) * Number(input5b.value);
+    if (resPotencia2) resPotencia2.innerHTML = filtrarNaN(Number(potencia2.toFixed(2))) + ' W';
 
-document.getElementById('input2b').addEventListener('input', (event) => {
-    const V = parseFloat(document.getElementById('input2a').value) || 0;
-    const R = parseFloat(event.target.value) || 0;
-    const I = R !== 0 ? V / R : 0;
-    document.getElementById('resCorrente').textContent = I.toFixed(2) + ' A';
-});
-
-// R = V / I
-document.getElementById('input3a').addEventListener('input', (event) => {
-    const V = parseFloat(event.target.value) || 0;
-    const I = parseFloat(document.getElementById('input3b').value) || 0;
-    const R = I !== 0 ? V / I : 0;
-    document.getElementById('resResistencia').textContent = R.toFixed(2) + ' Ω';
-});
-
-document.getElementById('input3b').addEventListener('input', (event) => {
-    const V = parseFloat(document.getElementById('input3a').value) || 0;
-    const I = parseFloat(event.target.value) || 0;
-    const R = I !== 0 ? V / I : 0;
-    document.getElementById('resResistencia').textContent = R.toFixed(2) + ' Ω';
-});
-
-// potencia
-
-// P = V * I
-document.getElementById('input4a').addEventListener('input', (event) => {
-    const V = parseFloat(event.target.value) || 0;
-    const I = parseFloat(document.getElementById('input4b').value) || 0;
-    const P = V * I;
-    document.getElementById('resPotencia1').textContent = P.toFixed(2) + ' W';
-});
-
-document.getElementById('input4b').addEventListener('input', (event) => {
-    const V = parseFloat(document.getElementById('input4a').value) || 0;
-    const I = parseFloat(event.target.value) || 0;
-    const P = V * I;
-    document.getElementById('resPotencia1').textContent = P.toFixed(2) + ' W';
-});
-
-// P = I² * R
-document.getElementById('input5a').addEventListener('input', (event) => {
-    const I = parseFloat(event.target.value) || 0;
-    const R = parseFloat(document.getElementById('input5b').value) || 0;
-    const P = I * I * R;
-    document.getElementById('resPotencia2').textContent = P.toFixed(2) + ' W';
-});
-
-document.getElementById('input5b').addEventListener('input', (event) => {
-    const I = parseFloat(document.getElementById('input5a').value) || 0;
-    const R = parseFloat(event.target.value) || 0;
-    const P = I * I * R;
-    document.getElementById('resPotencia2').textContent = P.toFixed(2) + ' W';
-});
-
-// P = V² / R
-document.getElementById('input6a').addEventListener('input', (event) => {
-    const V = parseFloat(event.target.value) || 0;
-    const R = parseFloat(document.getElementById('input6b').value) || 0;
-    const P = R !== 0 ? (V * V) / R : 0;
-    document.getElementById('resPotencia3').textContent = P.toFixed(2) + ' W';
-});
-
-document.getElementById('input6b').addEventListener('input', (event) => {
-    const V = parseFloat(document.getElementById('input6a').value) || 0;
-    const R = parseFloat(event.target.value) || 0;
-    const P = R !== 0 ? (V * V) / R : 0;
-    document.getElementById('resPotencia3').textContent = P.toFixed(2) + ' W';
+    // P = V^2 ÷ R
+    const potencia3 = (Number(input6a.value) ** 2) / Number(input6b.value);
+    if (resPotencia3) resPotencia3.innerHTML = `${filtrarNaN(Number(potencia3.toFixed(2)))} W`;
 });

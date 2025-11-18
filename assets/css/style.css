@@ -8,7 +8,6 @@
     --main-grey: #1a1a1a;
     --main-white: #f7f7fd;
     --main-highlight: #2098D1;
-    --panache-purple-transparent: rgba(115, 0, 255, 0.25)
 }
 
 ::selection {
@@ -30,3 +29,7 @@
 .icon-xs { height: 0.550rem; width: auto; }
 
 .input-small { max-width: 60px; }
+
+.hljs,
+pre.hljs,
+code.hljs { background: transparent !important; }
