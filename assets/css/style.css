@@ -1,6 +1,5 @@
 * {
     font-family: "Montserrat", sans-serif;
-    box-sizing: border-box;
 }
 
 :root {
@@ -29,6 +28,10 @@
 .icon-xs { height: 0.550rem; width: auto; }
 
 .input-small { max-width: 60px; }
+
+.vh-25{ height: 25vh;}
+.vh-50{ height: 50vh;}
+.vh-75{ height: 75vh;}
 
 .hljs,
 pre.hljs,
