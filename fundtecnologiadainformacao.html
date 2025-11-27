@@ -1,268 +1,280 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
 
-    <link rel="stylesheet" href="./assets/css/style.css" />
+		<!-- bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
 
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+		<!-- font awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
+		<title>SA - Tec. da Informação</title>
+	</head>
 
-    <title>SA - Tec. da Informação</title>
-</head>
+	<body>
+		<header class="fixed-top bg-blur p-2 px-md-4">
+			<nav class="d-flex justify-content-evenly align-items-center">
+				<a href="./index.html" class="px-2 py-1 text-decoration-none hvj-outline hvj-text rounded-pill"
+					>Home <i class="fa-regular fa-home hvj-text"></i>
+				</a>
 
-<body>
-    <header class="fixed-top bg-blur p-2 px-md-4">
-        <nav class="d-flex justify-content-evenly align-items-center">
-            <a href="./index.html" class="px-2 py-1 text-decoration-none hvj-outline hvj-text rounded-pill">Home <i
-                    class="fa-regular fa-home hvj-text"></i>
-            </a>
+				<div class="dropdown">
+					<button class="btn btn-default dropdown-toggle hvj-text" type="button" data-bs-toggle="dropdown">Matérias</button>
+					<ul class="dropdown-menu bg-blur">
+						<li><a class="dropdown-item hvj-text" href="./fundbancodedados.html">Fund. de Banco de Dados</a></li>
+						<li><a class="dropdown-item hvj-text" href="./fundeletroeletronica.html">Fund. de Eletroeletrônica</a></li>
+						<li><a class="dropdown-item hvj-text" href="./fundredes.html">Fund. de Redes</a></li>
+						<li>
+							<a class="dropdown-item hvj-text" href="./fundtecnologiadainformacao.html">Fund. de Tecnologia da Informação</a>
+						</li>
+						<li><a class="dropdown-item hvj-text" href="./logicacomputacional.html">Lógica Computacional</a></li>
+						<li><a class="dropdown-item hvj-text" href="./logicaprogramacao.html">Lógica de Programação</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
 
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle hvj-text" type="button" data-bs-toggle="dropdown">
-                    Matérias
-                </button>
-                <ul class="dropdown-menu bg-blur">
-                    <li><a class="dropdown-item hvj-text" href="./fundbancodedados.html">Fund. de Banco de Dados</a>
-                    </li>
-                    <li><a class="dropdown-item hvj-text" href="./fundeletroeletronica.html">Fund. de
-                            Eletroeletrônica</a></li>
-                    <li><a class="dropdown-item hvj-text" href="./fundredes.html">Fund. de Redes</a></li>
-                    <li><a class="dropdown-item hvj-text" href="./fundtecnologiadainformacao.html">Fund. de Tecnologia
-                            da Informação</a></li>
-                    <li><a class="dropdown-item hvj-text" href="./logicacomputacional.html">Lógica Computacional</a>
-                    </li>
-                    <li><a class="dropdown-item hvj-text" href="./logicaprogramacao.html">Lógica de Programação</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+		<main>
+			<section class="container d-flex vh-75 align-items-center justify-content-between">
+				<h1 class="display-3 fw-bold hvj-text">Tecnologia da Informação</h1>
+				<img src="./assets/img/hvj-logo.svg" alt="" class="d-none d-md-block img-fluid w-50" />
+			</section>
 
-    <main>
-        <section class="container d-flex vh-75 align-items-center justify-content-between">
-            <h1 class="display-3 fw-bold hvj-text">Tecnologia da Informação</h1>
-            <img src="./assets/img/hvj-logo.svg" alt="" class="d-none d-md-block img-fluid w-50">
-        </section>
+			<!-- componenetes hardware -->
+			<section class="container my-3 my-md-5">
+				<div class="row align-items-center">
+					<div class="col-12 col-md-6">
+						<h2>Hardware de Computadores</h2>
+						<p>
+							Hardware de computadores refere-se aos componentes físicos que formam a máquina e permitem que ela execute suas
+							funções. Ele abrange tudo o que é necessário para o computador funcionar, desde os processadores até os
+							dispositivos de armazenamento. Os principais componentes de hardware de um computador são:
+						</p>
+					</div>
+				</div>
 
-        <!-- componenetes hardware -->
-        <section class="container my-3 my-md-5">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-6">
-                    <h2>Hardware de Computadores</h2>
-                    <p>
-                        Hardware de computadores refere-se aos componentes físicos que formam a máquina e permitem que
-                        ela execute suas funções. Ele abrange tudo o que é necessário para o computador funcionar, desde
-                        os processadores até os dispositivos de armazenamento. Os principais componentes de hardware de
-                        um computador são:
-                    </p>
-                </div>
-            </div>
+				<div class="row justify-content-evenly g-3">
+					<div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Placa Mãe</h2>
+						<p>É a principal placa do computador, onde todos os outros componentes, como processador e memória, são conectados</p>
+					</div>
 
-            <div class="row justify-content-evenly g-3">
-                <div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Placa Mãe</h2>
-                    <p>É a principal placa do computador, onde todos os outros componentes, como processador e memória,
-                        são conectados</p>
-                </div>
+					<div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Processador (CPU)</h2>
+						<p>Responsável por executar as instruções e cálculos dos programas. Considerado o "cérebro" do computador.</p>
+					</div>
+				</div>
 
-                <div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Processador (CPU)</h2>
-                    <p>Responsável por executar as instruções e cálculos dos programas. Considerado o "cérebro" do
-                        computador.</p>
-                </div>
-            </div>
+				<div class="row justify-content-evenly g-3 mt-0 mt-md-3">
+					<div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Memória RAM</h2>
+						<p>Armazena dados temporários enquanto o computador está em uso, permitindo um acesso rápido para o processador.</p>
+					</div>
 
-            <div class="row justify-content-evenly g-3 mt-0 mt-md-3">
-                <div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Memória RAM</h2>
-                    <p>Armazena dados temporários enquanto o computador está em uso, permitindo um acesso rápido para o
-                        processador.</p>
-                </div>
+					<div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">HD/SSD</h2>
+						<p>
+							Dispositivos de armazenamento de longo prazo, onde o sistema e os dados do usuário são guardados. O HD é mais
+							barato e tem maior capacidade, enquanto o SSD é mais rápido e mais eficiente.
+						</p>
+					</div>
+				</div>
+			</section>
 
-                <div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">HD/SSD</h2>
-                    <p>Dispositivos de armazenamento de longo prazo, onde o sistema e os dados do usuário são guardados.
-                        O HD é mais barato e tem maior capacidade, enquanto o SSD é mais rápido e mais eficiente.</p>
-                </div>
-            </div>
-        </section>
+			<!-- sistemas operacionais -->
+			<section class="container my-3 my-md-5">
+				<div class="row align-items-center">
+					<div class="col-12 col-md-6">
+						<h2>Sistemas operacionais</h2>
+						<p>
+							Um sistema operacional (SO) é o software responsável por gerenciar os recursos do hardware e permitir a interação
+							do usuário com o computador. Ele controla as operações do sistema, como a execução de programas, a gestão de
+							arquivos e a comunicação com periféricos. Alguns dos sistemas operacionais mais conhecidos incluem:
+						</p>
+					</div>
+				</div>
 
-        <!-- sistemas operacionais -->
-        <section class="container my-3 my-md-5">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-6">
-                    <h2>Sistemas operacionais</h2>
-                    <p>
-                        Um sistema operacional (SO) é o software responsável por gerenciar os recursos do hardware e
-                        permitir a interação do usuário com o computador. Ele controla as operações do sistema, como a
-                        execução de programas, a gestão de arquivos e a comunicação com periféricos. Alguns dos sistemas
-                        operacionais mais conhecidos incluem:
-                    </p>
-                </div>
-            </div>
+				<div class="row justify-content-evenly g-3">
+					<div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Windows</h2>
+						<p>
+							O sistema operacional mais usado em desktops e laptops, com uma interface gráfica fácil de usar e ampla
+							compatibilidade com software.
+						</p>
+					</div>
 
-            <div class="row justify-content-evenly g-3">
-                <div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Windows</h2>
-                    <p>O sistema operacional mais usado em desktops e laptops, com uma interface gráfica fácil de usar e
-                        ampla compatibilidade com software.</p>
-                </div>
+					<div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Linux</h2>
+						<p>
+							Um sistema de código aberto, utilizado principalmente por desenvolvedores e servidores, conhecido pela sua
+							estabilidade e segurança.
+						</p>
+					</div>
+				</div>
 
-                <div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Linux</h2>
-                    <p>Um sistema de código aberto, utilizado principalmente por desenvolvedores e servidores, conhecido
-                        pela sua estabilidade e segurança.</p>
-                </div>
-            </div>
+				<div class="row justify-content-evenly g-3 mt-0 mt-md-3">
+					<div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">MacOS</h2>
+						<p>
+							Sistema operacional exclusivo da Apple, com uma interface muito reconhecível e ótima integração com o ecossistema
+							de dispositivos da Apple. Conhecido pela sua segurança e otimização.
+						</p>
+					</div>
 
-            <div class="row justify-content-evenly g-3 mt-0 mt-md-3">
-                <div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">MacOS</h2>
-                    <p>Sistema operacional exclusivo da Apple, com uma interface muito reconhecível e ótima integração
-                        com o ecossistema de dispositivos da Apple. Conhecido pela sua segurança e otimização.</p>
-                </div>
+					<div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Android</h2>
+						<p>Sistema operacional baseado no Linux, com foco em dispositivos móveis, como smartphones e tablets.</p>
+					</div>
+				</div>
+			</section>
 
-                <div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Android</h2>
-                    <p>Sistema operacional baseado no Linux, com foco em dispositivos móveis, como smartphones e
-                        tablets.</p>
-                </div>
-            </div>
-        </section>
+			<!-- sistema de arquivos -->
+			<section class="container my-3 my-md-5">
+				<h2 class="text-start">Sistema de Arquivos</h2>
+				<p class="col-12 col-md-6 text-start">
+					O sistema de arquivos organiza como os dados são armazenados e acessados no computador. Ele estrutura a forma como os
+					arquivos e pastas são dispostos no disco rígido (HD) ou SSD, permitindo que o sistema operacional localize e manipule esses
+					arquivos.
+				</p>
 
-        <!-- sistema de arquivos -->
-        <section class="container my-3 my-md-5">
-            <h2 class="text-start">Sistema de Arquivos</h2>
-            <p class="col-12 col-md-6 text-start">
-                O sistema de arquivos organiza como os dados são armazenados e acessados no computador. Ele estrutura a
-                forma como os arquivos e pastas são dispostos no disco rígido (HD) ou SSD, permitindo que o sistema
-                operacional localize e manipule esses arquivos.
-            </p>
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<h2>Modo Texto</h2>
+						<p>
+							O Command Prompt (CMD) permite que os usuários interajam com o sistema através de comandos digitados, como navegar
+							por pastas (cd), copiar (copy) ou mover arquivos (move).
+						</p>
+						<img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid" />
+					</div>
+					<div class="col-12 col-md-6">
+						<h2>Modo Gráfico</h2>
+						<p>
+							O explorador gráfico oferece uma interface visual onde o usuário pode navegar pelas pastas e arquivos com
+							facilidade, usando cliques para copiar, mover ou excluir itens.
+						</p>
+						<img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid" />
+					</div>
+				</div>
+			</section>
 
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <h2>Modo Texto</h2>
-                    <p>
-                        O Command Prompt (CMD) permite que os usuários interajam com o sistema através de comandos
-                        digitados, como navegar por pastas (cd), copiar (copy) ou mover arquivos (move).
-                    </p>
-                    <img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid">
-                </div>
-                <div class="col-12 col-md-6">
-                    <h2>Modo Gráfico</h2>
-                    <p>
-                        O explorador gráfico oferece uma interface visual onde o usuário pode navegar pelas pastas e
-                        arquivos com facilidade, usando cliques para copiar, mover ou excluir itens.
-                    </p>
-                    <img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid">
-                </div>
-            </div>
-        </section>
+			<!-- software de escritorio -->
+			<section class="container my-3 my-md-5">
+				<div class="row align-items-center">
+					<div class="col-12 col-md-6">
+						<h2>Softwares de Escritório</h2>
+						<p>
+							Software de escritório refere-se a um conjunto de aplicativos usados para criar, editar e gerenciar documentos,
+							planilhas, apresentações e outros tipos de trabalho de escritório. Esses programas são essenciais para a
+							produtividade e incluem ferramentas amplamente utilizadas.
+						</p>
+					</div>
+				</div>
+				<div class="col-12">
+					<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button
+								type="button"
+								data-bs-target="#carouselExampleIndicators"
+								data-bs-slide-to="0"
+								class="active"
+								aria-current="true"
+								aria-label="Slide 1"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleIndicators"
+								data-bs-slide-to="1"
+								aria-label="Slide 2"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleIndicators"
+								data-bs-slide-to="2"
+								aria-label="Slide 3"
+							></button>
+						</div>
 
-        <!-- software de escritorio -->
-        <section class="container my-3 my-md-5">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-6">
-                    <h2>Softwares de Escritório</h2>
-                    <p>
-                        Software de escritório refere-se a um conjunto de aplicativos usados para criar, editar e
-                        gerenciar documentos, planilhas, apresentações e outros tipos de trabalho de escritório. Esses
-                        programas são essenciais para a produtividade e incluem ferramentas amplamente utilizadas.
-                    </p>
-                </div>
-            </div>
-            <div class="col-12">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="./assets/img/hvj-logo.svg" class="d-block w-100" alt="" />
+								<div class="col-12 col-md-6 h-100">
+									<h2>Word</h2>
+									<p>
+										Processador de texto utilizado para criar e formatar documentos. Oferece ferramentas para editar
+										textos, adicionar imagens, tabelas e fazer ajustes de formatação, sendo usado para criar documentos,
+										relatórios, contratos, etc.
+									</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="./assets/img/hvj-logo.svg" class="d-block w-100" alt="" />
+								<div class="col-12 col-md-6 h-100">
+									<h2>Excel</h2>
+									<p>
+										Ferramenta de planilhas que facilita a organização de dados e cálculos. Com funções avançadas como
+										gráficos, fórmulas e tabelas dinâmicas, Excel é muito utilizado para análise de dados, controle
+										financeiro e elaboração de relatórios.
+									</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="./assets/img/hvj-logo.svg" class="d-block w-100" alt="" />
+								<div class="col-12 col-md-6 h-100">
+									<h2>PowerPoint</h2>
+									<p>
+										É usado para criar apresentações de slides, ideal para exibir informações de forma visual em
+										reuniões ou palestras. Permite adicionar texto, imagens, vídeos, gráficos e animações, tornando as
+										apresentações mais dinâmicas e interativas.
+									</p>
+								</div>
+							</div>
+						</div>
 
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./assets/img/hvj-logo.svg" class="d-block w-100" alt="">
-                            <div class="col-12 col-md-6 h-100">
-                                <h2>Word</h2>
-                                <p>
-                                    Processador de texto utilizado para criar e formatar documentos. Oferece ferramentas
-                                    para editar textos, adicionar imagens, tabelas e fazer ajustes de formatação, sendo
-                                    usado para criar documentos, relatórios, contratos, etc.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/img/hvj-logo.svg" class="d-block w-100" alt="">
-                            <div class="col-12 col-md-6 h-100">
-                                <h2>Excel</h2>
-                                <p>
-                                    Ferramenta de planilhas que facilita a organização de dados e cálculos. Com funções
-                                    avançadas como gráficos, fórmulas e tabelas dinâmicas, Excel é muito utilizado para
-                                    análise de dados, controle financeiro e elaboração de relatórios.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/img/hvj-logo.svg" class="d-block w-100" alt="">
-                            <div class="col-12 col-md-6 h-100">
-                                <h2>PowerPoint</h2>
-                                <p>
-                                    É usado para criar apresentações de slides, ideal para exibir informações de forma
-                                    visual em reuniões ou palestras. Permite adicionar texto, imagens, vídeos, gráficos
-                                    e animações, tornando as apresentações mais dinâmicas e interativas.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
 
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-blur p-2 p-md-3">
-        <div class="d-flex align-items-center justify-content-evenly">
-            <span class="d-none d-md-block"></span>
-            <p class="m-0 hvj-text">2025 &copy; Henrique Justus</p>
-        </div>
-    </footer>
-</body>
-
+		<footer class="bg-blur p-2 p-md-3">
+			<div class="d-flex align-items-center justify-content-evenly">
+				<span class="d-none d-md-block"></span>
+				<p class="m-0 hvj-text">2025 &copy; Henrique Justus</p>
+			</div>
+		</footer>
+	</body>
 </html>

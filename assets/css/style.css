@@ -14,12 +14,27 @@
 }
 
 .hvj-text { color: var(--main-color) !important; }
-.hvj-bg { background: var(--main-color) }
+.hvj-bg { background: var(--main-color); }
 .hvj-outline { outline: 2px solid var(--main-color); }
+.hvj-underline { text-decoration: underline; text-decoration-color: var(--main-color); }
 
-.bg-grey { background-color: var(--main-grey) !important;}
+.bg-grey { background-color: var(--main-grey) !important; }
 .bg-blur { backdrop-filter: blur(1rem); }
 
-.vh-25{ height: 25vh;}
-.vh-50{ height: 50vh;}
-.vh-75{ height: 75vh;}
+.vh-25{ height: 25vh; }
+.vh-50{ height: 50vh; }
+.vh-75{ height: 75vh; }
+
+.vermelho{
+    background-color: red !important;
+    color: red !important;
+}
+
+.preto{
+    background-color: black !important;
+    color: black !important;
+}
+.branco{
+    background-color: white !important;
+    color: white !important;
+}

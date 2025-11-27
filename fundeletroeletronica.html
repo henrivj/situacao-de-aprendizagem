@@ -1,324 +1,314 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<script src="./assets/js/scriptFundEletronica.js" defer></script>
 
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/scriptFundEletronica.js" defer></script>
+		<!-- bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
 
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+		<!-- font awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
+		<title>SA - Eletroeletrônica</title>
+	</head>
 
-    <title>SA - Eletroeletrônica</title>
-</head>
+	<body>
+		<header class="fixed-top bg-blur p-2 px-md-4">
+			<nav class="d-flex justify-content-evenly align-items-center">
+				<a href="./index.html" class="px-2 py-1 text-decoration-none hvj-outline hvj-text rounded-pill"
+					>Home <i class="fa-regular fa-home hvj-text"></i>
+				</a>
 
-<body>
-    <header class="fixed-top bg-blur p-2 px-md-4">
-        <nav class="d-flex justify-content-evenly align-items-center">
-            <a href="./index.html" class="px-2 py-1 text-decoration-none hvj-outline hvj-text rounded-pill">Home <i
-                    class="fa-regular fa-home hvj-text"></i>
-            </a>
+				<div class="dropdown">
+					<button class="btn btn-default dropdown-toggle hvj-text" type="button" data-bs-toggle="dropdown">Matérias</button>
+					<ul class="dropdown-menu bg-blur">
+						<li><a class="dropdown-item hvj-text" href="./fundbancodedados.html">Fund. de Banco de Dados</a></li>
+						<li><a class="dropdown-item hvj-text" href="./fundeletroeletronica.html">Fund. de Eletroeletrônica</a></li>
+						<li><a class="dropdown-item hvj-text" href="./fundredes.html">Fund. de Redes</a></li>
+						<li>
+							<a class="dropdown-item hvj-text" href="./fundtecnologiadainformacao.html">Fund. de Tecnologia da Informação</a>
+						</li>
+						<li><a class="dropdown-item hvj-text" href="./logicacomputacional.html">Lógica Computacional</a></li>
+						<li><a class="dropdown-item hvj-text" href="./logicaprogramacao.html">Lógica de Programação</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
 
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle hvj-text" type="button" data-bs-toggle="dropdown">
-                    Matérias
-                </button>
-                <ul class="dropdown-menu bg-blur">
-                    <li><a class="dropdown-item hvj-text" href="./fundbancodedados.html">Fund. de Banco de Dados</a>
-                    </li>
-                    <li><a class="dropdown-item hvj-text" href="./fundeletroeletronica.html">Fund. de
-                            Eletroeletrônica</a></li>
-                    <li><a class="dropdown-item hvj-text" href="./fundredes.html">Fund. de Redes</a></li>
-                    <li><a class="dropdown-item hvj-text" href="./fundtecnologiadainformacao.html">Fund. de Tecnologia
-                            da Informação</a></li>
-                    <li><a class="dropdown-item hvj-text" href="./logicacomputacional.html">Lógica Computacional</a>
-                    </li>
-                    <li><a class="dropdown-item hvj-text" href="./logicaprogramacao.html">Lógica de Programação</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+		<main>
+			<section class="container d-flex vh-75 align-items-center justify-content-between">
+				<h1 class="display-3 fw-bold hvj-text">Fundamento de<br />Eletroeletrônica</h1>
+				<img src="./assets/img/hvj-logo.svg" alt="" class="d-none d-md-block img-fluid w-50" />
+			</section>
 
-    <main>
-        <section class="container d-flex vh-75 align-items-center justify-content-between">
-            <h1 class="display-3 fw-bold hvj-text">Fundamento de<br>Eletroeletrônica</h1>
-            <img src="./assets/img/hvj-logo.svg" alt="" class="d-none d-md-block img-fluid w-50">
-        </section>
+			<!-- tipos de componentes eletronicos -->
+			<section class="container my-3 my-md-5">
+				<div class="row align-items-center">
+					<div class="col-12 col-md-6">
+						<h2>Tipos de Componentes Eletroeletrônicos</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus minus. Vero quam sint illo quis cupiditate amet
+							magnam accusantium temporibus aliquam cumque ratione error at.
+						</p>
+					</div>
+				</div>
 
-        <!-- tipos de componentes eletronicos -->
-        <section class="container my-3 my-md-5">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-6">
-                    <h2>Tipos de Componentes Eletroeletrônicos</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Delectus minus. Vero quam sint illo quis cupiditate amet magnam
-                        accusantium temporibus aliquam cumque ratione error at.
-                    </p>
-                </div>
-            </div>
+				<div class="row justify-content-evenly g-3">
+					<div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Item 1</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
 
-            <div class="row justify-content-evenly g-3">
-                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Item 1</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
+					<div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Item 2</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
 
-                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Item 2</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
+					<div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Item 3</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+				</div>
 
-                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Item 3</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-            </div>
+				<div class="row justify-content-evenly g-3 mt-0 mt-md-3">
+					<div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Item 4</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
 
-            <div class="row justify-content-evenly g-3 mt-0 mt-md-3">
-                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Item 4</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
+					<div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Item 5</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
 
-                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Item 5</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
+					<div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Item 6</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+				</div>
 
-                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Item 6</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-            </div>
+				<div class="row justify-content-evenly g-3 mt-0 mt-md-3">
+					<div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Diodo</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
 
-            <div class="row justify-content-evenly g-3 mt-0 mt-md-3">
-                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Diodo</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
+					<div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Diodo LED</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
 
-                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Diodo LED</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
+					<div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Display de 7 Segmentos</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</section>
 
-                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Display de 7 Segmentos</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-            </div>
-        </section>
+			<!-- sensores em sistemas automatizados -->
+			<section class="container my-3 my-md-5">
+				<div class="row align-items-center">
+					<div class="col-12 col-md-6">
+						<h2>Sensores em Sistemas Automatizados</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus minus. Vero quam sint illo quis cupiditate amet
+							magnam accusantium temporibus aliquam cumque ratione error at.
+						</p>
+					</div>
+				</div>
 
-        <!-- sensores em sistemas automatizados -->
-        <section class="container my-3 my-md-5">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-6">
-                    <h2>Sensores em Sistemas Automatizados</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Delectus minus. Vero quam sint illo quis cupiditate amet magnam
-                        accusantium temporibus aliquam cumque ratione error at.
-                    </p>
-                </div>
-            </div>
+				<div class="row justify-content-between g-3">
+					<div class="col-12 col-md-2 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Item 1</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
 
-            <div class="row justify-content-between g-3">
-                <div class="col-12 col-md-2 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Item 1</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
+					<div class="col-12 col-md-2 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Item 2</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
 
-                <div class="col-12 col-md-2 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Item 2</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
+					<div class="col-12 col-md-2 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Item 3</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
 
-                <div class="col-12 col-md-2 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Item 3</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
+					<div class="col-12 col-md-2 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Item 4</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
 
-                <div class="col-12 col-md-2 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Item 4</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
+					<div class="col-12 col-md-2 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Item 5</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</section>
 
-                <div class="col-12 col-md-2 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Item 5</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-            </div>
-        </section>
+			<!-- arduinos -->
+			<section class="container my-3 my-md-5">
+				<div class="row align-items-center">
+					<div class="col-12 col-md-6">
+						<img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid" />
+					</div>
+					<div class="col-12 col-md-6">
+						<h2>O que é e como funciona um Arduíno?</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora possimus molestias itaque vero rem voluptas dicta
+							optio, et labore! Ut, quia atque aliquid eum officia aspernatur minus eligendi dolores. Reiciendis!
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<h2 class="">Para que serve?</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id, iste dolore,
+							illum possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet assumenda voluptates.
+						</p>
+					</div>
+					<div class="col-12 col-md-6">
+						<h2 class=""><span class="hvj-text fw-bold">Prós</span> e Contras</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id, iste dolore,
+							illum possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet assumenda voluptates.
+						</p>
+					</div>
+				</div>
+			</section>
 
-        <!-- arduinos -->
-        <section class="container my-3 my-md-5">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-6">
-                    <img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid">
-                </div>
-                <div class="col-12 col-md-6">
-                    <h2>O que é e como funciona um Arduíno?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora possimus molestias itaque vero
-                        rem voluptas dicta optio, et labore! Ut, quia atque aliquid eum officia aspernatur minus
-                        eligendi dolores. Reiciendis!</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <h2 class="">Para que serve?</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti,
-                        hic id, iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod
-                        aspernatur eveniet assumenda voluptates.
-                    </p>
-                </div>
-                <div class="col-12 col-md-6">
-                    <h2 class=""><span class="hvj-text fw-bold">Prós</span> e Contras</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti,
-                        hic id, iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod
-                        aspernatur eveniet assumenda voluptates.
-                    </p>
-                </div>
-            </div>
-        </section>
+			<section class="container my-3 my-md-5">
+				<div class="row justify-content-evenly g-3">
+					<div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Qual Linguagem é Usada?</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
 
-        <section class="container my-3 my-md-5">
-            <div class="row justify-content-evenly g-3">
-                <div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Qual Linguagem é Usada?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
+					<div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Eletrônica Embarcada</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</section>
 
-                <div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Eletrônica Embarcada</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-            </div>
-        </section>
+			<!-- saidas em circuitos integrados -->
+			<section class="container my-3 my-md-5">
+				<div class="row align-items-center">
+					<div class="col-12 col-md-6">
+						<h2>Saídas em Circuitos Integrados</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus minus. Vero quam sint illo quis cupiditate amet
+							magnam accusantium temporibus aliquam cumque ratione error at.
+						</p>
+					</div>
+				</div>
 
-        <!-- saidas em circuitos integrados -->
-        <section class="container my-3 my-md-5">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-6">
-                    <h2>Saídas em Circuitos Integrados</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Delectus minus. Vero quam sint illo quis cupiditate amet magnam
-                        accusantium temporibus aliquam cumque ratione error at.
-                    </p>
-                </div>
-            </div>
+				<div class="row justify-content-evenly g-3">
+					<div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Saídas Digitais</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
 
-            <div class="row justify-content-evenly g-3">
-                <div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Saídas Digitais</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
+					<div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+						<img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" />
+						<h2 class="fs-4">Saídas Analógicas</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</section>
 
-                <div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Saídas Analógicas</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-            </div>
-        </section>
+			<section class="container my-3 my-md-5">
+				<div class="row align-items-center">
+					<div class="col-12 col-md-6">
+						<h2>Calculadoras de Eletroeletrônica</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint, illo quis cupiditate
+							amet magnam accusantium temporibus, aliquam, cumque ratione error at! Vero ab ullam pariatur ex?
+						</p>
+					</div>
+				</div>
 
-        <section class="container my-3 my-md-5">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-6">
-                    <h2>Calculadoras de Eletroeletrônica</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                        illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                        Vero ab ullam pariatur ex?
-                    </p>
-                </div>
-            </div>
+				<div class="row g-4 mt-2">
+					<div class="col-12 col-md-6">
+						<div class="p-3 p-md-4 hvj-outline rounded-4">
+							<h3 class="fs-4 hvj-text">Lei de Ohm</h3>
+							<p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-            <div class="row g-4 mt-2">
-                <div class="col-12 col-md-6">
-                    <div class="p-3 p-md-4 hvj-outline rounded-4">
-                        <h3 class="fs-4 hvj-text">Lei de Ohm</h3>
-                        <p class="mb-4">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
+							<div>
+								<span class="hvj-text small d-block mb-2">Corrente × Resistência = Tensão</span>
+								<div class="d-flex align-items-center gap-2">
+									<input type="number" class="form-control" id="input1a" placeholder="I (A)" />
+									<i class="fa-solid fa-xmark hvj-text"></i>
+									<input type="number" class="form-control" id="input1b" placeholder="R (Ω)" />
+									<i class="fa-solid fa-equals hvj-text"></i>
+									<span class="hvj-text fw-bold text-nowrap" id="resTensao">0 V</span>
+								</div>
+							</div>
 
-                        <div>
-                            <span class="hvj-text small d-block mb-2">Corrente × Resistência = Tensão</span>
-                            <div class="d-flex align-items-center gap-2">
-                                <input type="number" class="form-control" id="input1a" placeholder="I (A)">
-                                <i class="fa-solid fa-xmark hvj-text"></i>
-                                <input type="number" class="form-control" id="input1b" placeholder="R (Ω)">
-                                <i class="fa-solid fa-equals hvj-text"></i>
-                                <span class="hvj-text fw-bold text-nowrap" id="resTensao">0 V</span>
-                            </div>
-                        </div>
+							<div>
+								<span class="hvj-text small d-block mb-2">Tensão ÷ Resistência = Corrente</span>
+								<div class="d-flex align-items-center gap-2">
+									<input type="number" class="form-control" id="input2a" placeholder="V (V)" />
+									<i class="fa-solid fa-divide hvj-text"></i>
+									<input type="number" class="form-control" id="input2b" placeholder="R (Ω)" />
+									<i class="fa-solid fa-equals hvj-text"></i>
+									<span class="hvj-text fw-bold text-nowrap" id="resCorrente">0 A</span>
+								</div>
+							</div>
 
-                        <div>
-                            <span class="hvj-text small d-block mb-2">Tensão ÷ Resistência = Corrente</span>
-                            <div class="d-flex align-items-center gap-2">
-                                <input type="number" class="form-control" id="input2a" placeholder="V (V)">
-                                <i class="fa-solid fa-divide hvj-text"></i>
-                                <input type="number" class="form-control" id="input2b" placeholder="R (Ω)">
-                                <i class="fa-solid fa-equals hvj-text"></i>
-                                <span class="hvj-text fw-bold text-nowrap" id="resCorrente">0 A</span>
-                            </div>
-                        </div>
+							<div>
+								<span class="hvj-text small d-block mb-2">Tensão ÷ Corrente = Resistência</span>
+								<div class="d-flex align-items-center gap-2">
+									<input type="number" class="form-control" id="input3a" placeholder="V (V)" />
+									<i class="fa-solid fa-divide hvj-text"></i>
+									<input type="number" class="form-control" id="input3b" placeholder="I (A)" />
+									<i class="fa-solid fa-equals hvj-text"></i>
+									<span class="hvj-text fw-bold text-nowrap" id="resResistencia">0 Ω</span>
+								</div>
+							</div>
 
-                        <div>
-                            <span class="hvj-text small d-block mb-2">Tensão ÷ Corrente = Resistência</span>
-                            <div class="d-flex align-items-center gap-2">
-                                <input type="number" class="form-control" id="input3a" placeholder="V (V)">
-                                <i class="fa-solid fa-divide hvj-text"></i>
-                                <input type="number" class="form-control" id="input3b" placeholder="I (A)">
-                                <i class="fa-solid fa-equals hvj-text"></i>
-                                <span class="hvj-text fw-bold text-nowrap" id="resResistencia">0 Ω</span>
-                            </div>
-                        </div>
+							<button id="btnCalc1" class="btn hvj-outline hvj-text rounded-pill w-100 mt-3">Calcular</button>
 
-                        <button id="btnCalc1" class="btn hvj-outline hvj-text rounded-pill w-100 mt-3">
-                            Calcular
-                        </button>
-
-                        <details class="w-100 mt-3">
-                            <summary class="hvj-text fw-bold cursor-pointer">Ver Código</summary>
-                            <div class="mt-2">
-                                <pre><code class="small">// ohm.js - cálculos da Lei de Ohm
+							<details class="w-100 mt-3">
+								<summary class="hvj-text fw-bold cursor-pointer">Ver Código</summary>
+								<div class="mt-2">
+									<pre><code class="small">// ohm.js - cálculos da Lei de Ohm
 let btnCalc1 = document.getElementById('btnCalc1');
 
 let input1a = document.getElementById('input1a');
@@ -353,61 +343,57 @@ btnCalc1.addEventListener('click', () => {
     const resistencia = Number(input3a.value) / Number(input3b.value);
     resResistencia.innerHTML = filtrarNaN(Number(resistencia.toFixed(2))) + ' Ω';
 });</code></pre>
-                            </div>
-                        </details>
-                    </div>
-                </div>
+								</div>
+							</details>
+						</div>
+					</div>
 
-                <div class="col-12 col-md-6">
-                    <div class="p-3 p-md-4 hvj-outline rounded-4">
-                        <h3 class="fs-4 hvj-text">Cálculo de Potência</h3>
-                        <p class="mb-4">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
+					<div class="col-12 col-md-6">
+						<div class="p-3 p-md-4 hvj-outline rounded-4">
+							<h3 class="fs-4 hvj-text">Cálculo de Potência</h3>
+							<p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-                        <div>
-                            <span class="hvj-text small d-block mb-2">Tensão × Corrente = Potência</span>
-                            <div class="d-flex align-items-center gap-2">
-                                <input type="number" class="form-control" id="input4a" placeholder="V (V)">
-                                <i class="fa-solid fa-xmark hvj-text"></i>
-                                <input type="number" class="form-control" id="input4b" placeholder="I (A)">
-                                <i class="fa-solid fa-equals hvj-text"></i>
-                                <span class="hvj-text fw-bold text-nowrap" id="resPotencia1">0 W</span>
-                            </div>
-                        </div>
+							<div>
+								<span class="hvj-text small d-block mb-2">Tensão × Corrente = Potência</span>
+								<div class="d-flex align-items-center gap-2">
+									<input type="number" class="form-control" id="input4a" placeholder="V (V)" />
+									<i class="fa-solid fa-xmark hvj-text"></i>
+									<input type="number" class="form-control" id="input4b" placeholder="I (A)" />
+									<i class="fa-solid fa-equals hvj-text"></i>
+									<span class="hvj-text fw-bold text-nowrap" id="resPotencia1">0 W</span>
+								</div>
+							</div>
 
-                        <div>
-                            <span class="hvj-text small d-block mb-2">Corrente² × Resistência = Potência</span>
-                            <div class="d-flex align-items-center gap-2">
-                                <input type="number" class="form-control" id="input5a" placeholder="I (A)">
-                                <sup class="hvj-text">2</sup>
-                                <i class="fa-solid fa-xmark hvj-text"></i>
-                                <input type="number" class="form-control" id="input5b" placeholder="R (Ω)">
-                                <i class="fa-solid fa-equals hvj-text"></i>
-                                <span class="hvj-text fw-bold text-nowrap" id="resPotencia2">0 W</span>
-                            </div>
-                        </div>
+							<div>
+								<span class="hvj-text small d-block mb-2">Corrente² × Resistência = Potência</span>
+								<div class="d-flex align-items-center gap-2">
+									<input type="number" class="form-control" id="input5a" placeholder="I (A)" />
+									<sup class="hvj-text">2</sup>
+									<i class="fa-solid fa-xmark hvj-text"></i>
+									<input type="number" class="form-control" id="input5b" placeholder="R (Ω)" />
+									<i class="fa-solid fa-equals hvj-text"></i>
+									<span class="hvj-text fw-bold text-nowrap" id="resPotencia2">0 W</span>
+								</div>
+							</div>
 
-                        <div>
-                            <span class="hvj-text small d-block mb-2">Tensão² ÷ Resistência = Potência</span>
-                            <div class="d-flex align-items-center gap-2">
-                                <input type="number" class="form-control" id="input6a" placeholder="V (V)">
-                                <sup class="hvj-text">2</sup>
-                                <i class="fa-solid fa-divide hvj-text"></i>
-                                <input type="number" class="form-control" id="input6b" placeholder="R (Ω)">
-                                <i class="fa-solid fa-equals hvj-text"></i>
-                                <span class="hvj-text fw-bold text-nowrap" id="resPotencia3">0 W</span>
-                            </div>
-                        </div>
+							<div>
+								<span class="hvj-text small d-block mb-2">Tensão² ÷ Resistência = Potência</span>
+								<div class="d-flex align-items-center gap-2">
+									<input type="number" class="form-control" id="input6a" placeholder="V (V)" />
+									<sup class="hvj-text">2</sup>
+									<i class="fa-solid fa-divide hvj-text"></i>
+									<input type="number" class="form-control" id="input6b" placeholder="R (Ω)" />
+									<i class="fa-solid fa-equals hvj-text"></i>
+									<span class="hvj-text fw-bold text-nowrap" id="resPotencia3">0 W</span>
+								</div>
+							</div>
 
-                        <button id="btnCalc2" class="btn hvj-outline hvj-text rounded-pill w-100 mt-3">
-                            Calcular
-                        </button>
+							<button id="btnCalc2" class="btn hvj-outline hvj-text rounded-pill w-100 mt-3">Calcular</button>
 
-                        <details class="w-100 mt-3">
-                            <summary class="hvj-text fw-bold cursor-pointer">Ver Código</summary>
-                            <div class="mt-2">
-                                <pre><code class="small">// potencia.js - cálculos de potência
+							<details class="w-100 mt-3">
+								<summary class="hvj-text fw-bold cursor-pointer">Ver Código</summary>
+								<div class="mt-2">
+									<pre><code class="small">// potencia.js - cálculos de potência
 let btnCalc2 = document.getElementById('btnCalc2');
 
 let input4a = document.getElementById('input4a');
@@ -442,52 +428,50 @@ btnCalc2.addEventListener('click', () => {
     const potencia3 = (Number(input6a.value) ** 2) / Number(input6b.value);
     if (resPotencia3) resPotencia3.innerHTML = filtrarNaN(Number(potencia3.toFixed(2))) + ' W';
 });</code></pre>
-                            </div>
-                        </details>
-                    </div>
-                </div>
-            </div>
-        </section>
+								</div>
+							</details>
+						</div>
+					</div>
+				</div>
+			</section>
 
-        <!-- leitura de dados s/analogica acionando s/digitais -->
-        <section class="container my-3 my-md-5">
-            <div class="row align-items-center">
-                <div class="col-12">
-                    <img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6 p-3 rounded-4">
-                    <h2>Leitura de dados de um sensor analógico, acionando saídas digitais</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti,
-                        hic id, iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod
-                        aspernatur eveniet assumenda voluptates.
-                    </p>
-                </div>
-                <div class="col-12 col-md-6 d-flex align-items-start">
-                    <details class="w-100 p-3 hvj-outline rounded-4">
-                        <summary class="accordion-button fs-4 hvj-text">
-                            <div class="d-flex w-100 align-items-center justify-content-between">
-                                <h2 class="fs-4 hvj-text">Ver Código</h2>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                        </summary>
-                        <div class="accordion-body">
-                            <pre><code>// colocar codigo aqui</code></pre>
-                        </div>
-                    </details>
-                </div>
-            </div>
-        </section>
-    </main>
+			<!-- leitura de dados s/analogica acionando s/digitais -->
+			<section class="container my-3 my-md-5">
+				<div class="row align-items-center">
+					<div class="col-12">
+						<img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 p-3 rounded-4">
+						<h2>Leitura de dados de um sensor analógico, acionando saídas digitais</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id, iste dolore,
+							illum possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet assumenda voluptates.
+						</p>
+					</div>
+					<div class="col-12 col-md-6 d-flex align-items-start">
+						<details class="w-100 p-3 hvj-outline rounded-4">
+							<summary class="accordion-button fs-4 hvj-text">
+								<div class="d-flex w-100 align-items-center justify-content-between">
+									<h2 class="fs-4 hvj-text">Ver Código</h2>
+									<i class="fas fa-chevron-down"></i>
+								</div>
+							</summary>
+							<div class="accordion-body">
+								<pre><code>// colocar codigo aqui</code></pre>
+							</div>
+						</details>
+					</div>
+				</div>
+			</section>
+		</main>
 
-    <footer class="bg-blur p-2 p-md-3">
-        <div class="d-flex align-items-center justify-content-evenly">
-            <span class="d-none d-md-block"></span>
-            <p class="m-0 hvj-text">2025 &copy; Henrique Justus</p>
-        </div>
-    </footer>
-</body>
-
+		<footer class="bg-blur p-2 p-md-3">
+			<div class="d-flex align-items-center justify-content-evenly">
+				<span class="d-none d-md-block"></span>
+				<p class="m-0 hvj-text">2025 &copy; Henrique Justus</p>
+			</div>
+		</footer>
+	</body>
 </html>
