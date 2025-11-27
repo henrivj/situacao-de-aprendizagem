@@ -98,7 +98,7 @@
 
 ---
 
-## Fundamentos de Tecnologia da Informação OK
+## Fundamentos de Tecnologia da Informação TEXTOS OK
 
 1. **O que é o Hardware de computadores?**  
    - Placa mãe, processador, memória RAM.
@@ -139,7 +139,7 @@
 
 ---
 
-## Lógica de Programação OK
+## Lógica de Programação TEXTOS OK
 
 1. **O que são Linguagens de Programação?**  
    - C++, Javascript, Java, Python, PHP.
