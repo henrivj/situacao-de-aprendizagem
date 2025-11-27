@@ -6,14 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/scriptFundEletronica.js" defer></script>
-
-    <!-- hover.css -->
-    <link rel="stylesheet" href="./assets/css/hover-min.css" media="all" />
-
-    <!-- highlight.js -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -31,29 +23,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
 
-    <title>Situação de Aprendizagem</title>
+    <title>SA - Redes</title>
 </head>
 
 <body>
-    <header class="d-flex justify-content-evenly align-items-center bg-blur fixed-top px-2 px-md-4 py-1">
-        <a href="./index.html"
-            class="hvj-text hvj-outline rounded-pill text-decoration-none p-1 px-2 hvr-icon-forward hvr-grow">
-            Home <i class="fa-regular fa-home hvj-text hvr-icon"></i>
-        </a>
-        <nav class="d-block d-sm-flex align-items-center">
-            <a href="#tecnologias"
-                class="d-none d-md-flex hvj-text text-decoration-none mx-2 mx-md-3 pt-2 h-100 hvr-sink hvr-grow">
-                Tecnologias
+    <header class="fixed-top bg-blur p-2 px-md-4">
+        <nav class="d-flex justify-content-evenly align-items-center">
+            <a href="./index.html" class="px-2 py-1 text-decoration-none hvj-outline hvj-text rounded-pill">Home <i
+                    class="fa-regular fa-home hvj-text"></i>
             </a>
-            <a href="#contato"
-                class="d-none d-md-flex hvj-text text-decoration-none mx-2 mx-md-3 pt-2 h-100 hvr-sink hvr-grow">
-                Contato
-            </a>
-            <div class="dropdown hvj-text text-decoration-none mx-2 mx-md-3 pt-2 h-100 hvr-sink hvr-grow">
+
+            <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle hvj-text" type="button" data-bs-toggle="dropdown">
                     Matérias
                 </button>
-                <ul class="dropdown-menu bg-black" role="menu">
+                <ul class="dropdown-menu bg-blur">
                     <li><a class="dropdown-item hvj-text" href="./fundbancodedados.html">Fund. de Banco de Dados</a>
                     </li>
                     <li><a class="dropdown-item hvj-text" href="./fundeletroeletronica.html">Fund. de
@@ -63,447 +47,366 @@
                             da Informação</a></li>
                     <li><a class="dropdown-item hvj-text" href="./logicacomputacional.html">Lógica Computacional</a>
                     </li>
-                    <li><a class="dropdown-item hvj-text" href="./logicaprogramacao.html">Lógica de Programação</a></li>
+                    <li><a class="dropdown-item hvj-text" href="./logicaprogramacao.html">Lógica de Programação</a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="container-lg d-flex align-items-center py-5 vh-75">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-9">
-                        <h1 class="fw-bold fs-1 mb-3 hvj-text">Fundamento de Banco de Dados.</h1>
-                        <h2 class="fs-4 mb-4 hvj-text opacity-50">Subtitulo</h2>
-                    </div>
-                    <div class="col-lg-3">
-                        <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" alt="Logo Banco 1">
-                    </div>
+        <section class="container d-flex vh-75 align-items-center justify-content-between">
+            <h2 class="display-3 fw-bold hvj-text">Fundamento de Redes</h2>
+            <img src="./assets/img/hvj-logo.svg" alt="" class="d-none d-md-block img-fluid w-50">
+        </section>
+
+        <!-- redes de computadores -->
+        <section class="container my-3 my-md-5">
+            <h2 class="text-end">Redes de computadores</h2>
+            <p class="col-12 col-md-6 ms-md-auto text-end">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id,
+                iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet
+                assumenda voluptates.
+            </p>
+        </section>
+
+        <!-- rede Minima -->
+        <section class="container my-3 my-md-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <h2>O que é uma Rede Mínima?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora possimus molestias itaque vero
+                        rem voluptas dicta optio, et labore! Ut, quia atque aliquid eum officia aspernatur minus
+                        eligendi dolores. Reiciendis!</p>
+                </div>
+                <div class="col-12">
+                    <img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid">
                 </div>
             </div>
         </section>
 
-        <section class="container-lg pt-4 py-md-5">
-            <div class="row g-4 px-3">
-                <div class="col-12 col-md-6">
-                    <div>
-                        <h1 class="fs-3 fw-bold mb-3">1. O que são Redes de Computadores?</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                            Vero ab ullam pariatur ex?</p>
-                    </div>
+        <!-- internet -->
+        <section class="container my-3 my-md-5">
+            <div class="row">
+                <div class="col-12 col-md-6 p-3 hvj-outline rounded-4">
+                    <h2 class="hvj-text">O que é a Internet?</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti,
+                        hic id, iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod
+                        aspernatur eveniet assumenda voluptates.
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 p-3">
+                    <h2>O que a compõe?</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti,
+                        hic id, iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod
+                        aspernatur eveniet assumenda voluptates.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section class="container-lg pt-4 py-md-5">
-            <div class="row g-4 px-3">
+        <!-- web -->
+        <section class="container my-3 my-md-5">
+            <h2 class="text-center hvj-text">O que é a Web?</h2>
+            <p class="col-12 col-md-6 mx-auto text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id,
+                iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet
+                assumenda voluptates.
+            </p>
+        </section>
+
+        <!-- mapa fibra optica -->
+        <section class="container my-3 my-md-5">
+            <div class="row align-items-center">
                 <div class="col-12 col-md-6">
-                    <div>
-                        <h1 class="fs-3 fw-bold mb-3">2. O que é uma Rede mínima?</h1>
-                    </div>
+                    <h2>O Mapa global de Fibra Óptica</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora possimus molestias itaque vero
+                        rem voluptas dicta optio, et labore! Ut, quia atque aliquid eum officia aspernatur minus
+                        eligendi dolores. Reiciendis!</p>
                 </div>
-            </div>
-            <div class="row g-4 px-3">
-                <div class="col-12 text-center d-flex align-items-center">
-                    <div class="w-100 align-items-center g-3">
-                        <img src="./assets/img/hvj-logo.svg" class="img-fluid" alt="Logo Banco 1">
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                        illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                        Vero ab ullam pariatur ex?</p>
+                <div class="col-12">
+                    <img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid">
                 </div>
             </div>
         </section>
 
-        <section class="container-lg pt-4 py-md-5">
-            <div class="row g-4 px-3">
+        <!-- hardware wifi -->
+        <section class="container my-3 my-md-5">
+            <div class="row align-items-center">
                 <div class="col-12 col-md-6">
-                    <div>
-                        <h1 class="fs-3 fw-bold mb-3">3. O que é a internet?</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                            Vero ab ullam pariatur ex?</p>
-                    </div>
-                    <div class="text-end">
-                        <h1 class="fs-3 fw-bold mb-3">3. O que a compoe?</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                            Vero ab ullam pariatur ex?</p>
-                    </div>
+                    <h2>O Hardware de uma Rede Wi-Fi</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Delectus minus. Vero quam sint illo quis cupiditate amet magnam
+                        accusantium temporibus aliquam cumque ratione error at.
+                    </p>
                 </div>
-                <div class="col-12 col-md-6">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid" alt="Logo Banco 1">
+            </div>
+
+            <div class="row justify-content-evenly g-3">
+                <div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
+                    <h2 class="fs-4">Item 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
+                    <h2 class="fs-4">Item 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-evenly g-3 mt-0 mt-md-3">
+                <div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
+                    <h2 class="fs-4">Item 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
+                    <h2 class="fs-4">Item 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
             </div>
         </section>
 
-        <section class="container-lg pt-4 py-md-5">
-            <div class="row g-4 px-3">
-                <div class="col-12 d-flex justify-content-center">
-                    <div class="text-center w-50">
-                        <h1 class="fs-3 fw-bold">
-                            4. O que é web?</h1>
-                        <p class="hvj-outline rounded-4 p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                            Vero ab ullam pariatur ex?</p>
-                    </div>
+        <!-- hardware local -->
+        <section class="container my-3 my-md-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <h2>Hardware de uma Rede Local</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Delectus minus. Vero quam sint illo quis cupiditate amet magnam
+                        accusantium temporibus aliquam cumque ratione error at.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-evenly g-3">
+                <div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
+                    <h2 class="fs-4">Item 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
+                    <h2 class="fs-4">Item 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
             </div>
         </section>
 
-        <section class="container-lg pt-4 py-md-5">
-            <div class="row g-4 px-3">
+        <!-- protocolos de com. -->
+        <section class="container my-3 my-md-5">
+            <h2 class="text-start">O que são <span class="hvj-text fw-bold">Procotolos de Comunicação</span>?</h2>
+            <p class="col-12 col-md-6 text-start">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id,
+                iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet
+                assumenda voluptates.
+            </p>
+
+            <div class="row">
                 <div class="col-12 col-md-6">
-                    <div>
-                        <h1 class="fs-3 fw-bold mb-3">O que é o mapa de fibra óptica? Mostre o mapa global de fibra
-                            óptica da internet.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                            Vero ab ullam pariatur ex?</p>
-                    </div>
+                    <h2 class="">Modelo OSI</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti,
+                        hic id, iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod
+                        aspernatur eveniet assumenda voluptates.
+                    </p>
+                    <img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti,
+                        hic id, iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod
+                        aspernatur eveniet assumenda voluptates.
+                    </p>
                 </div>
-            </div>
-            <div class="row g-4 px-3">
-                <div class="col-12 text-center d-flex align-items-center">
-                    <div class="w-100 align-items-center g-3">
-                        <img src="./assets/img/hvj-logo.svg" class="img-fluid" alt="Logo Banco 1">
-                    </div>
+                <div class="col-12 col-md-6">
+                    <h2 class="">Modelo TCP/IP</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti,
+                        hic id, iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod
+                        aspernatur eveniet assumenda voluptates.
+                    </p>
+                    <img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti,
+                        hic id, iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod
+                        aspernatur eveniet assumenda voluptates.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section class="container-lg py-4 py-md-5">
-            <div class="row g-4 px-3">
-                <div class="col-12 col-md-6 d-flex align-items-center">
-                    <div>
-                        <h1 class="fs-3 fw-bold mb-3">Quais os componentes de hardware de uma rede Wi-Fi?</h1>
-                        <p>APLICACOES Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero
-                            quam sint, illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione
-                            error at! Vero ab ullam pariatur ex?</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-4 px-3">
+        <!-- ip -->
+        <section class="container my-3 my-md-5">
+            <div class="row hvj-outline p-3 rounded-4">
                 <div class="col-12 col-md-6">
-                    <div class="p-3 bg-grey rounded-4 text-center text-light">
-                        <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" alt="Logo Banco 1">
-                        <h2 class="h5">Componente</h2>
-                        <p>Descricao Descricao Descricao Descricao Descricao Descricao</p>
-                    </div>
+                    <h2>Protocolo IPv4</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti,
+                        hic id, iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod
+                        aspernatur eveniet assumenda voluptates.
+                    </p>
                 </div>
-                <div class="col-12 col-md-6">
-                    <div class="p-3 bg-grey rounded-4 text-center text-light">
-                        <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" alt="Logo Banco 3">
-                        <h2 class="h5">Componente</h2>
-                        <p>Descricao Descricao Descricao Descricao Descricao Descricao</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="p-3 bg-grey rounded-4 text-center text-light">
-                        <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" alt="Logo Banco 3">
-                        <h2 class="h5">Componente</h2>
-                        <p>Descricao Descricao Descricao Descricao Descricao Descricao</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="p-3 bg-grey rounded-4 text-center text-light">
-                        <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" alt="Logo Banco 4">
-                        <h2 class="h5">Componente</h2>
-                        <p>Descricao Descricao Descricao Descricao Descricao Descricao</p>
-                    </div>
+                <div class="col-12 col-md-6"> <!-- hvj-outline -->
+                    <h2>Protocolo IPv6</h2> <!-- hvj-text -->
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti,
+                        hic id, iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod
+                        aspernatur eveniet assumenda voluptates.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section class="container-lg py-4 py-md-5">
-            <div class="row g-4 px-3">
-                <div class="col-12 col-md-6 d-flex align-items-center">
-                    <div>
-                        <h1 class="fs-3 fw-bold mb-3">Quais os componentes de hardware de uma rede Wi-Fi?</h1>
-                        <p>APLICACOES Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero
-                            quam sint, illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione
-                            error at! Vero ab ullam pariatur ex?</p>
-                    </div>
+        <!-- config de tcp/ip com Node.js -->
+        <section class="container my-3 my-md-5">
+            <div class="row">
+                <div class="col-12 col-md-6 p-3 rounded-4">
+                    <h2>Configuração TCP/IP com Node.js</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti,
+                        hic id, iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod
+                        aspernatur eveniet assumenda voluptates.
+                    </p>
+                    <img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid">
                 </div>
-            </div>
-            <div class="row g-4 px-3">
-                <div class="col-12 col-md-6">
-                    <div class="p-3 bg-grey rounded-4 text-center text-light">
-                        <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" alt="Logo Banco 1">
-                        <h2 class="h5">Componente</h2>
-                        <p>Descricao Descricao Descricao Descricao Descricao Descricao</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="p-3 bg-grey rounded-4 text-center text-light">
-                        <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" alt="Logo Banco 3">
-                        <h2 class="h5">Componente</h2>
-                        <p>Descricao Descricao Descricao Descricao Descricao Descricao</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="container-lg py-4 pt-md-5 mb-md bg-light">
-            <div class="row g-4 px-3">
-                <div class="col-12 col-md-6 d-flex align-items-center">
-                    <div>
-                        <h1 class="fs-3 fw-bold mb-3">8. O que é um protocolo de comunicação?</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                            Vero ab ullam pariatur ex?</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-4 px-3">
-                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
-                    <div>
-                        <h1 class="fs-3 fw-bold mb-3">9. O que é o modelo OSI?</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                            Vero ab ullam pariatur ex?</p>
-                        <div class="text-center mb-3">
-                            <img src="./assets/img/PLACEHOLDER-fbd-DER.png" class="img-fluid" alt="Exemplo DER">
+                <div class="col-12 col-md-6 d-flex align-items-start">
+                    <details class="w-100 p-3 hvj-outline rounded-4">
+                        <summary class="accordion-button fs-4 hvj-text">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <h2 class="fs-4 hvj-text">Ver Código</h2>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </summary>
+                        <div class="accordion-body">
+                            <pre><code>// colocar codigo aqui</code></pre>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                            Vero ab ullam pariatur ex?</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
-                    <div>
-                        <h1 class="fs-3 fw-bold mb-3">10. E o modelo TCP/IP?</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                            Vero ab ullam pariatur ex?</p>
-                        <div class="text-center mb-3">
-                            <img src="./assets/img/PLACEHOLDER-fbd-DER.png" class="img-fluid" alt="Exemplo MER">
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                            Vero ab ullam pariatur ex?</p>
-                    </div>
+                    </details>
                 </div>
             </div>
         </section>
 
-        <section class="container-lg py-4 pt-md-5">
-            <div class="row g-4 px-3">
-                <div class="col-12 col-md-6 d-flex align-items-center">
-                </div>
-            </div>
-            <div class="row g-4 px-3 align-items-center">
-                <div class="col-12 col-md-5">
-                    <div class="h-100 d-flex flex-column justify-content-center hvj-outline rounded-4 p-3">
-                        <h3 class="fs-4 fw-bold">11. O que é o protocolo IP V4?</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis
-                            cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at! Vero ab
-                            ullam pariatur ex?</p>
-                        <div class="text-center">
-                            <img src="./assets/img/PLACEHOLDER-SAIDAS.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-2 d-flex justify-content-center">
-                    <i class="fa-solid fa-xmark fa-2x hvj-text" aria-hidden="true"></i>
-                </div>
-                <div class="col-12 col-md-5">
-                    <div class="h-100 d-flex flex-column justify-content-center hvj-outline rounded-4 p-3">
-                        <h3 class="fs-4 fw-bold">E o IP V6?</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis
-                            cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at! Vero ab
-                            ullam pariatur ex?</p>
-                        <div class="text-center">
-                            <img src="./assets/img/PLACEHOLDER-SAIDAS.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="container-lg pt-4 py-md-5">
-            <div class="row g-4 px-3">
+        <section class="container my-3 my-md-5">
+            <div class="row hvj-outline p-3 rounded-4">
                 <div class="col-12 col-md-6">
-                    <div>
-                        <h1 class="fs-3 fw-bold mb-3">12. Como é configurado o IP e o TCP em uma programação backend com Node.js?</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                            Vero ab ullam pariatur ex?</p>
-                    </div>
+                    <h2>Protocolo HTTP</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti,
+                        hic id, iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod
+                        aspernatur eveniet assumenda voluptates.
+                    </p>
                 </div>
-                <div class="col-12 col-md-6 d-flex">
-                    <div class="row w-100 g-3">
-                        <div class="accordion mb-5 my-md-0" id="accordion3">
-                            <div class="accordion-item hvj-outline">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree">
-                                        Ver Código
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordion3">
-                                    <div class="accordion-body">
-                                        <pre><code>// colocar codigo aqui </code></pre>
-                                    </div>
-                                </div>
+                <div class="col-12 col-md-6"> <!-- hvj-outline -->
+                    <h2>Protocolo HTTPS</h2> <!-- hvj-text -->
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti,
+                        hic id, iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod
+                        aspernatur eveniet assumenda voluptates.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- express (framework) -->
+        <section class="container my-3 my-md-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-6">
+                    <h2>Express</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora possimus molestias itaque vero
+                        rem voluptas dicta optio, et labore! Ut, quia atque aliquid eum officia aspernatur minus
+                        eligendi dolores. Reiciendis!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- codigo back com. front -->
+        <section class="container my-3 my-md-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <h2>Exemplos de comunicação<br>Backend <span class="hvj-text fw-bold">x</span> Frontend</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Delectus minus. Vero quam sint illo quis cupiditate amet magnam
+                        accusantium temporibus aliquam cumque ratione error at.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/img/hvj-logo.svg" class="d-block w-100" alt="">
+                            <div class="col-12 col-md-6 h-100">
+                                <h2>Item 1</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Delectus minus. Vero quam sint illo quis cupiditate amet magnam
+                                    accusantium temporibus aliquam cumque ratione error at.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/hvj-logo.svg" class="d-block w-100" alt="">
+                            <div class="col-12 col-md-6 h-100">
+                                <h2>Item 2</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Delectus minus. Vero quam sint illo quis cupiditate amet magnam
+                                    accusantium temporibus aliquam cumque ratione error at.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/hvj-logo.svg" class="d-block w-100" alt="">
+                            <div class="col-12 col-md-6 h-100">
+                                <h2>Item 3</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Delectus minus. Vero quam sint illo quis cupiditate amet magnam
+                                    accusantium temporibus aliquam cumque ratione error at.
+                                </p>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="container-lg py-4 pt-md-5">
-            <div class="row g-4 px-3">
-                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
-                    <div>
-                        <h1 class="fs-3 fw-bold mb-3">    13. O que é o protocolo HTTP? </h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                            Vero ab ullam pariatur ex?</p>
-                        <div class="text-center mb-3">
-                            <img src="./assets/img/PLACEHOLDER-fbd-DER.png" class="img-fluid" alt="Exemplo DER">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
-                    <div>
-                        <h1 class="fs-3 fw-bold mb-3">E o HTTPS?</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                            Vero ab ullam pariatur ex?</p>
-                        <div class="text-center mb-3">
-                            <img src="./assets/img/PLACEHOLDER-fbd-DER.png" class="img-fluid" alt="Exemplo MER">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="container-lg">
-            <div class="row g-4 px-3">
-                <div class="col-12 col-md-6">
-                    <div class="p-3 p-md-5">
-                        <h1 class="fs-3 fw-bold mb-3">14. Cite exemplo de um framework para programação do protocolo HTTP com uso do Node.js.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                            Vero ab ullam pariatur ex?</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="rounded-4 hvj-outline p-3 p-md-5">
-                        <div class="d-flex align-items-center justify-content-center g-3">
-                            <img src="./assets/img/cplusplus.jpeg" class="icon-xl" alt="c++">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="container-lg py-4 py-md-5">
-            <div class="row g-4 px-3">
-                <div class="col-12 col-md-6">
-                    <div>
-                        <h1 class="fs-3 fw-bold mb-3">15. Apresente 3 exemplos de código Backend para troca de mensagens entre front e backend.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                            Vero ab ullam pariatur ex?</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row g-4 px-3">
-                <div class="col-12 col-md-4">
-                    <div class="p-3 bg-grey rounded-4 text-center text-light">
-                        <h2 class="h5">1</h2>
-                        <p>Descricao Descricao Descricao Descricao Descricao Descricao</p>
-                        <div class="accordion mt-3 mt-md-4" id="accordion4">
-                            <div class="accordion-item hvj-outline">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour">
-                                        Ver Código
-                                    </button>
-                                </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordion4">
-                                    <div class="accordion-body">
-                                        <pre><code>
-                                            
-                                        </code></pre>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-4">
-                    <div class="p-3 bg-grey rounded-4 text-center text-light">
-                        <h2 class="h5"> 2 </h2>
-                        <p>Descricao Descricao Descricao Descricao Descricao Descricao</p>
-                        <div class="accordion mt-3 mt-md-4" id="accordion5">
-                            <div class="accordion-item hvj-outline">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive">
-                                        Ver Código
-                                    </button>
-                                </h2>
-                                <div id="collapseFive" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordion5">
-                                    <div class="accordion-body">
-                                        <pre><code>
-                                            
-                                        </code></pre>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-4">
-                    <div class="p-3 bg-grey rounded-4 text-center text-light">
-                        <h2 class="h5">3</h2>
-                        <p>Descricao Descricao Descricao Descricao Descricao Descricao</p>
-                        <div class="accordion mt-3 mt-md-4" id="accordion6">
-                            <div class="accordion-item hvj-outline">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSix">
-                                        Ver Código
-                                    </button>
-                                </h2>
-                                <div id="collapseSix" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordion6">
-                                    <div class="accordion-body">
-                                        <pre><code>
-
-                                        </code></pre>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="container-fluid py-3 bg-black text-light">
-        <div class="container-lg d-flex flex-column flex-md-row justify-content-between align-items-center">
-            <a href="./index.html" class="d-inline-block mb-3 mb-md-0">
-                <img src="./assets/img/hvj-logo.svg" class="hvr-grow icon-lg" alt="HvJ Logo" />
-            </a>
-            <p class="text-center small hvj-text">&copy; Henrique V. Justus</p>
+    <footer class="bg-blur p-2 p-md-3">
+        <div class="d-flex align-items-center justify-content-evenly">
+            <span class="d-none d-md-block"></span>
+            <p class="m-0 hvj-text">2025 &copy; Henrique Justus</p>
         </div>
     </footer>
 </body>

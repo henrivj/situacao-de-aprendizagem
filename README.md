@@ -1,118 +1,179 @@
-# Situação de Aprendizagem - Segundo Ano
-
-## CONTEXTUALIZAÇÃO:
-
-No mercado de trabalho, muitas empresas disponibilizam suas informações relacionadas à empresa através de um site/página web. Neste site, além de aproveitar para a divulgação da marca, são apresentados seus produtos e serviços, endereço, localização, formas de contato e outras informações importantes para os possíveis clientes. Normalmente, estas empresas contratam uma prestadora de serviços da área de tecnologia para implementar e disponibilizar o site/página na web.
-
-A disponibilização de um site/página web normalmente é direcionada a um ou mais profissionais técnicos de uma empresa prestadora de serviços. Nesse contexto, os profissionais da área de Tecnologia da Informação são encarregados de realizar essa atividade. Vários são os desafios envolvendo a prototipação e codificação do site/página web, entre os quais se destacam a criação dos aspectos estáticos estruturais do site, bem como o aspecto visual, com o emprego de tecnologias como HTML e CSS.
-
-A codificação, com o uso de técnicas e recursos tecnológicos, envolve lógica computacional e de programação, infraestrutura de comunicação, eletrônica envolvida, redes de comunicação, sistemas de armazenamento de dados, e diversas outras especificações técnicas. Em relação à disponibilidade do serviço, são configurados servidores web que suportam a entrega das páginas conforme a solicitação do usuário. Estes equipamentos precisam de um endereçamento e um protocolo de comunicação configurados para troca de informações conforme a solicitação do usuário.
-
-Portanto, a atividade de disponibilizar um site na web envolve: planejar, configurar, codificar, testar e realizar a manutenção em toda uma infraestrutura de serviços web, o que um técnico precisa fazer para garantir a entrega do serviço.
+# Situação de Aprendizagem
 
 ---
 
-## DESAFIO:
+## Fundamentos de Banco de Dados OK
 
-Uma empresa de desenvolvimento de sistemas deseja apresentar seus serviços para seus clientes através de um site/página web. Para isso, contratou o serviço de implementação de um site/página web, bem como a disponibilização deste site na web. O serviço contratado, após ser executado, deve conter os seguintes elementos gerais e seus respectivos detalhamentos:
+1. **O que é um SGBD?**
+   - Tipos e Aplicações.
 
-### Elementos Gerais:
+2. **Principais Bancos de Dados**
 
-* **Implementação do site/página web em ambiente de desenvolvimento (antes da publicação).** 
-* **Publicação do site na web.**
+3. **Dicionário de Dados**  
+   - Tipos de dados em um banco de dados.
 
-### Detalhamento da Estrutura e Aspecto Visual do Site/Página Web a ser Implementado:
+4. **Modelagem de Banco de Dados**  
+   - Modelos DER e MER.
 
-* **Barra de navegação**, com links para serviços, além do link da página inicial (home) e de contato. FEITO
-* **Página de Serviços**, destacando as soluções de programação e tipos de Banco de Dados empregados nos serviços.
-* **Página de Algoritmos e Lógica Computacional**, detalhando as competências da empresa na implementação dessas soluções.
-* **Página de Componentes Eletrônicos**, abordando os componentes de rede, servidores e dispositivos utilizados nos serviços da empresa.
-* **Rodapé** com o nome e a marca registrada da empresa. FEITO
+5. **Exemplo de Diagrama DER**  
+   - Incluir imagem.
 
----
+6. **Exemplo de Diagrama MER**  
+   - Incluir imagem.
 
-## RESULTADOS ESPERADOS:
-
-A publicação do site/página, contendo os serviços de Tecnologia da Informação prestados pela empresa.
-
----
-
-## Itens da Situação de Aprendizagem
-
-### Fundamentos de Eletroeletrônica:
-
-1. Componentes Eletrônicos empregados em serviços (Resistor, Diodo LED, Transistor, Circuito Integrado) --
-
-2. Sensores empregados em Sistemas Automatizados (Sensor de temperatura, umidade, luminosidade, etc.)
-3. Arduino: O que é, para que serve, aplicações, vantagens e desvantagens.
-4. Como o Arduino funciona? O que é eletrônica embarcada?
-5. Arduino: Qual a linguagem de programação usada? (C++, Python, etc.)
-6. O que são entradas e saídas digitais em circuitos integrados como o Arduino?
-7. O que são entradas e saídas analógicas em circuitos integrados como o Arduino?
-11. O que é um diodo? O que é um Diodo LED? E um Display de 7 segmentos?
-8. Script para cálculo da tensão, corrente, resistência pela Lei de Ohm.
-9. Script para cálculo da Potência a partir de valores de tensão, resistência e corrente.
-10. Apresente um programa para leitura de dados de um sensor analógico, acionando saídas digitais.
+7. **Formulário para cadastro de dados**  
+   - Simulação de gravação de dados.
 
 ---
 
-### Lógica Computacional:
+## Fundamentos de Eletroeletrônica OK
 
-1. O que são fluxogramas? Qual a sua simbologia básica?
-2. O que são algoritmos? Onde são usados?
-3. O que é o Portugol? O que é o Portugol Studio? (foto)
-4. O que são variáveis e constantes?
-5. Quais os tipos de dados mais usados em algoritmos (Portugol)? Booleanos, caractere, cadeia (string), inteiro, real, vetor.
-6. Apresente 3 exemplos de programas em Portugol usando funções (print de tela).
-7. Apresente 3 exemplos de programas em Portugol usando vetores (print de tela).
+1. **Componentes Eletrônicos empregados em serviços**  
+   - Resistor, Diodo LED, Transistor, Circuito Integrado
 
----
+2. **Sensores Empregados em Sistemas Automatizados**  
+   - Sensores de temperatura, umidade, luminosidade, etc.
 
-### Fundamentos de Banco de Dados:
-Finalizar textos
+3. **Arduino**  
+   - O que é, para que serve, aplicações, vantagens e desvantagens.
 
----
+4. **Como o Arduino funciona? O que é eletrônica embarcada?**
 
-### Fundamentos de Redes:
+5. **Linguagem de Programação do Arduino**  
+   - C++, Python, etc.
 
-1. O que são Redes de Computadores?
-2. O que é uma Rede mínima?
-3. O que é a internet? O que a compõe?
-4. O que é web?
-5. O que é o mapa de fibra óptica? Mostre o mapa global de fibra óptica da internet.
-6. Quais os componentes de hardware de uma rede Wi-Fi?
-7. Quais os componentes de hardware de uma rede local com cabo de rede?
-8. O que é um protocolo de comunicação?
-9. O que é o modelo OSI?
-10. E o modelo TCP/IP?
-11. O que é o protocolo IP V4? E o IP V6?
-12. Como é configurado o IP e o TCP em uma programação backend com Node.js?
-13. O que é o protocolo HTTP? E o HTTPS?
-14. Cite exemplo de um framework para programação do protocolo HTTP com uso do Node.js.
-15. Apresente 3 exemplos de código Backend para troca de mensagens entre front e backend.
+6. **Entradas e saídas digitais em circuitos integrados (Arduino)**
+
+7. **Entradas e saídas analógicas em circuitos integrados (Arduino)**
+
+8. **Script para cálculo da tensão, corrente, resistência pela Lei de Ohm**
+
+9. **Script para cálculo da Potência**  
+   - A partir de valores de tensão, resistência e corrente.
+
+10. **Programa para leitura de dados de um sensor analógico**  
+    - Acionando saídas digitais.
+
+11. **O que é um diodo?**  
+    - Diodo LED e Display 7 segmentos.
 
 ---
 
-### Lógica de Programação:
+## Fundamentos de Redes OK
 
-1. O que são Linguagens de Programação? Fale sobre as seguintes linguagens: C++, Javascript, Java, Python, PHP.
-2. O que é uma linguagem de programação interpretada? E uma linguagem de programação compilada?
-3. O que é HTML e CSS?
-4. O que é uma IDE (ambiente de desenvolvimento de sistemas - exemplos: VSCode, IntelliJ, etc.)?
-5. Gere um script para ordenar números de 1 a 20, em ordem crescente e decrescente.
-6. Gere um script para ordenar 10 números aleatórios de 1 a 20 (com BubbleSort).
-7. Apresente um script para somar 10 números aleatórios de 1 a 220 em um array.
-8. Apresente um script para gerar uma matriz 3x3 de números aleatórios de 1 a 20.
-9. Apresente um script para calcular o IMC de uma pessoa.
-10. Apresente um Script para converter a temperatura em °F, °C.
-11. Apresente um script de busca linear (explique em 1 ou 2 parágrafos).
-12. Apresente um script de cálculo de IMC de uma pessoa.
+1. **O que são Redes de Computadores?**
+
+2. **Rede mínima**
+
+3. **O que é a Internet?**  
+   - O que a compõe?
+
+4. **O que é a Web?**
+
+5. **Mapa de Fibra Óptica**  
+   - Incluir mapa global de fibra óptica da internet.
+
+6. **Componentes de Hardware de uma rede Wi-Fi**
+
+7. **Componentes de Hardware de uma rede local com cabo de rede**
+
+8. **Protocolos de Comunicação**
+
+9. **Modelo OSI**
+
+10. **Modelo TCP/IP**
+
+11. **Protocolo IPv4 e IPv6**
+
+12. **Configuração do IP e TCP em programação Backend com Node.js**
+
+13. **O que é o Protocolo HTTP?**  
+    - Diferença do HTTPS.
+
+14. **Exemplo de Framework para programação do protocolo HTTP**  
+    - Usando Node.js.
+
+15. **Exemplos de código Backend**  
+    - 3 exemplos de troca de mensagens entre Frontend e Backend.
 
 ---
 
-### Fundamentos de Tecnologia da Informação:
+## Fundamentos de Tecnologia da Informação OK
 
-1. O que é o Hardware de computadores? O que é placa mãe? Processador? E memória principal (RAM)?
-2. O que é um sistema operacional? Cite 4 exemplos diferentes.
-3. O que é o sistema de arquivos? Como funciona em modo texto (cmd) e modo gráfico (explorer)?
-4. O que é software de escritório? Cite 3 exemplos (fotos de exercícios) e suas aplicações.
+1. **O que é o Hardware de computadores?**  
+   - Placa mãe, processador, memória RAM.
+
+2. **O que é um Sistema Operacional?**  
+   - Exemplos: Windows, Linux, macOS, Android.
+
+3. **Sistema de Arquivos**  
+   - Como funciona em modo texto (cmd) e modo gráfico (Explorer).
+
+4. **Software de Escritório**  
+   - Exemplos: Microsoft Office, Google Docs, LibreOffice.
+
+---
+
+## Lógica Computacional OK
+
+1. **Fluxogramas**  
+   - O que são e qual a sua simbologia básica?
+
+2. **Algoritmos**  
+   - O que são e onde são usados?
+
+3. **Portugol e Portugol Studio**  
+   - O que são e como utilizá-los? (inclua uma foto do Portugol Studio)
+
+4. **Variáveis e constantes**  
+   - Definição e exemplos.
+
+5. **Tipos de dados em Portugol**  
+   - Booleanos, caractere, cadeia (string), inteiro, real, vetor.
+
+6. **Exemplos de programas em Portugol**  
+   - 3 programas usando funções (incluir prints de tela).
+
+7. **Exemplos de programas em Portugol**  
+   - 3 programas usando vetores (incluir prints de tela).
+
+---
+
+## Lógica de Programação OK
+
+1. **O que são Linguagens de Programação?**  
+   - C++, Javascript, Java, Python, PHP.
+
+2. **Linguagem de Programação Interpretada vs Compilada**
+
+3. **HTML e CSS**
+
+4. **IDE (Ambiente de Desenvolvimento de Sistemas)**  
+   - Exemplos: VSCode, IntelliJ, etc.
+
+5. **Script para ordenar números de 1 a 20**  
+   - Em ordem crescente e decrescente.
+
+6. **Script para ordenar 10 números aleatórios de 1 a 20 (Bubble Sort)**
+
+7. **Script para somar 10 números aleatórios de 1 a 220 em um array.**
+
+8. **Script para gerar uma matriz 3x3 de números aleatórios de 1 a 20.**
+
+9. **Script para calcular o IMC de uma pessoa.**
+
+10. **Script para converter temperatura entre °F e °C.**
+
+11. **Script de busca linear**  
+    - Explicação em 1 ou 2 parágrafos.
+
+12. **Script de cálculo de IMC**  
+    - Novo exemplo para o cálculo de IMC.
+
+---
+
+FALTA: 
+    - Textos
+    - Imagens
+    - Vídeos (descobrir onde e quais são nescessários)
+    - Scripts

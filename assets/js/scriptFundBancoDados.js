@@ -1,24 +1,24 @@
-const btnAdicionar = document.getElementById('btnAdicionar');
-let contador = 1;
+const btnAdicionar = document.getElementById('btnAdicionar')
+let contador = 1
 
 btnAdicionar.addEventListener('click', () => {
-    const nome = document.getElementById('nome');
-    const idade = document.getElementById('idade');
-    const cidade = document.getElementById('cidade');
-    const tabela = document.getElementById('tabela');
+    const nome = document.getElementById('nome').value
+    const idade = document.getElementById('idade').value
+    const cidade = document.getElementById('cidade').value
+    const tabela = document.getElementById('tabela')
 
-    if (nome.value && idade.value && cidade.value) {
+    if (nome && idade && cidade) {
         tabela.innerHTML += `
                     <tr>
                         <td>${contador++}</td>
-                        <td>${nome.value}</td>
-                        <td>${idade.value}</td>
-                        <td>${cidade.value}</td>
+                        <td>${nome}</td>
+                        <td>${idade}</td>
+                        <td>${cidade}</td>
                     </tr>
                 `;
-        nome.value = idade.value = cidade.value = '';
+        nome = idade = cidade = ''
     } else {
-        alert('Preencha todos os campos.');
-        return;
+        alert('Preencha todos os campos.')
+        return
     }
 });

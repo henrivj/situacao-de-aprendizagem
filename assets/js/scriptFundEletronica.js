@@ -1,5 +1,3 @@
-hljs.highlightAll()
-
 let btnCalc1 = document.getElementById('btnCalc1');
 let btnCalc2 = document.getElementById('btnCalc2');
 

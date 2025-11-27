@@ -2,14 +2,11 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="./assets/js/scriptFundBancoDados.js" defer></script>
-
-    <!-- hover.css -->
-    <link rel="stylesheet" href="./assets/css/hover-min.css" media="all">
 
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -19,37 +16,29 @@
         crossorigin="anonymous"></script>
 
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 
     <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 
-    <title>Situação de Aprendizagem</title>
+    <title>SA - Banco de Dados</title>
 </head>
 
 <body>
-    <header class="d-flex justify-content-evenly align-items-center bg-blur fixed-top px-2 px-md-4 py-1">
-        <a href="./index.html"
-            class="hvj-text hvj-outline rounded-pill text-decoration-none p-1 px-2 hvr-icon-forward hvr-grow">
-            Home <i class="fa-regular fa-home hvj-text hvr-icon"></i>
-        </a>
-        <nav class="d-block d-sm-flex align-items-center">
-            <a href="#tecnologias"
-                class="d-none d-md-flex hvj-text text-decoration-none mx-2 mx-md-3 pt-2 h-100 hvr-sink hvr-grow">
-                Tecnologias
+    <header class="fixed-top bg-blur p-2 px-md-4">
+        <nav class="d-flex justify-content-evenly align-items-center">
+            <a href="./index.html" class="px-2 py-1 text-decoration-none hvj-outline hvj-text rounded-pill">Home <i
+                    class="fa-regular fa-home hvj-text"></i>
             </a>
-            <a href="#contato"
-                class="d-none d-md-flex hvj-text text-decoration-none mx-2 mx-md-3 pt-2 h-100 hvr-sink hvr-grow">
-                Contato
-            </a>
-            <div class="dropdown hvj-text text-decoration-none mx-2 mx-md-3 pt-2 h-100 hvr-sink hvr-grow">
+
+            <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle hvj-text" type="button" data-bs-toggle="dropdown">
                     Matérias
                 </button>
-                <ul class="dropdown-menu bg-black" role="menu">
+                <ul class="dropdown-menu bg-blur">
                     <li><a class="dropdown-item hvj-text" href="./fundbancodedados.html">Fund. de Banco de Dados</a>
                     </li>
                     <li><a class="dropdown-item hvj-text" href="./fundeletroeletronica.html">Fund. de
@@ -59,249 +48,221 @@
                             da Informação</a></li>
                     <li><a class="dropdown-item hvj-text" href="./logicacomputacional.html">Lógica Computacional</a>
                     </li>
-                    <li><a class="dropdown-item hvj-text" href="./logicaprogramacao.html">Lógica de Programação</a></li>
+                    <li><a class="dropdown-item hvj-text" href="./logicaprogramacao.html">Lógica de Programação</a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main class="container-fluid">
-        <section class="container-lg d-flex align-items-center py-5 vh-75">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-9">
-                        <h1 class="fw-bold fs-1 mb-3 hvj-text">Fundamento de Banco de Dados.</h1>
-                        <h2 class="fs-4 mb-4 hvj-text opacity-50">Subtitulo</h2>
-                    </div>
-                    <div class="col-lg-3">
-                        <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" alt="Logo Banco 1">
-                    </div>
-                </div>
-            </div>
+    <main>
+        <section class="container d-flex vh-75 align-items-center justify-content-between">
+            <h2 class="display-3 fw-bold hvj-text">Fundamento de<br>Banco de Dados</h2>
+            <img src="./assets/img/hvj-logo.svg" alt="" class="d-none d-md-block img-fluid w-50">
         </section>
 
-        <!-- tipos sgbd -->
-        <section class="container-lg py-4 py-md-5">
-            <div class="row g-4 px-3">
-                <div class="col-12 col-md-6 d-flex align-items-center">
-                    <div>
-                        <h1 class="fs-3 fw-bold mb-3">O que é um SGBD?</h1>
-                        <p>APLICACOES Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero
-                            quam sint, illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione
-                            error at! Vero ab ullam pariatur ex?</p>
-                    </div>
+        <!-- sgbd -->
+        <section class="container my-3 my-md-5">
+            <h2 class="text-start">Sistemas de Gerenciamento de Banco de Dados</h2>
+            <p class="col-12 col-md-6 text-start">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id,
+                iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet
+                assumenda voluptates.
+            </p>
+
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h2 class="">Bancos Relacionais</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti,
+                        hic id, iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod
+                        aspernatur eveniet assumenda voluptates.
+                    </p>
                 </div>
-            </div>
-                <h2 class="text-start text-md-end me-0 me-md-5 fs-3 fw-bold mb-3">Tipos de SGBD:</h2>
-            <div class="row g-4 px-3">
-                <div class="col-12 col-md-4">
-                    <div class="p-3 bg-grey rounded-4 text-center text-light">
-                        <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" alt="Logo Banco 1">
-                        <h2 class="h5">Componente</h2>
-                        <p>Descricao Descricao Descricao Descricao Descricao Descricao</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="p-3 bg-grey rounded-4 text-center text-light">
-                        <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" alt="Logo Banco 3">
-                        <h2 class="h5">Componente</h2>
-                        <p>Descricao Descricao Descricao Descricao Descricao Descricao</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="p-3 bg-grey rounded-4 text-center text-light">
-                        <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" alt="Logo Banco 3">
-                        <h2 class="h5">Componente</h2>
-                        <p>Descricao Descricao Descricao Descricao Descricao Descricao</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="p-3 bg-grey rounded-4 text-center text-light">
-                        <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" alt="Logo Banco 4">
-                        <h2 class="h5">Componente</h2>
-                        <p>Descricao Descricao Descricao Descricao Descricao Descricao</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="p-3 bg-grey rounded-4 text-center text-light">
-                        <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" alt="Logo Banco 5">
-                        <h2 class="h5">Componente</h2>
-                        <p>Descricao Descricao Descricao Descricao Descricao Descricao</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="p-3 bg-grey rounded-4 text-center text-light">
-                        <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2" alt="Logo Banco 6">
-                        <h2 class="h5">Componente</h2>
-                        <p>Descricao Descricao Descricao Descricao Descricao Descricao</p>
-                    </div>
+                <div class="col-12 col-md-6">
+                    <h2 class="">Bancos <span class="hvj-text fw-bold">Não</span> Relacionais</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti,
+                        hic id, iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod
+                        aspernatur eveniet assumenda voluptates.
+                    </p>
                 </div>
             </div>
         </section>
 
         <!-- principais bancos -->
-        <section class="container-lg py-4 py-md-5 bg-light">
-            <div class="row g-4 px-3">
+        <section class="container my-3 my-md-5">
+            <div class="row align-items-center">
                 <div class="col-12 col-md-6">
-                    <div>
-                        <h1 class="fs-3 fw-bold mb-3">2. Quais os principais bancos de dados?</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                            Vero ab ullam pariatur ex?</p>
-                    </div>
+                    <h2>Principais Bancos de Dados</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Delectus minus. Vero quam sint illo quis cupiditate amet magnam
+                        accusantium temporibus aliquam cumque ratione error at.
+                    </p>
                 </div>
-                <div class="col-12 col-md-6 text-center d-flex align-items-center">
-                    <div class="row w-100 align-items-center g-3">
-                        <div class="col-4 text-center hvr-grow">
-                            <img src="./assets/img/hvj-logo.svg" class="img-fluid" alt="Logo Banco 1">
-                        </div>
-                        <div class="col-4 text-center hvr-grow">
-                            <img src="./assets/img/hvj-logo.svg" class="img-fluid" alt="Logo Banco 2">
-                        </div>
-                        <div class="col-4 text-center hvr-grow">
-                            <img src="./assets/img/hvj-logo.svg" class="img-fluid" alt="Logo Banco 3">
-                        </div>
-                    </div>
+            </div>
+
+            <div class="row justify-content-evenly g-3">
+                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
+                    <h2 class="fs-4">Item 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
+
+                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
+                    <h2 class="fs-4">Item 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
+                    <h2 class="fs-4">Item 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div> <!-- logo principais bancos -->
             </div>
         </section>
 
         <!-- dicionario de dados -->
-        <section class="container-lg py-4 py-md-5">
-            <div class="row g-4 px-3">
-                <div class="col-12 col-md-6 d-flex align-items-center">
-                    <div>
-                        <h1 class="fs-3 fw-bold mb-3">3. O que é um dicionário de dados?</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                            Vero ab ullam pariatur ex?</p>
-                    </div>
+        <section class="container my-3 my-md-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <h2>O que é um dicionário de dados?</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Delectus minus. Vero quam sint illo quis cupiditate amet magnam
+                        accusantium temporibus aliquam cumque ratione error at.
+                    </p>
                 </div>
-                <div class="col-12 col-md-6 text-center">
-                    <h1 class="fs-3 fw-bold mb-4">Tipos de Dados</h1>
-                    <div class="row row-cols-2 row-cols-md-3 g-3">
-                        <div class="col text-center">
-                            <h3 class="fs-5 mb-1">Dado</h3>
-                            <p class="mb-0">Lorem ipsum dolor sit amet...</p>
-                        </div>
-                        <div class="col text-center">
-                            <h3 class="fs-5 mb-1">Dado</h3>
-                            <p class="mb-0">Lorem ipsum dolor sit amet...</p>
-                        </div>
-                        <div class="col text-center">
-                            <h3 class="fs-5 mb-1">Dado</h3>
-                            <p class="mb-0">Lorem ipsum dolor sit amet...</p>
-                        </div>
-                        <div class="col text-center">
-                            <h3 class="fs-5 mb-1">Dado</h3>
-                            <p class="mb-0">Lorem ipsum dolor sit amet...</p>
-                        </div>
-                        <div class="col text-center">
-                            <h3 class="fs-5 mb-1">Dado</h3>
-                            <p class="mb-0">Lorem ipsum dolor sit amet...</p>
-                        </div>
-                        <div class="col text-center">
-                            <h3 class="fs-5 mb-1">Dado</h3>
-                            <p class="mb-0">Lorem ipsum dolor sit amet...</p>
-                        </div>
-                    </div>
+            </div>
+
+            <div class="row justify-content-between g-3">
+                <div class="col-12 col-md-2 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
+                    <h2 class="fs-4">Item 1</h2>
+                    <p>TIPOS DE DADOS</p>
+                </div>
+
+                <div class="col-12 col-md-2 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
+                    <h2 class="fs-4">Item 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="col-12 col-md-2 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
+                    <h2 class="fs-4">Item 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="col-12 col-md-2 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
+                    <h2 class="fs-4">Item 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="col-12 col-md-2 px-2 px-md-4 text-center text-light bg-grey rounded-4">
+                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
+                    <h2 class="fs-4">Item 5</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
             </div>
         </section>
 
-        <!-- modelagem -->
-        <section class="container-lg py-4 pt-md-5 mb-md bg-light">
-            <div class="row g-4 px-3">
-                <div class="col-12 col-md-6 d-flex align-items-center">
-                    <div>
-                        <h1 class="fs-3 fw-bold mb-3">O que é uma modelagem de banco de dados?</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                            Vero ab ullam pariatur ex?</p>
-                    </div>
+        <!-- modelo DER e MER -->
+        <section class="container my-3 my-md-5">
+            <h2 class="text-start">O que é <span class="hvj-text fw-bold">Modelagem de Banco de Dados</span>?</h2>
+            <p class="col-12 col-md-6 text-start">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id,
+                iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet
+                assumenda voluptates.
+            </p>
+
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h2 class="">Modelo DER</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti,
+                        hic id, iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod
+                        aspernatur eveniet assumenda voluptates.
+                    </p>
+                    <img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti,
+                        hic id, iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod
+                        aspernatur eveniet assumenda voluptates.
+                    </p>
                 </div>
-            </div>
-            <div class="row g-4 px-3">
-                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
-                    <div>
-                        <h1 class="fs-3 fw-bold mb-3">Modelo DER</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                            Vero ab ullam pariatur ex?</p>
-                        <div class="text-center mb-3">
-                            <img src="./assets/img/PLACEHOLDER-fbd-DER.png" class="img-fluid" alt="Exemplo DER">
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                            Vero ab ullam pariatur ex?</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
-                    <div>
-                        <h1 class="fs-3 fw-bold mb-3">Modelo MER</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                            Vero ab ullam pariatur ex?</p>
-                        <div class="text-center mb-3">
-                            <img src="./assets/img/PLACEHOLDER-fbd-DER.png" class="img-fluid" alt="Exemplo MER">
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint,
-                            illo quis cupiditate amet magnam accusantium temporibus, aliquam, cumque ratione error at!
-                            Vero ab ullam pariatur ex?</p>
-                    </div>
+                <div class="col-12 col-md-6">
+                    <h2 class="">Modelo MER</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti,
+                        hic id, iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod
+                        aspernatur eveniet assumenda voluptates.
+                    </p>
+                    <img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti,
+                        hic id, iste dolore, illum possimus quae maxime quod adipisci culpa quos officia. Quod
+                        aspernatur eveniet assumenda voluptates.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- exemplo simples bd -->
-        <section class="container-lg py-4 py-md-5">
-            <div class="row g-4 px-3">
-                <div class="col-12 col-md-6 d-flex align-items-center">
-                    <div>
-                        <h2 class="fs-3 fw-bold mb-3">Exemplo de Cadastro</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aperiam temporibus modi
-                            quam suscipit. Magnam dolores delectus laborum ducimus laudantium exercitationem eius fugiat
-                            iure placeat. Itaque alias facilis sint doloremque.</p>
-                    </div>
+        <!-- ex. banco de dados -->
+        <section class="container my-3 my-md-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <h2>Exemplo de Cadastro</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aperiam temporibus modi
+                        quam suscipit. Magnam dolores delectus laborum ducimus laudantium exercitationem eius fugiat
+                        iure placeat. Itaque alias facilis sint doloremque.
+                    </p>
                 </div>
             </div>
-            <div class="row g-4 px-3 align-content-start">
+
+            <div class="row">
                 <div class="col-12 col-md-6">
-                    <h4 class="fw-bold mb-3">Formulário</h4>
-                    <input type="text" id="nome" class="form-control mb-2" placeholder="Nome">
-                    <input type="number" id="idade" class="form-control mb-2" placeholder="Idade">
-                    <input type="text" id="cidade" class="form-control mb-3" placeholder="Cidade">
-                </div>
-                <div class="col-12 col-md-6">
-                    <h4 class="fw-bold mb-3">Banco de Dados</h4>
-                    <div class="table-responsive">
-                        <table class="table table-striped align-middle">
-                            <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Nome</th>
-                                    <th>Idade</th>
-                                    <th>Cidade</th>
-                                </tr>
-                            </thead>
-                            <tbody id="tabela"></tbody>
-                        </table>
+                    <div class="p-3 hvj-outline rounded-4">
+                        <h4 class="hvj-text">Formulário</h4>
+                        <input type="text" id="nome" class="form-control mb-2" placeholder="Nome">
+                        <input type="number" id="idade" class="form-control mb-2" placeholder="Idade">
+                        <input type="text" id="cidade" class="form-control mb-3" placeholder="Cidade">
+                        <button id="btnAdicionar" class="btn hvj-text rounded-pill w-100">
+                            Adicionar
+                        </button>
                     </div>
                 </div>
-                <div class="col-12 my-2 my-md-4 d-flex align-items-center justify-content-center">
-                    <button id="btnAdicionar"
-                        class="px-3 py-2 hvj-outline fs-5 rounded-pill hvj-text bg-white hvr-grow">Adicionar</button>
+
+                <div class="col-12 col-md-6">
+                    <div class="p-3">
+                        <h4>Banco de Dados</h4>
+                        <div class="table-responsive">
+                            <table class="table table-striped align-middle">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nome</th>
+                                        <th>Idade</th>
+                                        <th>Cidade</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tabela"></tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    
-    <footer class="container-fluid py-3 bg-black text-light">
-        <div class="container-lg d-flex flex-column flex-md-row justify-content-between align-items-center">
-            <a href="./index.html" class="d-inline-block mb-3 mb-md-0">
-                <img src="./assets/img/hvj-logo.svg" class="hvr-grow icon-lg" alt="HvJ Logo" />
-            </a>
-            <p class="text-center small hvj-text">&copy; Henrique V. Justus</p>
+
+    <footer class="bg-blur p-2 p-md-3">
+        <div class="d-flex align-items-center justify-content-evenly">
+            <span class="d-none d-md-block"></span>
+            <p class="m-0 hvj-text">2025 &copy; Henrique Justus</p>
         </div>
     </footer>
 </body>
