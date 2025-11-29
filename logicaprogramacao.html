@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/scripts-logica-prog/1ordenarCresDec.js" defer></script>
+    <script src="./assets/js/scripts-logica-prog/2bubbleSort.js" defer></script>
+    <script src="./assets/js/scripts-logica-prog/3somarArr.js" defer></script>
+    <script src="./assets/js/scripts-logica-prog/4matrizFixa.js" defer></script>
+    <script src="./assets/js/scripts-logica-prog/5calcularIMC.js" defer></script>
+    <script src="./assets/js/scripts-logica-prog/6conversorTemperatura.js" defer></script>
+    <script src="./assets/js/scripts-logica-prog/7buscaLinear.js" defer></script>
 
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -188,88 +195,625 @@
                     <p>
                     <p>
                         Veja exemplos de scripts que demonstram algoritmos básicos, como ordenação de dados, buscas,
-                        operações com matrizes e cálculos. Esses exemplos são simples e demonstram o básico da lógica de programação.
+                        operações com matrizes e cálculos. Esses exemplos são simples e demonstram o básico da lógica de
+                        programação.
                     </p>
 
                     </p>
                 </div>
             </div>
             <div class="col-12">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                            aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                            aria-label="Slide 5"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                            aria-label="Slide 6"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
-                            aria-label="Slide 7"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
-                            aria-label="Slide 8"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="col-12 col-md-6 h-100">
-                                <h2>1. <strong>Ordenar números de 1 a 20</strong></h2>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/img/hvj-logo.svg" class="d-block w-100" alt="">
-                            <div class="col-12 col-md-6 h-100">
-                                <h2>2. <strong>Ordenar 10 números de 1 a 20 com Bubble Sort</strong></h2>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/img/hvj-logo.svg" class="d-block w-100" alt="">
-                            <div class="col-12 col-md-6 h-100">
-                                <h2>3. <strong>Somar 10 números de 1 a 220 em um array.</strong></h2>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/img/hvj-logo.svg" class="d-block w-100" alt="">
-                            <div class="col-12 col-md-6 h-100">
-                                <h2>4. <strong>Matriz 3x3 com números de 1-20.</strong></h2>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/img/hvj-logo.svg" class="d-block w-100" alt="">
-                            <div class="col-12 col-md-6 h-100">
-                                <h2>5. <strong>Conversor Fahrenheit/Celsius.</strong></h2>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/img/hvj-logo.svg" class="d-block w-100" alt="">
-                            <div class="col-12 col-md-6 h-100">
-                                <h2>6. <strong>Busca Linear</strong></h2>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/img/hvj-logo.svg" class="d-block w-100" alt="">
-                            <div class="col-12 col-md-6 h-100">
-                                <h2>7. <strong>Cálculo de IMC</strong></h2>-
-                            </div>
-                        </div>
-                    </div>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-inner mb-4">
+                        <div class="carousel-item active p-3 p-md-4 bg-grey rounded-4 text-light">
+                            <h3 class="mb-3">1. <strong>Array Crescente e Decrescente</strong></h3>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3 d-flex flex-column align-items-center">
+                                        <h4 class="hvj-text mb-2 small">Ordem</h4>
+                                        <div class="d-flex align-items-center gap-3 p-3 rounded-4 hvj-outline mb-3">
+                                            <span>Decrescente</span>
+                                            <div class="form-check form-switch m-0 p-0">
+                                                <input class="form-check-input m-0" type="checkbox" role="switch"
+                                                    id="switchCrescente1">
+                                            </div>
+                                            <span>Crescente</span>
+                                        </div>
+                                        <div class="d-flex gap-2">
+                                            <button class="btn btn-sm hvj-outline hvj-text" id="btnCriarArray1">Criar
+                                                Array</button>
+                                            <button class="btn btn-sm hvj-outline hvj-text"
+                                                id="btnOrdenar1">Ordenar</button>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="mb-2 hvj-text fw-semibold small">Array Original:</p>
+                                        <div class="p-2 rounded-3 hvj-outline w-100" id="resArrNumeros1">
+                                            <span>Clique em "Criar Array" para gerar números aleatórios</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="mb-2 hvj-text fw-semibold small">Array Ordenado:</p>
+                                        <div class="p-2 rounded-3 hvj-outline w-100" id="resArrOrdenado1">
+                                            <span>Clique em "Ordenar" após criar o array</span>
+                                        </div>
+                                    </div>
+                                    <p class="small opacity-75 mb-0">Ordena um array de 10 números aleatórios entre 1 e
+                                        20 em ordem crescente ou decrescente usando o método sort().</p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <details class="w-100 p-3 hvj-outline rounded-4">
+                                        <summary class="accordion-button fs-4 hvj-text">
+                                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                                <h2 class="fs-4 hvj-text m-0">Ver Código</h2>
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                        </summary>
+                                        <div class="accordion-body pt-3">
+                                            <pre><code>let switchCrescente1 = document.getElementById('switchCrescente1')
+let btnCriarArray1 = document.getElementById('btnCriarArray1')
+let btnOrdenar1 = document.getElementById('btnOrdenar1')
+let resArrOrdenado1 = document.getElementById('resArrOrdenado1')
+let resArrNumeros1 = document.getElementById('resArrNumeros1')
 
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+    let arrNumeros1 = []
+
+    function gerarArrayAleatorio1() {
+        let arr = []
+        for (let i = 0; i < 10; i++) {
+            arr.push(Math.floor(Math.random() * 20) + 1)
+        }
+        return arr
+    }
+
+    btnCriarArray1.addEventListener('click', () => {
+        arrNumeros1 = gerarArrayAleatorio1()
+        resArrNumeros1.innerText = arrNumeros1.join(', ')
+        resArrOrdenado1.innerText = 'Clique em "Ordenar" após criar o array'
+    })
+
+    btnOrdenar1.addEventListener('click', () => {
+        if (!arrNumeros1.length) {
+            resArrOrdenado1.innerText = 'Primeiro crie um array.'
+            return
+        }
+
+        let arrOrdenado = arrOrdenado.sort((a, b) => a - b)
+
+        if (!switchCrescente1.checked) {
+            arrOrdenado1.reverse()
+        }
+
+        resArrOrdenado1.innerText = arrOrdenado.join(', ')
+    })</code></pre>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item p-3 p-md-4 bg-grey rounded-4 text-light">
+                            <h3 class="mb-3">2. <strong>Ordenar com Bubble Sort</strong></h3>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <div class="d-flex gap-2 flex-wrap">
+                                            <button class="btn btn-sm hvj-outline hvj-text" id="btnCriarArray2">Criar
+                                                Array</button>
+                                            <button class="btn btn-sm hvj-outline hvj-text"
+                                                id="btnOrdenar2">Ordenar</button>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="mb-2 hvj-text fw-semibold small">Array Original:</p>
+                                        <div class="p-2 rounded-3 hvj-outline w-100" id="resArrNumeros2">
+                                            <span>Clique em "Criar Array" para gerar números aleatórios</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="mb-2 hvj-text fw-semibold small">Array Ordenado:</p>
+                                        <div class="p-2 rounded-3 hvj-outline w-100" id="resArrOrdenado2">
+                                            <span>Clique em "Ordenar" após criar o array</span>
+                                        </div>
+                                    </div>
+                                    <p class="small opacity-75 mb-0">Implementa o algoritmo Bubble Sort, que compara
+                                        pares de elementos adjacentes e os troca se estiverem na ordem errada, repetindo
+                                        até o array estar ordenado.</p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <details class="w-100 p-3 hvj-outline rounded-4">
+                                        <summary class="accordion-button fs-4 hvj-text">
+                                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                                <h2 class="fs-4 hvj-text m-0">Ver Código</h2>
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                        </summary>
+                                        <div class="accordion-body pt-3">
+                                            <pre><code>let btnCriarArray2 = document.getElementById('btnCriarArray2')
+let btnOrdenar2 = document.getElementById('btnOrdenar2')
+let resArrNumeros2 = document.getElementById('resArrNumeros2')
+let resArrOrdenado2 = document.getElementById('resArrOrdenado2')
+let arrNumeros2 = []
+
+function gerarArrayAleatorio2() {
+    let arr = []
+    for (let i = 0; i < 10; i++) {
+        arr.push(Math.floor(Math.random() * 20) + 1)
+    }
+    return arr
+}
+
+function bubbleSort2(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr.length - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                let temp = arr[j]
+                arr[j] = arr[j + 1]
+                arr[j + 1] = temp
+            }
+        }
+    }
+    return arr
+}
+
+btnCriarArray2.addEventListener('click', () => {
+    arrNumeros2 = gerarArrayAleatorio2()
+    resArrNumeros2.innerText = arrNumeros2.join(', ')
+    resArrOrdenado2.innerText = 'Clique em "Ordenar" após criar o array'
+})
+
+btnOrdenar2.addEventListener('click', () => {
+    if (!arrNumeros2.length) {
+        resArrOrdenado2.innerText = 'Primeiro crie um array.'
+        return
+    }
+    let arrOrdenado = bubbleSort2(arrNumeros2)
+    resArrOrdenado2.innerText = arrOrdenado.join(', ')
+})</code></pre>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item p-3 p-md-4 bg-grey rounded-4 text-light">
+                            <h3 class="mb-3">3. <strong>Somar 10 números</strong></h3>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <div class="d-flex gap-2 flex-wrap">
+                                            <button class="btn btn-sm hvj-outline hvj-text" id="btnCriarArray3">Criar
+                                                Array</button>
+                                            <button class="btn btn-sm hvj-outline hvj-text"
+                                                id="btnSomar3">Somar</button>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="mb-2 hvj-text fw-semibold small">Array:</p>
+                                        <div class="p-2 rounded-3 hvj-outline w-100" id="resArrNumeros3">
+                                            <span>Clique em "Criar Array" para gerar números aleatórios</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="mb-2 hvj-text fw-semibold small">Resultado:</p>
+                                        <div class="p-2 rounded-3 hvj-outline w-100" id="resSoma3">
+                                            <span>Clique em "Somar" após criar o array</span>
+                                        </div>
+                                    </div>
+                                    <p class="small opacity-75 mb-0">Gera um array com 10 números aleatórios entre 1 e
+                                        220 e calcula a soma de todos os valores usando um loop.</p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <details class="w-100 p-3 hvj-outline rounded-4">
+                                        <summary class="accordion-button fs-4 hvj-text">
+                                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                                <h2 class="fs-4 hvj-text m-0">Ver Código</h2>
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                        </summary>
+                                        <div class="accordion-body pt-3">
+                                            <pre><code>let btnCriarArray3 = document.getElementById('btnCriarArray3')
+let btnSomar3 = document.getElementById('btnSomar3')
+let resArrNumeros3 = document.getElementById('resArrNumeros3')
+let resSoma3 = document.getElementById('resSoma3')
+
+if (btnCriarArray3 && btnSomar3) {
+    let arrNumeros3 = []
+
+    function gerarArrayAleatorio3() {
+        let arr = []
+        for (let i = 0; i < 10; i++) {
+            arr.push(Math.floor(Math.random() * 220) + 1)
+        }
+        return arr
+    }
+
+    function somarArray3(arr) {
+        let soma = 0
+        for (let i = 0; i < arr.length; i++) {
+            soma += arr[i]
+        }
+        return soma
+    }
+
+    btnCriarArray3.addEventListener('click', () => {
+        arrNumeros3 = gerarArrayAleatorio3()
+        resArrNumeros3.innerText = arrNumeros3.join(', ')
+        resSoma3.innerText = 'Clique em "Somar" para ver o resultado'
+    })
+
+    btnSomar3.addEventListener('click', () => {
+        if (!arrNumeros3.length) {
+            resSoma3.innerText = 'Primeiro crie um array.'
+            return
+        }
+
+        let soma = somarArray3(arrNumeros3)
+        resSoma3.innerText = 'Soma total: ' + soma
+    })
+}</code></pre>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item p-3 p-md-4 bg-grey rounded-4 text-light">
+                            <h3 class="mb-3">4. <strong>Matriz 3x3</strong></h3>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <button class="btn btn-sm hvj-outline hvj-text" id="btnGerarMatriz4">Gerar
+                                            Matriz</button>
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="mb-2 hvj-text fw-semibold small">Resultado:</p>
+                                        <div class="p-3 rounded-3 hvj-outline w-100" id="resMatriz4">
+                                            <span>Clique em "Gerar Matriz" para preencher os valores</span>
+                                        </div>
+                                    </div>
+                                    <p class="small opacity-75 mb-0">Cria uma matriz bidimensional 3x3 preenchida com
+                                        números aleatórios entre 1 e 20, usando loops aninhados para percorrer linhas e
+                                        colunas.</p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <details class="w-100 p-3 hvj-outline rounded-4">
+                                        <summary class="accordion-button fs-4 hvj-text">
+                                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                                <h2 class="fs-4 hvj-text m-0">Ver Código</h2>
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                        </summary>
+                                        <div class="accordion-body pt-3">
+                                            <pre><code>let btnGerarMatriz4 = document.getElementById('btnGerarMatriz4')
+let resMatriz4 = document.getElementById('resMatriz4')
+
+function gerarNumeroAleatorio() {
+    return Math.floor(Math.random() * 20) + 1
+}
+
+function gerarMatriz4() {
+    let matriz = []
+    for (let i = 0; i < 3; i++) {
+        let linha = []
+        for (let j = 0; j < 3; j++) {
+            linha.push(gerarNumeroAleatorio())
+        }
+        matriz.push(linha)
+    }
+    return matriz
+}
+
+btnGerarMatriz4.addEventListener('click', () => {
+    let matriz = gerarMatriz4()
+    
+    resMatriz4.innerHTML = `
+        <table class="table table-dark table-bordered text-center mb-0">
+            <tr>
+                <td class="p-2">${matriz[0][0]}</td>
+                <td class="p-2">${matriz[0][1]}</td>
+                <td class="p-2">${matriz[0][2]}</td>
+            </tr>
+            <tr>
+                <td class="p-2">${matriz[1][0]}</td>
+                <td class="p-2">${matriz[1][1]}</td>
+                <td class="p-2">${matriz[1][2]}</td>
+            </tr>
+            <tr>
+                <td class="p-2">${matriz[2][0]}</td>
+                <td class="p-2">${matriz[2][1]}</td>
+                <td class="p-2">${matriz[2][2]}</td>
+            </tr>
+        </table>
+    `
+})</code></pre>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item p-3 p-md-4 bg-grey rounded-4 text-light">
+                            <h3 class="mb-3">5. <strong>Conversor Fahrenheit/Celsius</strong></h3>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="inputTemp5"
+                                            class="form-label hvj-text fw-semibold small mb-1">Temperatura</label>
+                                        <div class="d-flex gap-2 align-items-end">
+                                            <input type="number" class="form-control form-control-sm" id="inputTemp5"
+                                                placeholder="Digite um número">
+                                            <button class="btn btn-sm hvj-outline hvj-text"
+                                                id="btnConverter5">Converter</button>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div
+                                            class="d-flex align-items-center gap-3 p-3 rounded-4 hvj-outline justify-content-center">
+                                            <span>Fahrenheit</span>
+                                            <div class="form-check form-switch m-0 p-0">
+                                                <input class="form-check-input m-0" type="checkbox"
+                                                    id="switchConversao5">
+                                            </div>
+                                            <span>Celsius</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="mb-2 hvj-text fw-semibold small">Resultado:</p>
+                                        <div class="p-2 rounded-3 hvj-outline w-100" id="resConversao5">
+                                            <span>Escolha o sentido e clique em converter</span>
+                                        </div>
+                                    </div>
+                                    <p class="small opacity-75 mb-0">Converte temperaturas entre Fahrenheit e Celsius
+                                        usando as fórmulas: °C = (°F - 32) × 5/9 e °F = (°C × 9/5) + 32.</p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <details class="w-100 p-3 hvj-outline rounded-4">
+                                        <summary class="accordion-button fs-4 hvj-text">
+                                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                                <h2 class="fs-4 hvj-text m-0">Ver Código</h2>
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                        </summary>
+                                        <div class="accordion-body pt-3">
+                                            <pre><code>let inputTemp5 = document.getElementById('inputTemp5')
+let switchConversao5 = document.getElementById('switchConversao5')
+let btnConverter5 = document.getElementById('btnConverter5')
+let resConversao5 = document.getElementById('resConversao5')
+
+if (inputTemp5 && switchConversao5 && btnConverter5) {
+    function paraCelsius(valor) {
+        return ((valor - 32) * 5) / 9
+    }
+
+    function paraFahrenheit(valor) {
+        return (valor * 9) / 5 + 32
+    }
+
+    btnConverter5.addEventListener('click', () => {
+        let valor = Number(inputTemp5.value)
+        if (isNaN(valor)) {
+            resConversao5.innerText = 'Digite uma temperatura válida.'
+            return
+        }
+
+        if (switchConversao5.checked) {
+            let resultado = paraFahrenheit(valor).toFixed(1)
+            resConversao5.innerText = valor + '°C = ' + resultado + '°F'
+        } else {
+            let resultado = paraCelsius(valor).toFixed(1)
+            resConversao5.innerText = valor + '°F = ' + resultado + '°C'
+        }
+    })
+}</code></pre>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item p-3 p-md-4 bg-grey rounded-4 text-light">
+                            <h3 class="mb-3">6. <strong>Busca Linear</strong></h3>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <div
+                                            class="d-flex gap-2 flex-wrap mb-2 justify-content-between align-items-end">
+                                            <button class="btn btn-sm hvj-outline hvj-text" id="btnCriarArray6">Criar
+                                                Array</button>
+                                            <div class="d-flex gap-2" style="max-width: 300px;">
+                                                <input type="number" class="form-control form-control-sm"
+                                                    id="inputBusca6" placeholder="Número para buscar">
+                                                <button class="btn btn-sm hvj-outline hvj-text"
+                                                    id="btnBuscar6">Buscar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="mb-2 hvj-text fw-semibold small">Array:</p>
+                                        <div class="p-2 rounded-3 hvj-outline w-100" id="resArrNumeros6">
+                                            <span>Clique em "Criar Array" para gerar números aleatórios</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="mb-2 hvj-text fw-semibold small">Resultado:</p>
+                                        <div class="p-2 rounded-3 hvj-outline w-100" id="resBusca6">
+                                            <span>Digite um número e clique em "Buscar"</span>
+                                        </div>
+                                    </div>
+                                    <p class="small opacity-75 mb-0">Busca um valor em um array percorrendo elemento por
+                                        elemento do início ao fim até encontrar o valor desejado ou chegar ao final do
+                                        array.</p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <details class="w-100 p-3 hvj-outline rounded-4">
+                                        <summary class="accordion-button fs-4 hvj-text">
+                                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                                <h2 class="fs-4 hvj-text m-0">Ver Código</h2>
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                        </summary>
+                                        <div class="accordion-body pt-3">
+                                            <pre><code>let btnCriarArray6 = document.getElementById('btnCriarArray6')
+let btnBuscar6 = document.getElementById('btnBuscar6')
+let inputBusca6 = document.getElementById('inputBusca6')
+let resArrNumeros6 = document.getElementById('resArrNumeros6')
+let resBusca6 = document.getElementById('resBusca6')
+
+if (btnCriarArray6 && btnBuscar6) {
+    let arrNumeros6 = []
+
+    function gerarArrayAleatorio6() {
+        let arr = []
+        for (let i = 0; i < 8; i++) {
+            arr.push(Math.floor(Math.random() * 30) + 1)
+        }
+        return arr
+    }
+
+    function buscaLinear6(arr, valor) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === valor) {
+                return i
+            }
+        }
+        return -1
+    }
+
+    btnCriarArray6.addEventListener('click', () => {
+        arrNumeros6 = gerarArrayAleatorio6()
+        resArrNumeros6.innerText = arrNumeros6.join(', ')
+        resBusca6.innerText = 'Digite um número e clique em "Buscar"'
+    })
+
+    btnBuscar6.addEventListener('click', () => {
+        if (!arrNumeros6.length) {
+            resBusca6.innerText = 'Primeiro crie um array.'
+            return
+        }
+
+        let valor = Number(inputBusca6.value)
+        if (isNaN(valor)) {
+            resBusca6.innerText = 'Digite um número válido.'
+            return
+        }
+
+        let indice = buscaLinear6(arrNumeros6, valor)
+        if (indice === -1) {
+            resBusca6.innerText = 'Valor não encontrado.'
+        } else {
+            resBusca6.innerText = 'Valor encontrado na posição ' + indice + '.'
+        }
+    })
+}</code></pre>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item p-3 p-md-4 bg-grey rounded-4 text-light">
+                            <h3 class="mb-3">7. <strong>Cálculo de IMC</strong></h3>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <div class="d-flex gap-2 align-items-end flex-wrap mb-2">
+                                            <div style="min-width: 120px;">
+                                                <label for="inputPeso7"
+                                                    class="form-label hvj-text fw-semibold small mb-1">Peso (kg)</label>
+                                                <input type="number" class="form-control form-control-sm"
+                                                    id="inputPeso7" placeholder="Ex: 70">
+                                            </div>
+                                            <div style="min-width: 120px;">
+                                                <label for="inputAltura7"
+                                                    class="form-label hvj-text fw-semibold small mb-1">Altura
+                                                    (m)</label>
+                                                <input type="number" step="0.01" class="form-control form-control-sm"
+                                                    id="inputAltura7" placeholder="Ex: 1.70">
+                                            </div>
+                                            <button class="btn btn-sm hvj-outline hvj-text"
+                                                id="btnCalcular7">Calcular</button>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="mb-2 hvj-text fw-semibold small">Resultado:</p>
+                                        <div class="p-2 rounded-3 hvj-outline w-100" id="resIMC7">
+                                            <span>Informe seu peso e altura para calcular</span>
+                                        </div>
+                                    </div>
+                                    <p class="small opacity-75 mb-0">Calcula o Índice de Massa Corporal usando a
+                                        fórmula: IMC = peso (kg) / altura (m)², útil para avaliar o estado nutricional.
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <details class="w-100 p-3 hvj-outline rounded-4">
+                                        <summary class="accordion-button fs-4 hvj-text">
+                                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                                <h2 class="fs-4 hvj-text m-0">Ver Código</h2>
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                        </summary>
+                                        <div class="accordion-body pt-3">
+                                            <pre><code>let inputPeso7 = document.getElementById('inputPeso7')
+let inputAltura7 = document.getElementById('inputAltura7')
+let btnCalcular7 = document.getElementById('btnCalcular7')
+let resIMC7 = document.getElementById('resIMC7')
+
+    function calcularIMC7(peso, altura) {
+        if (!altura) {
+            return 0
+        }
+        return (peso / (altura * altura)).toFixed(2)
+    }
+
+    btnCalcular7.addEventListener('click', () => {
+        let peso = Number(inputPeso7.value)
+        let altura = Number(inputAltura7.value)
+
+        if (peso <= 0 || altura <= 0) {
+            resIMC7.innerText = 'Informe peso e altura válidos.'
+            return
+        }
+
+        let imc = calcularIMC7(peso, altura)
+        resIMC7.innerText = 'IMC: ' + imc
+    })</code></pre>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel Controls Footer -->
+                    <div class="d-flex align-items-center justify-content-evenly">
+                        <button class="carousel-control-prev position-static w-auto h-auto opacity-100" type="button"
+                            data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" data-bs-theme="dark">
+                            <span class="carousel-control-prev-icon" aria-hidden="true" data-bs-theme="dark"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <div class="carousel-indicators position-static m-0 flex-grow-0">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                class="bg-dark" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                class="bg-dark" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                class="bg-dark" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                class="bg-dark" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                                class="bg-dark" aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                                class="bg-dark" aria-label="Slide 7"></button>
+                        </div>
+                        <button class="carousel-control-next position-static w-auto h-auto opacity-100" type="button"
+                            data-bs-target="#carouselExampleIndicators" data-bs-slide="next" data-bs-theme="dark">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
-            </div>
         </section>
     </main>
 

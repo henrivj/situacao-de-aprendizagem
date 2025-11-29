@@ -24,17 +24,3 @@
 .vh-25{ height: 25vh; }
 .vh-50{ height: 50vh; }
 .vh-75{ height: 75vh; }
-
-.vermelho{
-    background-color: red !important;
-    color: red !important;
-}
-
-.preto{
-    background-color: black !important;
-    color: black !important;
-}
-.branco{
-    background-color: white !important;
-    color: white !important;
-}
