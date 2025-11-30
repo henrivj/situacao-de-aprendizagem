@@ -19,7 +19,7 @@ function gerarMatriz4() {
 
 btnGerarMatriz4.addEventListener('click', () => {
     let matriz = gerarMatriz4()
-    
+
     resMatriz4.innerHTML = `
         <table class="table table-dark table-bordered text-center mb-0">
             <tr>

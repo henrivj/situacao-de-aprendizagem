@@ -1,193 +1,54 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+		<section class="container my-3 my-md-5" id="exemploBanco">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-6">
+					<h2>Exemplo de Cadastro</h2>
+					<p>
+						Esse simples exemplo de formulário exemplifica como as informações inseridas seriam salvas em um
+						banco de dados
+						relacional.
+					</p>
+				</div>
+			</div>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<div class="p-3 hvj-outline rounded-4">
+						<h4 class="hvj-text">Formulário</h4>
+						<input type="text" id="nome" class="form-control mb-2" placeholder="Nome" />
+						<input type="number" id="idade" class="form-control mb-2" placeholder="Idade" />
+						<input type="text" id="cidade" class="form-control mb-3" placeholder="Cidade" />
+						<div class="d-flex align-items-center justify-content-evenly">
+							<button id="btnAdicionar" class="btn hvj-text hvj-outline rounded-pill">Adicionar</button>
+							<button id="btnLimpar" class="btn hvj-text hvj-outline rounded-pill">Limpar</button>
+						</div>
+					</div>
+				</div>
 
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/scripts-logica-prog/1ordenarCresDec.js" defer></script>
-    <script src="./assets/js/scripts-logica-prog/2bubbleSort.js" defer></script>
-    <script src="./assets/js/scripts-logica-prog/3somarArr.js" defer></script>
-    <script src="./assets/js/scripts-logica-prog/4matrizFixa.js" defer></script>
-    <script src="./assets/js/scripts-logica-prog/5calcularIMC.js" defer></script>
-    <script src="./assets/js/scripts-logica-prog/6conversorTemperatura.js" defer></script>
-    <script src="./assets/js/scripts-logica-prog/7buscaLinear.js" defer></script>
+				<div class="col-12 col-md-6">
+					<div class="p-3">
+						<h4>Banco de Dados</h4>
+						<div class="row">
+							<div class="table-responsive">
+								<table class="table table-hover">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>Nome</th>
+											<th>Idade</th>
+											<th>Cidade</th>
+										</tr>
+									</thead>
+									<tbody id="tabela">
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
-
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
-
-    <title>SA - Lógica de Programação</title>
-</head>
-
-<body>
-    <header class="fixed-top bg-blur p-2 px-md-4">
-        <nav class="d-flex justify-content-evenly align-items-center">
-            <a href="./index.html" class="px-2 py-1 text-decoration-none hvj-outline hvj-text rounded-pill">Home <i
-                    class="fa-regular fa-home hvj-text"></i>
-            </a>
-
-            <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle hvj-text" type="button" data-bs-toggle="dropdown">
-                    Matérias
-                </button>
-                <ul class="dropdown-menu bg-blur">
-                    <li><a class="dropdown-item hvj-text" href="./fundbancodedados.html">Fund. de Banco de Dados</a>
-                    </li>
-                    <li><a class="dropdown-item hvj-text" href="./fundeletroeletronica.html">Fund. de
-                            Eletroeletrônica</a></li>
-                    <li><a class="dropdown-item hvj-text" href="./fundredes.html">Fund. de Redes</a></li>
-                    <li><a class="dropdown-item hvj-text" href="./fundtecnologiadainformacao.html">Fund. de Tecnologia
-                            da Informação</a></li>
-                    <li><a class="dropdown-item hvj-text" href="./logicacomputacional.html">Lógica Computacional</a>
-                    </li>
-                    <li><a class="dropdown-item hvj-text" href="./logicaprogramacao.html">Lógica de Programação</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="container d-flex vh-75 align-items-center justify-content-between">
-            <h1 class="display-3 fw-bold hvj-text">Lógica de Programação</h1>
-            <img src="./assets/img/hvj-logo.svg" alt="" class="d-none d-md-block img-fluid w-50">
-        </section>
-
-        <!-- linguagens -->
-        <section class="container my-3 my-md-5">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-6">
-                    <h2>Línguagens de Programação</h2>
-                    <p>
-                        Uma linguagem de programação é uma série de instruções que permite o programador a se comunicar
-                        com a máquina. Elas podem ser de mais alto ou mais baixo nível, com as de mais alto nível sendo
-                        mais verbosas e entendíveis - já as de mais baixo nível, como o Assembly, se aproximam mais do
-                        que o computador entende: binário. Assim como as línguas humanas, cada uma delas possuem uma
-                        sintaxe e uma semântica próprias e são usadas para criar softwares, como aplicativos, jogos e
-                        sistemas web.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row justify-content-evenly g-3">
-                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">C++</h2>
-                    <p>Uma linguagem com alto desempenho, amplamente usada no desenvolvimento de sistemas, jogos
-                        e softwares que precisam de performance avançada.</p>
-                </div>
-
-                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">JavaScript</h2>
-                    <p>Usada principalmente no desenvolvimento web para criar páginas interativas e dinâmicas, sendo a
-                        linguagem principal para o front-end e também muito usada no back-end com Node.js.</p>
-                </div>
-
-                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Java</h2>
-                    <p>Uma linguagem robusta e de plataforma independente, conhecida por sua segurança e portabilidade,
-                        amplamente utilizada em sistemas corporativos, aplicações móveis e servidores.</p>
-                </div>
-            </div>
-
-            <div class="row justify-content-evenly g-3 mt-0 mt-md-3">
-                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Python</h2>
-                    <p>Uma linguagem de programação simples e versátil, popular para automação, análise de dados e
-                        inteligência artificial e desenvolvimento web.</p>
-                </div>
-
-                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">PHP</h2>
-                    <p>Usada principalmente no desenvolvimento web, especialmente para criar sites
-                        dinâmicos e interativos, sendo a base de plataformas como WordPress.</p>
-                </div>
-
-                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Assembly</h2>
-                    <p>Uma linguagem de baixo nível que é quase diretamente compreendida pela máquina, utilizada para
-                        desenvolvimento de sistemas onde o controle de hardware é necessário.</p>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- linguagens interpretadas x compiladas -->
-        <section class="container my-3 my-md-5">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <h2>Linguagens Interpretadas</h2>
-                    <p>
-                        Uma linguagem interpretada vai ser executada linha a linha pelo interpretador - sem converter em
-                        código de máquina antes. (ex: py, js e ruby)
-                    </p>
-                </div>
-                <div class="col-12 col-md-6">
-                    <h2>Linguagens Compiladas</h2>
-                    <p>
-                        As linguagens compiladas, antes de serem executadas, precisam ser transformadas em código de
-                        máquina pelo compilador.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- html e css -->
-        <section class="container my-3 my-md-5">
-            <div class="row justify-content-evenly g-3">
-                <div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">HTML</h2>
-                    <p> O HTML (HyperText Markup Language) é uma linguagem de marcação usada para estruturar o conteúdo
-                        da web. Ele define a disposição e organização dos elementos em uma página, como cabeçalhos,
-                        parágrafos, imagens e links. O HTML cria a estrutura básica para o conteúdo.</p>
-                </div>
-
-                <div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">CSS</h2>
-                    <p>O CSS (Cascading Style Sheets) é a linguagem responsável por dar estilo ao conteúdo definido pelo
-                        HTML. Com o CSS, é possível aplicar cores, fontes, tamanhos, margens e outros estilos aos
-                        elementos da página. Enquanto o HTML organiza o conteúdo, o CSS o torna visualmente atraente e
-                        fácil de navegar.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ide -->
-        <section class="container my-3 my-md-5">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-6">
-                    <img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid">
-                </div>
-                <div class="col-12 col-md-6">
-                    <h2>O que é uma IDE?</h2>
-                    <p>Uma IDE é o ambiente onde o programador vai escrever os seus programas. Geralmente contam com
-                        auxilios como completar automaticamente nomes de arquivos, variaveis, funções, etc.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- scrips -->
+                <!-- scrips -->
         <section class="container my-3 my-md-5 min-vh-100">
             <div class="row align-items-center">
                 <div class="col-12 col-md-6">
@@ -815,14 +676,3 @@ let resIMC7 = document.getElementById('resIMC7')
                     </div>
                 </div>
         </section>
-    </main>
-
-    <footer class="bg-blur p-2 p-md-3">
-        <div class="d-flex align-items-center justify-content-evenly">
-            <span class="d-none d-md-block"></span>
-            <p class="m-0 hvj-text">2025 &copy; Henrique Justus</p>
-        </div>
-    </footer>
-</body>
-
-</html>

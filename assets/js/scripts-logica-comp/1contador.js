@@ -7,6 +7,6 @@ funcao contador()
 
 	enquanto(num > contador){
 		contador = contador + 1
-		escreva("\nA contagem atual é ",contador,"")
+		escreva("\nA contagem atual é ", contador, "")
 	}
 }
