@@ -1,422 +1,593 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link rel="stylesheet" href="./assets/css/style.css" />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- bootstrap -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-			crossorigin="anonymous"
-		/>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-			crossorigin="anonymous"
-		></script>
+	<link rel="stylesheet" href="./assets/css/style.css" />
 
-		<!-- font awesome -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
 
-		<!-- google fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 
-		<title>SA - Redes</title>
-	</head>
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet" />
 
-	<body>
-		<header class="fixed-top bg-blur p-2 px-md-4">
-			<nav class="d-flex justify-content-evenly align-items-center">
-				<a href="./index.html" class="px-2 py-1 text-decoration-none hvj-outline hvj-text rounded-pill"
-					>Home <i class="fa-regular fa-home hvj-text"></i>
-				</a>
+	<title>SA - Redes</title>
+</head>
 
-				<div class="dropdown">
-					<button class="btn btn-default dropdown-toggle hvj-text" type="button" data-bs-toggle="dropdown">Matérias</button>
-					<ul class="dropdown-menu bg-blur">
-						<li><a class="dropdown-item hvj-text" href="./fundbancodedados.html">Fund. de Banco de Dados</a></li>
-						<li><a class="dropdown-item hvj-text" href="./fundeletroeletronica.html">Fund. de Eletroeletrônica</a></li>
-						<li><a class="dropdown-item hvj-text" href="./fundredes.html">Fund. de Redes</a></li>
-						<li>
-							<a class="dropdown-item hvj-text" href="./fundtecnologiadainformacao.html">Fund. de Tecnologia da Informação</a>
-						</li>
-						<li><a class="dropdown-item hvj-text" href="./logicacomputacional.html">Lógica Computacional</a></li>
-						<li><a class="dropdown-item hvj-text" href="./logicaprogramacao.html">Lógica de Programação</a></li>
-					</ul>
-				</div>
-			</nav>
-		</header>
+<body>
+	<header class="fixed-top bg-blur p-2 px-md-4">
+		<nav class="d-flex justify-content-evenly align-items-center">
+			<a href="./index.html" class="px-2 py-1 text-decoration-none hvj-outline hvj-text rounded-pill">Home <i
+					class="fa-regular fa-home hvj-text"></i>
+			</a>
 
-		<main>
-			<section class="container d-flex vh-75 align-items-center justify-content-between">
-				<h1 class="col-12 col-md-6 display-3 fw-bold hvj-text">Fundamento de Redes</h1>
-			</section>
+			<div class="dropdown">
+				<button class="btn btn-default dropdown-toggle hvj-text" type="button"
+					data-bs-toggle="dropdown">Matérias</button>
+				<ul class="dropdown-menu bg-blur">
+					<li><a class="dropdown-item hvj-text" href="./fundbancodedados.html">Fund. de Banco de Dados</a>
+					</li>
+					<li><a class="dropdown-item hvj-text" href="./fundeletroeletronica.html">Fund. de
+							Eletroeletrônica</a></li>
+					<li><a class="dropdown-item hvj-text" href="./fundredes.html">Fund. de Redes</a></li>
+					<li>
+						<a class="dropdown-item hvj-text" href="./fundtecnologiadainformacao.html">Fund. de Tecnologia
+							da Informação</a>
+					</li>
+					<li><a class="dropdown-item hvj-text" href="./logicacomputacional.html">Lógica Computacional</a>
+					</li>
+					<li><a class="dropdown-item hvj-text" href="./logicaprogramacao.html">Lógica de Programação</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
 
-			<!-- redes de computadores -->
-			<section class="container my-3 my-md-5">
-				<h2 class="text-end">Redes de computadores</h2>
-				<p class="col-12 col-md-6 ms-md-auto text-end">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id, iste dolore, illum
-					possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet assumenda voluptates.
-				</p>
-			</section>
+	<main>
+		<section class="container d-flex vh-75 align-items-center justify-content-between">
+			<h1 class="col-12 col-md-6 display-3 fw-bold hvj-text">Fundamento de Redes</h1>
+		</section>
 
-			<!-- rede Minima -->
-			<section class="container my-3 my-md-5">
-				<div class="row align-items-center">
-					<div class="col-12 col-md-6">
-						<h2>O que é uma Rede Mínima?</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora possimus molestias itaque vero rem voluptas dicta
-							optio, et labore! Ut, quia atque aliquid eum officia aspernatur minus eligendi dolores. Reiciendis!
-						</p>
-					</div>
-					<div class="col-12">
-						<img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid" />
-					</div>
-				</div>
-			</section>
+		<!-- redes de computadores -->
+		<section class="container my-3 my-md-5">
+			<h2 class="text-end">Redes de computadores</h2>
+			<p class="col-12 col-md-6 ms-md-auto text-end">
+				Redes de computadores são sistemas que conectam dois ou mais dispositivos para compartilhar informações.
+				Elas permitem a comunicação entre computadores, smartphones, servidores e outros equipamentos,
+				possibilitando o acesso à internet. As redes podem variar em tamanho, desde pequenas redes domésticas
+				até grandes redes corporativas e a própria internet.
+			</p>
+		</section>
 
-			<!-- internet -->
-			<section class="container my-3 my-md-5">
-				<div class="row">
-					<div class="col-12 col-md-6 p-3 hvj-outline rounded-4">
-						<h2 class="hvj-text">O que é a Internet?</h2>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id, iste dolore,
-							illum possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet assumenda voluptates.
-						</p>
-					</div>
-					<div class="col-12 col-md-6 p-3">
-						<h2>O que a compõe?</h2>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id, iste dolore,
-							illum possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet assumenda voluptates.
-						</p>
-					</div>
-				</div>
-			</section>
-
-			<!-- web -->
-			<section class="container my-3 my-md-5">
-				<h2 class="text-center hvj-text">O que é a Web?</h2>
-				<p class="col-12 col-md-6 mx-auto text-center">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id, iste dolore, illum
-					possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet assumenda voluptates.
-				</p>
-			</section>
-
-			<!-- mapa fibra optica -->
-			<section class="container my-3 my-md-5">
-				<div class="row align-items-center">
-					<div class="col-12 col-md-6">
-						<h2>O Mapa global de Fibra Óptica</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora possimus molestias itaque vero rem voluptas dicta
-							optio, et labore! Ut, quia atque aliquid eum officia aspernatur minus eligendi dolores. Reiciendis!
-						</p>
-					</div>
-					<div class="col-12">
-						<img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid" />
-					</div>
-				</div>
-			</section>
-
-			<!-- hardware wifi -->
-			<section class="container my-3 my-md-5">
-				<div class="row align-items-center">
-					<div class="col-12 col-md-6">
-						<h2>O Hardware de uma Rede Wi-Fi</h2>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus minus. Vero quam sint illo quis cupiditate amet
-							magnam accusantium temporibus aliquam cumque ratione error at.
-						</p>
-					</div>
-				</div>
-
-				<div class="row justify-content-evenly g-3">
-					<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
-						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
-						</figure>
-						<h3 class="fs-4">Item 1</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
-
-					<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
-						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
-						</figure>
-						<h3 class="fs-4">Item 2</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
-				</div>
-
-				<div class="row justify-content-evenly g-3 mt-0 mt-md-3">
-					<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
-						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
-						</figure>
-						<h3 class="fs-4">Item 1</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
-
-					<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
-						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
-						</figure>
-						<h3 class="fs-4">Item 2</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
-				</div>
-			</section>
-
-			<!-- hardware local -->
-			<section class="container my-3 my-md-5">
-				<div class="row align-items-center">
-					<div class="col-12 col-md-6">
-						<h2>Hardware de uma Rede Local</h2>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus minus. Vero quam sint illo quis cupiditate amet
-							magnam accusantium temporibus aliquam cumque ratione error at.
-						</p>
-					</div>
-				</div>
-
-				<div class="row justify-content-evenly g-3">
-					<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
-						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
-						</figure>
-						<h3 class="fs-4">Item 1</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
-
-					<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
-						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
-						</figure>
-						<h3 class="fs-4">Item 2</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
-				</div>
-			</section>
-
-			<!-- protocolos de com. -->
-			<section class="container my-3 my-md-5">
-				<h2 class="text-start">O que são <span class="hvj-text fw-bold">Procotolos de Comunicação</span>?</h2>
-				<p class="col-12 col-md-6 text-start">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id, iste dolore, illum
-					possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet assumenda voluptates.
-				</p>
-
-				<div class="row">
-					<div class="col-12 col-md-6">
-						<h2 class="">Modelo OSI</h2>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id, iste dolore,
-							illum possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet assumenda voluptates.
-						</p>
-						<img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid" />
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id, iste dolore,
-							illum possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet assumenda voluptates.
-						</p>
-					</div>
-					<div class="col-12 col-md-6">
-						<h2 class="">Modelo TCP/IP</h2>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id, iste dolore,
-							illum possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet assumenda voluptates.
-						</p>
-						<img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid" />
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id, iste dolore,
-							illum possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet assumenda voluptates.
-						</p>
-					</div>
-				</div>
-			</section>
-
-			<!-- ip -->
-			<section class="container my-3 my-md-5">
-				<div class="row hvj-outline p-3 rounded-4">
-					<div class="col-12 col-md-6">
-						<h2>Protocolo IPv4</h2>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id, iste dolore,
-							illum possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet assumenda voluptates.
-						</p>
-					</div>
-					<div class="col-12 col-md-6">
-						<!-- hvj-outline -->
-						<h2>Protocolo IPv6</h2>
-						<!-- hvj-text -->
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id, iste dolore,
-							illum possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet assumenda voluptates.
-						</p>
-					</div>
-				</div>
-			</section>
-
-			<!-- config de tcp/ip com Node.js -->
-			<section class="container my-3 my-md-5">
-				<div class="row">
-					<div class="col-12 col-md-6 p-3 rounded-4">
-						<h2>Configuração TCP/IP com Node.js</h2>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id, iste dolore,
-							illum possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet assumenda voluptates.
-						</p>
-						<img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid" />
-					</div>
-					<div class="col-12 col-md-6 d-flex align-items-start">
-						<details class="w-100 p-3 mb-3 mb-md-4 hvj-outline rounded-4">
-							<summary class="accordion-button fs-4 hvj-text">
-								<div class="d-flex w-100 align-items-center justify-content-between">
-									<h2 class="fs-4 hvj-text">Ver Código</h2>
-									<i class="fas fa-chevron-down"></i>
-								</div>
-							</summary>
-							<div class="accordion-body">
-								<pre><code>// colocar codigo aqui</code></pre>
-							</div>
-						</details>
-					</div>
-				</div>
-			</section>
-
-			<section class="container my-3 my-md-5">
-				<div class="row hvj-outline p-3 rounded-4">
-					<div class="col-12 col-md-6">
-						<h2>Protocolo HTTP</h2>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id, iste dolore,
-							illum possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet assumenda voluptates.
-						</p>
-					</div>
-					<div class="col-12 col-md-6">
-						<!-- hvj-outline -->
-						<h2>Protocolo HTTPS</h2>
-						<!-- hvj-text -->
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id, iste dolore,
-							illum possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet assumenda voluptates.
-						</p>
-					</div>
-				</div>
-			</section>
-
-			<!-- express (framework) -->
-			<section class="container my-3 my-md-5">
-				<div class="row align-items-center">
-					<div class="col-12 col-md-6">
-						<img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid" />
-					</div>
-					<div class="col-12 col-md-6">
-						<h2>Express</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora possimus molestias itaque vero rem voluptas dicta
-							optio, et labore! Ut, quia atque aliquid eum officia aspernatur minus eligendi dolores. Reiciendis!
-						</p>
-					</div>
-				</div>
-			</section>
-
-			<!-- codigo back com. front -->
-			<section class="container my-3 my-md-5">
-				<div class="row align-items-center">
-					<div class="col-12 col-md-6">
-						<h2>Exemplos de comunicação<br />Backend <span class="hvj-text fw-bold">x</span> Frontend</h2>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus minus. Vero quam sint illo quis cupiditate amet
-							magnam accusantium temporibus aliquam cumque ratione error at.
-						</p>
-					</div>
+		<!-- rede Minima -->
+		<section class="container my-3 my-md-5">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-6">
+					<h2>O que é uma Rede Mínima?</h2>
+					<p>
+						Uma rede mínima é a configuração simples necessária para estabelecer comunicação entre dois
+						dispositivos. Ela consiste em pelo menos dois computadores conectados por um meio de transmissão
+						e um protocolo de comunicação que permite a troca de dados.
+					</p>
 				</div>
 				<div class="col-12">
-					<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-						<div class="carousel-indicators">
-							<button
-								type="button"
-								data-bs-target="#carouselExampleIndicators"
-								data-bs-slide-to="0"
-								class="active"
-								aria-current="true"
-								aria-label="Slide 1"
-							></button>
-							<button
-								type="button"
-								data-bs-target="#carouselExampleIndicators"
-								data-bs-slide-to="1"
-								aria-label="Slide 2"
-							></button>
-							<button
-								type="button"
-								data-bs-target="#carouselExampleIndicators"
-								data-bs-slide-to="2"
-								aria-label="Slide 3"
-							></button>
-						</div>
-
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img src="./assets/img/hvj-logo.svg" class="d-block w-100" alt="" />
-								<div class="col-12 col-md-6 h-100">
-									<h2>Item 1</h2>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus minus. Vero quam sint illo quis
-										cupiditate amet magnam accusantium temporibus aliquam cumque ratione error at.
-									</p>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img src="./assets/img/hvj-logo.svg" class="d-block w-100" alt="" />
-								<div class="col-12 col-md-6 h-100">
-									<h2>Item 2</h2>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus minus. Vero quam sint illo quis
-										cupiditate amet magnam accusantium temporibus aliquam cumque ratione error at.
-									</p>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img src="./assets/img/hvj-logo.svg" class="d-block w-100" alt="" />
-								<div class="col-12 col-md-6 h-100">
-									<h2>Item 3</h2>
-									<p>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus minus. Vero quam sint illo quis
-										cupiditate amet magnam accusantium temporibus aliquam cumque ratione error at.
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-						</button>
-					</div>
+					<img src="./assets/img/fundredes/redeminima.png" alt="" class="img-fluid" />
 				</div>
-			</section>
-		</main>
-
-		<footer class="bg-blur p-2 p-md-3">
-			<div class="d-flex align-items-center justify-content-evenly">
-				<span class="d-none d-md-block"></span>
-				<p class="m-0 hvj-text">2025 &copy; Henrique Justus</p>
 			</div>
-		</footer>
-	</body>
+		</section>
+
+		<!-- internet -->
+		<section class="container my-3 my-md-5">
+			<div class="row">
+				<div class="col-12 col-md-6 p-3 hvj-outline rounded-4">
+					<h2 class="hvj-text">O que é a Internet?</h2>
+					<p>
+						A Internet é uma rede global de computadores que permite a comunicação e o compartilhamento de
+						informações mundialmente. Ela funciona através de protocolos padronizados (como o TCP/IPd) que
+						permitem que dispositivos diferentes se comuniquem. A Internet surgiu na década de 1960 como um
+						projeto militar e evoluiu para se tornar a maior rede de comunicação do planeta, conectando
+						bilhões de dispositivos e pessoas.
+					</p>
+				</div>
+				<div class="col-12 col-md-6 p-3">
+					<h2>O que a compõe?</h2>
+					<p>
+						A Internet é uma infraestrutura complexa. Fisicamente, inclui cabos submarinos, cabos de fibra
+						óptica terrestres, satélites, roteadores, servidores e data centers distribuídos pelo mundo.
+						Logicamente, é composta por protocolos de comunicação (TCP/IP, HTTP, DNS), sistemas de
+						endereçamento (endereços IP), provedores de serviços de internet (ISPs) e milhões de redes
+						menores interconectadas. Toda essa estrutura trabalha em conjunto para garantir que os dados
+						cheguem do remetente ao destinatário.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- web -->
+		<section class="container my-3 my-md-5">
+			<h2 class="text-center hvj-text">O que é a Web?</h2>
+			<div class="col-12 col-md-6 mx-auto text-center">
+				<p>
+					A Web (World Wide Web) é um sistema de informação que funciona sobre a Internet, composto por
+					páginas interligadas através de hiperlinks.
+				</p>
+				<p>
+					Web e Internet <span class="hvj-text fw-bold">não são</span> a mesma coisa: a Internet é a
+					infraestrutura de rede, enquanto a Web é um serviço que funciona sobre essa infraestrutura.
+				</p>
+			</div>
+		</section>
+
+		<!-- mapa fibra optica -->
+		<section class="container my-3 my-md-5">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-6">
+					<h2>O Mapa global de Fibra Óptica</h2>
+					<p>
+						O mapa global de fibra óptica mostra a rede de cabos submarinos e terrestres que, basicamente,
+						forma a Internet. Esses cabos, transmitem dados com fibras opticas muito pequenas, conectando
+						paises e continentes.
+					</p>
+				</div>
+				<div class="col-12">
+					<img src="./assets/img/fundredes/cabossubmarinos.jpg" alt="" class="img-fluid" />
+				</div>
+			</div>
+		</section>
+
+		<!-- hardware wifi -->
+		<section class="container my-3 my-md-5">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-6">
+					<h2>O Hardware de uma Rede Wi-Fi</h2>
+					<p>
+						Uma rede Wi-Fi é composta por diversos componentes que trabalham juntos para fornecer
+						conectividade sem fio. A qualidade da conexão depende da frequência utilizada (2.4GHz ou 5GHz), do padrão
+						Wi-Fi e de fatores como distância e obstáculos.
+					</p>
+				</div>
+			</div>
+			<div class="row justify-content-evenly g-3">
+				<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+					<figure class="mb-3 h-50 d-flex justify-content-center align-itens-center">
+						<img src="./assets/img/fundredes/roteador.png" class="img-fluid object-fit-contain w-50 mb-2" alt="">
+					</figure>
+					<h3 class="fs-4">Roteador</h3>
+					<p>Dispositivo que transmite o sinal Wi-Fi e gerencia o tráfego de dados entre dispositivos
+						conectados e a Internet.</p>
+				</div>
+			</div>
+			<div class="row justify-content-evenly g-3 mt-0 mt-md-3">
+				<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+					<figure class="mb-3 h-50 d-flex justify-content-center align-itens-center">
+						<img src="./assets/img/fundredes/acesspoint.png" class="img-fluid object-fit-contain w-50 mb-2" alt="">
+					</figure>
+					<h3 class="fs-4">Access Point</h3>
+					<p>Dispositivo que estende a cobertura da rede Wi-Fi, conectando-se ao roteador principal via cabo
+						para criar áreas adicionais de cobertura sem fio em ambientes maiores.</p>
+				</div>
+				<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+					<figure class="mb-3 h-50 d-flex justify-content-center align-itens-center">
+						<img src="./assets/img/fundredes/repetidor.png" class="img-fluid object-fit-contain w-50 mb-2" alt="">
+					</figure>
+					<h3 class="fs-4">Repetidor/Extensor</h3>
+					<p>Equipamento que capta o sinal Wi-Fi existente e o retransmite, ampliando o alcance da rede sem
+						necessidade de cabos adicionais entre os dispositivos.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- hardware local -->
+		<section class="container my-3 my-md-5">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-6">
+					<h2>Hardware de uma Rede Local</h2>
+					<p>
+						Uma rede local (LAN) utiliza componentes físicos para conectar dispositivos através de
+						cabos de rede. Essa estrutura oferece maior estabilidade, velocidade e segurança comparada
+						às redes wireless. 
+					</p>
+				</div>
+			</div>
+			<div class="row justify-content-evenly g-3">
+				<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+					<figure class="mb-3 h-50 d-flex justify-content-center align-itens-center">
+						<img src="./assets/img/fundredes/switch.png" class="img-fluid object-fit-contain w-50 mb-2" alt="">
+					</figure>
+					<h3 class="fs-4">Switch</h3>
+					<p>Equipamento que conecta múltiplos dispositivos em uma rede local, gerenciando o tráfego de dados
+						e direcionando pacotes especificamente para o dispositivo de destino correto.</p>
+				</div>
+				<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+					<figure class="mb-3 h-50 d-flex justify-content-center align-itens-center">
+						<img src="./assets/img/fundredes/caborede.png" class="img-fluid object-fit-contain w-50 mb-2" alt="">
+					</figure>
+					<h3 class="fs-4">Cabos Ethernet</h3>
+					<p>Cabos (Cat5e, Cat6, Cat6a) que transmitem dados entre dispositivos. Quanto maior
+						a categoria, maior a velocidade e menor a interferência.</p>
+				</div>
+			</div>
+			<div class="row justify-content-evenly g-3 mt-0 mt-md-3">
+				<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+					<figure class="mb-3 h-50 d-flex justify-content-center align-itens-center">
+						<img src="./assets/img/fundredes/placarede.png" class="img-fluid object-fit-contain w-50 mb-2" alt="">
+					</figure>
+					<h3 class="fs-4">Placa de Rede</h3>
+					<p>Interface de hardware instalada nos computadores que permite a conexão física à rede através de
+						cabos Ethernet, convertendo dados em sinais elétricos.</p>
+				</div>
+				<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+					<figure class="mb-3 h-50 d-flex justify-content-center align-itens-center">
+						<img src="./assets/img/fundredes/server.png" class="img-fluid object-fit-contain w-50 mb-2" alt="">
+					</figure>
+					<h3 class="fs-4">Servidor</h3>
+					<p>Computador dedicado que fornece recursos, serviços e armazena dados compartilhados para todos os
+						dispositivos conectados na rede local.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- protocolos de com. -->
+		<section class="container my-3 my-md-5">
+			<h2 class="text-start">O que são <span class="hvj-text fw-bold">Procotolos de Comunicação</span>?</h2>
+			<p class="col-12 col-md-6 text-start">
+				Protocolos de comunicação são conjuntos de regras e padrões que definem como os dados são enviados e
+				recebidos em uma rede. Eles garantem que os dois dispositivos "falam a mesma língua". Sem protocolos,
+				dispositivos diferentes não conseguiriam se comunicar. Exemplos incluem TCP/IP, HTTP, FTP e DNS, cada um
+				com funções específicas no processo de comunicação em rede.
+			</p>
+		</section>
+
+		<section class="container my-3 my-md-5">
+			<div class="row">
+				<div class="col-12 col-md-6 p-3 rounded-4">
+					<h2>Modelo OSI</h2>
+					<p>
+						O Modelo OSI (Open Systems Interconnection) é um conceito de sete camadas que descreve como os
+						dados viajam de uma aplicação em um dispositivo para uma aplicação em outro dispositivo através
+						de uma rede. As camadas são:
+					</p>
+					<ul>
+						<li><span class="hvj-text fw-bold">Física</span> - Meios de transmissão - fios, geralmente.</li>
+						<li><span class="hvj-text fw-bold">Enlace</span> - Comunicação entre dispositivos da LAN</li>
+						<li><span class="hvj-text fw-bold">Rede</span> - Roteamento de pacotes (Protocolo IP)</li>
+						<li><span class="hvj-text fw-bold">Transporte</span> - Entrega confiável de dados (ex: TCP)</li>
+						<li><span class="hvj-text fw-bold">Sessão</span> - Gerenciamento de conexões</li>
+						<li><span class="hvj-text fw-bold">Apresentação</span> - Formatação de dados</li>
+						<li><span class="hvj-text fw-bold">Aplicação</span> - interface com o usuário (ex: HTTP)</li>
+					</ul>
+					<p>
+						Cada camada tem responsabilidades definidas e comunica apenas com as camadas em cima e em baixo.
+						O modelo OSI serve como referência para entender e melhor desenvolver protocolos de rede.
+					</p>
+				</div>
+				<div class="col-12 col-md-6 p-3 rounded-4">
+					<h2>Modelo TCP/IP</h2>
+					<p>
+						O Modelo TCP/IP é o conjunto de protocolos que fundamenta a Internet e a maioria das redes
+						modernas. É mais simples que o OSI, com apenas quatro camadas:
+					</p>
+					<ul>
+						<li><span class="hvj-text fw-bold">Acesso à Rede</span> - Equivalente às camadas física e de
+							enlace do OSI</li>
+						<li><span class="hvj-text fw-bold">Internet</span> - Roteamento de pacotes (Protocolo IP)</li>
+						<li><span class="hvj-text fw-bold">Transporte</span> - Entrega de dados (TCP é confiável, UDP é
+							mais rápido mas não garente entrega,)
+						<li>
+						<li><span class="hvj-text fw-bold">Aplicação</span> - </li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- ip -->
+		<section class="container my-3 my-md-5">
+			<div class="row hvj-outline p-3 rounded-4">
+				<div class="col-12 col-md-6">
+					<h2>Protocolo IPv4</h2>
+					<p>
+						O IPv4 (Internet Protocol version 4) é o protocolo responsável pelo endereçamento e roteamento
+						de pacotes na Internet. Cada dispositivo recebe um endereço IP único composto por 32 bits (ex:
+						192.168.1.1). O IPv4 permite aproximadamente 4,3 bilhões de endereços únicos, número que com o
+						crescimento muito rápido da Internet se tornou pouco.
+					</p>
+				</div>
+				<div class="col-12 col-md-6">
+					<h2>Protocolo IPv6</h2>
+					<p>
+						O IPv6 (Internet Protocol version 6) é a versão mais recente do protocolo de Internet,
+						desenvolvida para substituir o IPv4. Utiliza endereços de 128 bits (ex:
+						2001:0db8:85a3:0000:0000:8a2e:0370:7334), permitindo ~340 undecilhões de IPs únicos. Além de
+						resolver o problema de poucos endereços, o IPv6 oferece melhorias em segurança, qualidade de
+						serviço e eficiência. Atualmente estamos em transição, com os dois protocolos co-existindo.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- config de tcp/ip com Node.js -->
+		<section class="container my-3 my-md-5">
+			<div class="row">
+				<div class="col-12 col-md-6 p-3 rounded-4">
+					<h2>Configuração TCP/IP com Node.js</h2>
+
+					<p>Este código cria um servidor usando <b>Node.js</b> e <b>Express</b>. Ele define rotas para testar
+						a simulaçãoo de um login.</p>
+
+					<h2>Principais pontos</h2>
+					<ul>
+						<li><span class="hvj-text fw-bold">Configuração:</span> O servidor roda na porta 3000 e no
+							endereço <i>localhost</i>.</li>
+						<li><span class="hvj-text fw-bold">Middleware:</span> Permite receber dados em JSON e habilita o
+							uso de CORS.</li>
+						<li><span class="hvj-text fw-bold">Rota GET "/":</span> Retorna uma mensagem dizendo que a
+							aplicação está rodando.</li>
+						<li><span class="hvj-text fw-bold">Rota GET "/login":</span> Retorna um usuário fixo (email e
+							senha).</li>
+						<li><span class="hvj-text fw-bold">Rota POST "/login":</span> Verifica se o email e senha
+							enviados batem com os valores fixos:
+							<ul>
+								<li>Se corretos: retorna sucesso com nome e status.</li>
+								<li>Se senha errada: retorna "Acesso não autorizado".</li>
+								<li>Se email não encontrado: retorna "Usuário não encontrado".</li>
+							</ul>
+						</li>
+					</ul>
+
+				</div>
+				<div class="col-12 col-md-6 d-flex align-items-start">
+					<details class="w-100 p-3 mb-3 mb-md-4 hvj-outline rounded-4">
+						<summary class="accordion-button fs-4 hvj-text">
+							<div class="d-flex w-100 align-items-center justify-content-between">
+								<h2 class="fs-4 hvj-text">Ver Código</h2>
+								<i class="fas fa-chevron-down"></i>
+							</div>
+						</summary>
+						<div class="accordion-body">
+							<pre><code>const express = require('express')
+const app = express()
+const cors = require('cors')
+
+// PORT do TCP
+const PORT = 3000 
+// endereço IP = 127.0.0.1 do servidor de teste
+const hostname = 'localhost' 
+
+// ------------ Middleware ---------------------
+app.use(express.urlencoded({extended: true}))
+app.use(express.json())
+app.use(cors())
+
+// ---------------------------------------------
+app.get('/', (req,res)=>{
+    res.status(200).json({message: 'Aplicação Rodando!'})
+})
+
+app.get('/login', (req,res)=>{
+    const email_bd = 'carlos@gmail.com'
+    const senha_bd = 123
+    const dados = {
+        email: email_bd,
+        senha: senha_bd
+    }
+    res.status(200).json(dados)
+})
+
+app.post('/login', (req,res)=>{
+    const email_bd = 'carlos@gmail.com'
+    const senha_bd = 123
+    const valores = req.body
+    console.log(valores)
+    
+    if(email_bd === valores.email){
+        if(senha_bd === valores.senha){
+            return res.status(200).json({ 
+                message: 'login realizado com sucesso!', 
+                nome: valores.nome, 
+                statusLog: 'true'
+            })
+        }else{
+            return res.status(403).json({ 
+                message: 'Acesso não autorizado!'
+            })
+        }
+    }else{
+        return res.status(404).json({
+            message: 'Usuário não encontrado'
+        })
+    }
+})
+
+// ---------------- Server ---------------------
+app.listen(PORT, hostname, ()=>{
+    console.log(`http://${hostname}:${PORT}`)
+})</code></pre>
+						</div>
+					</details>
+				</div>
+			</div>
+		</section>
+
+		<section class="container my-3 my-md-5">
+			<div class="row hvj-outline p-3 rounded-4">
+				<div class="col-12 col-md-6">
+					<h2>Protocolo HTTP</h2>
+					<p>
+						O HTTP (HyperText Transfer Protocol) é o protocolo usado para transferir informações na Web. Ele
+						define como as mensagens são formatadas e transmitidas entre navegadores (clientes) e
+						servidores. O HTTP funciona no modelo requisição-resposta: o cliente envia uma requisição (GET,
+						POST, PUT, DELETE, etc.) e o servidor responde com um código de status (200 OK, 404 Not Found,
+						etc.) e os dados solicitados. É um protocolo sem estado, ou seja, cada requisição é independente
+						da anterior.
+					</p>
+				</div>
+				<div class="col-12 col-md-6">
+					<h2>Protocolo HTTPS</h2>
+					<p>
+						O HTTPS (HTTP Secure) é uma versão mais segura do HTTP, que adiciona uma camada de criptografia.
+						Todos os dados transmitidos entre o navegador e o servidor são criptografados, protegendo
+						informações sensíveis como senhas, dados de cartão de crédito e informações pessoais. O HTTPS
+						também autentica o servidor através de certificados digitais (SLL), garantindo que o usuário
+						está se comunicando com o site legítimo.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- express (framework) -->
+		<section class="container my-3 my-md-5">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-6">
+					<h2>Express</h2>
+					<p>
+						Express é um framework para Node.js, utilizado para construir aplicações web e APIs. Ele
+						simplifica o processo de criação de servidores HTTP, Com Express, é mais fácil definir rotas,
+						gerenciar requisições e respostas, implementar middleware para processamento de dados, e
+						organizar a estrutura da aplicação.
+				</div>
+				<div class="col-12 col-md-6">
+					<img src="./assets/img/fundredes/express.png" alt="" class="img-fluid" />
+				</div>
+			</div>
+		</section>
+
+		<!-- codigo back com. front -->
+		<section class="container my-3 my-md-5">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-6">
+					<h2>Exemplos de comunicação<br />Backend <span class="hvj-text fw-bold">x</span> Frontend</h2>
+				</div>
+			</div>
+			<div class="col-12">
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+							class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+							aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+							aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<h3 class="hvj-text">GET - Consultar Status</h3>
+							<div class="p-3 bg-grey text-light rounded-4">
+								<pre class="text-light mb-0"><code>app.get('/', (req,res)=>{
+    res.status(200).json({message: 'Aplicação Rodando!'})
+})
+
+app.get('/login', (req,res)=>{
+    const email_bd = 'carlos@gmail.com'
+    const senha_bd = 123
+
+    const dados = {
+        email: email_bd,
+        senha: senha_bd
+    }
+
+    res.status(200).json(dados)
+})</code></pre>
+							</div>
+							<p class="mt-3 mb-0">O método GET é usado para consultar dados no servidor sem
+								modificá-los. Retorna status 200 quando bem-sucedido.</p>
+						</div>
+						<div class="carousel-item">
+							<h3 class="hvj-text">POST - Autenticação</h3>
+							<div class="p-3 bg-grey text-light rounded-4">
+								<pre class="text-light mb-0"><code>app.post('/login', (req,res)=>{
+    const email_bd = 'carlos@gmail.com'
+    const senha_bd = 123
+    const valores = req.body
+
+    console.log(valores)
+
+    if(email_bd === valores.email){
+        if(senha_bd === valores.senha){
+            return res.status(200).json({ 
+                message: 'login realizado com sucesso!', 
+                nome: valores.nome, 
+                statusLog: 'true'
+            })
+        }else{
+            return res.status(403).json({ 
+                message: 'Acesso não autorizado!'
+            })
+        }
+    }else{
+        return res.status(404).json({
+            message: 'Usuário não encontrado'
+        })
+    }
+})</code></pre>
+							</div>
+							<p class="mt-3 mb-0">POST envia dados para o servidor processar. Retorna 200 (sucesso),
+								403 (não autorizado) ou 404 (não encontrado).</p>
+						</div>
+						<div class="carousel-item">
+							<h3 class="hvj-text">GET - Controle de Hardware</h3>
+							<div class="p-3 bg-grey text-light rounded-4">
+								<pre class="text-light mb-0"><code>app.get('/ligar', (req,res)=>{
+    arduino.write("s", (err)=>{
+        if(err){
+            console.error("Erro ao escrever no arduino: ", err)
+            return res.status(500).json({ 
+                led: "erro", 
+                detalhe: "falha ao enviar o comando"
+            })
+        }
+    })
+    res.status(200).json({ led: "ligado"})
+})
+
+app.get('/desligar', (req,res)=>{
+    arduino.write("d", (err)=>{
+        if(err){
+            console.error("Erro ao escrever no arduino: ", err)
+            return res.status(500).json({ 
+                led: "erro", 
+                detalhe: "falha ao enviar o comando"
+            })
+        }
+    })
+    res.status(200).json({ led: "desligado"})
+})</code></pre>
+							</div>
+							<p class="mt-3 mb-0">Rotas GET também podem controlar hardware. Retorna 200 em sucesso
+								ou 500 quando há erro no servidor.</p>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="bg-blur p-2 p-md-3">
+		<div class="d-flex align-items-center justify-content-evenly">
+			<span class="d-none d-md-block"></span>
+			<p class="m-0 hvj-text">2025 &copy; Henrique Justus</p>
+		</div>
+	</footer>
+</body>
+
 </html>
