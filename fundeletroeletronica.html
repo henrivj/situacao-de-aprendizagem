@@ -1,349 +1,368 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link rel="stylesheet" href="./assets/css/style.css" />
-		<script src="./assets/js/scriptFundEletronica.js" defer></script>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- bootstrap -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-			crossorigin="anonymous"
-		/>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-			crossorigin="anonymous"
-		></script>
+	<link rel="stylesheet" href="./assets/css/style.css" />
+	<script src="./assets/js/scriptFundEletronica.js" defer></script>
 
-		<!-- font awesome -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
 
-		<!-- google fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 
-		<title>SA - Eletroeletrônica</title>
-	</head>
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet" />
 
-	<body>
-		<header class="fixed-top bg-blur p-2 px-md-4">
-			<nav class="d-flex justify-content-evenly align-items-center">
-				<a href="./index.html" class="px-2 py-1 text-decoration-none hvj-outline hvj-text rounded-pill"
-					>Home <i class="fa-regular fa-home hvj-text"></i>
-				</a>
+	<title>SA - Eletroeletrônica</title>
+</head>
 
-				<div class="dropdown">
-					<button class="btn btn-default dropdown-toggle hvj-text" type="button" data-bs-toggle="dropdown">Matérias</button>
-					<ul class="dropdown-menu bg-blur">
-						<li><a class="dropdown-item hvj-text" href="./fundbancodedados.html">Fund. de Banco de Dados</a></li>
-						<li><a class="dropdown-item hvj-text" href="./fundeletroeletronica.html">Fund. de Eletroeletrônica</a></li>
-						<li><a class="dropdown-item hvj-text" href="./fundredes.html">Fund. de Redes</a></li>
-						<li>
-							<a class="dropdown-item hvj-text" href="./fundtecnologiadainformacao.html">Fund. de Tecnologia da Informação</a>
-						</li>
-						<li><a class="dropdown-item hvj-text" href="./logicacomputacional.html">Lógica Computacional</a></li>
-						<li><a class="dropdown-item hvj-text" href="./logicaprogramacao.html">Lógica de Programação</a></li>
-					</ul>
+<body>
+	<header class="fixed-top bg-blur p-2 px-md-4">
+		<nav class="d-flex justify-content-evenly align-items-center">
+			<a href="./index.html" class="px-2 py-1 text-decoration-none hvj-outline hvj-text rounded-pill">Home <i
+					class="fa-regular fa-home hvj-text"></i>
+			</a>
+
+			<div class="dropdown">
+				<button class="btn btn-default dropdown-toggle hvj-text" type="button"
+					data-bs-toggle="dropdown">Matérias</button>
+				<ul class="dropdown-menu bg-blur">
+					<li><a class="dropdown-item hvj-text" href="./fundbancodedados.html">Fund. de Banco de Dados</a>
+					</li>
+					<li><a class="dropdown-item hvj-text" href="./fundeletroeletronica.html">Fund. de
+							Eletroeletrônica</a></li>
+					<li><a class="dropdown-item hvj-text" href="./fundredes.html">Fund. de Redes</a></li>
+					<li>
+						<a class="dropdown-item hvj-text" href="./fundtecnologiadainformacao.html">Fund. de Tecnologia
+							da Informação</a>
+					</li>
+					<li><a class="dropdown-item hvj-text" href="./logicacomputacional.html">Lógica Computacional</a>
+					</li>
+					<li><a class="dropdown-item hvj-text" href="./logicaprogramacao.html">Lógica de Programação</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="container d-flex vh-75 align-items-center justify-content-between">
+			<h1 class="col-12 col-md-6 display-3 fw-bold hvj-text">Fundamento de Eletroeletrônica</h1>
+		</section>
+
+		<!-- tipos de componentes eletronicos -->
+		<section class="container my-3 my-md-5">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-6">
+					<h2>Tipos de Componentes Eletroeletrônicos</h2>
+					<p>
+						Componentes eletrônicos são peças usadas para construir circuitos e dispositivos
+						eletrônicos. Cada componente tem uma função, como controlar a corrente, armazenar
+						energia, emitir luz, etc. Quando conectados entre si, eles permitem a criação de aparelhos
+						como celulares, computadores, rádios e brinquedos eletrônicos funcionem corretamente.
+					</p>
 				</div>
-			</nav>
-		</header>
+			</div>
 
-		<main>
-			<section class="container d-flex vh-75 align-items-center justify-content-between">
-				<h1 class="col-12 col-md-6 display-3 fw-bold hvj-text">Fundamento de Eletroeletrônica</h1>
-			</section>
-
-			<!-- tipos de componentes eletronicos -->
-			<section class="container my-3 my-md-5">
-				<div class="row align-items-center">
-					<div class="col-12 col-md-6">
-						<h2>Tipos de Componentes Eletroeletrônicos</h2>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus minus. Vero quam sint illo quis cupiditate amet
-							magnam accusantium temporibus aliquam cumque ratione error at.
-						</p>
-					</div>
-				</div>
-
-				<div class="row justify-content-evenly g-3">
+			<div class="row justify-content-evenly g-3">
+				<div class="row justify-content-evenly g-3 mt-0 mt-md-3">
 					<div class="col-12 col-md-3 p-2 p-md-4 text-center text-light bg-grey rounded-4">
 						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
+							<img src="./assets/img/fundeletroeletronica/resistor.png"
+								class="img-fluid object-fit-contain w-50 mb-2" alt="">
 						</figure>
-						<h3 class="fs-4">Item 1</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<h3 class="fs-4"><span class="hvj-text">Resistor</span></h3>
+						<p>Limita ou controla a passagem de corrente em um circuito. É usado para proteger componentes e
+							ajustar níveis de tensão.</p>
 					</div>
 
 					<div class="col-12 col-md-3 p-2 p-md-4 text-center text-light bg-grey rounded-4">
 						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
+							<img src="./assets/img/fundeletroeletronica/transistor.png"
+								class="img-fluid object-fit-contain w-50 mb-2" alt="">
 						</figure>
-						<h3 class="fs-4">Item 2</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<h3 class="fs-4"><span class="hvj-text">Transistor</span></h3>
+						<p>Usa uma corrente fraca para controlar uma forte, como um interruptor que liga/desliga
+							dependendo da corrente que recebe.</p>
 					</div>
 
 					<div class="col-12 col-md-3 p-2 p-md-4 text-center text-light bg-grey rounded-4">
 						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
+							<img src="./assets/img/fundeletroeletronica/circuito_integrado.png"
+								class="img-fluid object-fit-contain w-50 mb-2" alt="">
 						</figure>
-						<h3 class="fs-4">Item 3</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<h3 class="fs-4"><span class="hvj-text">Circuito Integrado</span></h3>
+						<p>São chips que reúnem vários componentes em um único bloco muito pequeno, permitindo funções
+							complexas em pouco espaço.</p>
 					</div>
 				</div>
 
 				<div class="row justify-content-evenly g-3 mt-0 mt-md-3">
 					<div class="col-12 col-md-3 p-2 p-md-4 text-center text-light bg-grey rounded-4">
 						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
+							<img src="./assets/img/fundeletroeletronica/diodo.png"
+								class="img-fluid object-fit-contain w-50 mb-2" alt="">
 						</figure>
-						<h3 class="fs-4">Item 4</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<h3 class="fs-4"><span class="hvj-text">Diodo</span></h3>
+						<p>Impede a corrente de passar em apenas um sentido, quase como uma válvula eletrônica.</p>
 					</div>
 
 					<div class="col-12 col-md-3 p-2 p-md-4 text-center text-light bg-grey rounded-4">
 						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
+							<img src="./assets/img/fundeletroeletronica/leds.png"
+								class="img-fluid object-fit-contain w-50 mb-2" alt="">
 						</figure>
-						<h3 class="fs-4">Item 5</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<h3 class="fs-4"><span class="hvj-text">Diodo LED</span></h3>
+						<p>Assim como o diodo, também impede a corrente de passar em uma direção - mas a sua principal
+							função é gerar luz.</p>
 					</div>
 
 					<div class="col-12 col-md-3 p-2 p-md-4 text-center text-light bg-grey rounded-4">
 						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
+							<img src="./assets/img/fundeletroeletronica/7seg.png"
+								class="img-fluid object-fit-contain w-50 mb-2" alt="">
 						</figure>
-						<h3 class="fs-4">Item 6</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<h3 class="fs-4"><span class="hvj-text">Display de 7 Segmentos</span></h3>
+						<p>Um componente capaz de representar números de 1-9 (e algumas letras, com dificuldade)
+							formados de apenas 7 linhas.</p>
 					</div>
 				</div>
+		</section>
 
-				<div class="row justify-content-evenly g-3 mt-0 mt-md-3">
-					<div class="col-12 col-md-3 p-2 p-md-4 text-center text-light bg-grey rounded-4">
-						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
-						</figure>
-						<h3 class="fs-4">Diodo</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
-
-					<div class="col-12 col-md-3 p-2 p-md-4 text-center text-light bg-grey rounded-4">
-						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
-						</figure>
-						<h3 class="fs-4">Diodo LED</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
-
-					<div class="col-12 col-md-3 p-2 p-md-4 text-center text-light bg-grey rounded-4">
-						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
-						</figure>
-						<h3 class="fs-4">Display de 7 Segmentos</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
+		<!-- sensores em sistemas automatizados -->
+		<section class="container my-3 my-md-5">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-6">
+					<h2>Sensores em Sistemas Automatizados</h2>
+					<p>
+						Os sensores em sistemas automatizados são responsáveis pela coleta de dados e monitoramento do
+						ambiente. É como se alguém estivesse dizendo ao computador o que está acontecendo com algum
+						ponto do ambiente, o tempo todo.
+					</p>
 				</div>
-			</section>
+			</div>
 
-			<!-- sensores em sistemas automatizados -->
-			<section class="container my-3 my-md-5">
-				<div class="row align-items-center">
-					<div class="col-12 col-md-6">
-						<h2>Sensores em Sistemas Automatizados</h2>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus minus. Vero quam sint illo quis cupiditate amet
-							magnam accusantium temporibus aliquam cumque ratione error at.
-						</p>
-					</div>
+			<div class="row justify-content-between g-3">
+				<div class="col-12 col-md-2 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+					<figure class="mb-3 h-50 d-flex justify-content-center align-itens-center">
+						<img src="./assets/img/fundeletroeletronica/sensor-temperatura.png"
+							class="img-fluid object-fit-contain mb-2" alt="">
+					</figure>
+					<h3 class="fs-4"><span class="hvj-text">Sensor de Temperatura</span></h3>
 				</div>
 
-				<div class="row justify-content-between g-3">
-					<div class="col-12 col-md-2 p-2 p-md-4 text-center text-light bg-grey rounded-4">
-						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
-						</figure>
-						<h3 class="fs-4">Item 1</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
-
-					<div class="col-12 col-md-2 p-2 p-md-4 text-center text-light bg-grey rounded-4">
-						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
-						</figure>
-						<h3 class="fs-4">Item 2</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
-
-					<div class="col-12 col-md-2 p-2 p-md-4 text-center text-light bg-grey rounded-4">
-						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
-						</figure>
-						<h3 class="fs-4">Item 3</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
-
-					<div class="col-12 col-md-2 p-2 p-md-4 text-center text-light bg-grey rounded-4">
-						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
-						</figure>
-						<h3 class="fs-4">Item 4</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
-
-					<div class="col-12 col-md-2 p-2 p-md-4 text-center text-light bg-grey rounded-4">
-						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
-						</figure>
-						<h3 class="fs-4">Item 5</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
+				<div class="col-12 col-md-2 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+					<figure class="mb-3 h-50 d-flex justify-content-center align-itens-center">
+						<img src="./assets/img/fundeletroeletronica/sensor-umidade.png"
+							class="img-fluid object-fit-contain mb-2" alt="">
+					</figure>
+					<h3 class="fs-4"><span class="hvj-text">Sensor de Umidade</span></h3>
 				</div>
-			</section>
 
-			<!-- arduinos -->
-			<section class="container my-3 my-md-5">
-				<div class="row align-items-center">
-					<div class="col-12 col-md-6">
-						<img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid" />
-					</div>
-					<div class="col-12 col-md-6">
-						<h2>O que é e como funciona um Arduíno?</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora possimus molestias itaque vero rem voluptas dicta
-							optio, et labore! Ut, quia atque aliquid eum officia aspernatur minus eligendi dolores. Reiciendis!
-						</p>
-					</div>
+				<div class="col-12 col-md-2 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+					<figure class="mb-3 h-50 d-flex justify-content-center align-itens-center">
+						<img src="./assets/img/fundeletroeletronica/sensor-luminosidade.png"
+							class="img-fluid object-fit-contain mb-2" alt="">
+					</figure>
+					<h3 class="fs-4"><span class="hvj-text">Sensor de Luminosidade</span></h3>
 				</div>
-				<div class="row">
-					<div class="col-12 col-md-6">
-						<h2 class="">Para que serve?</h2>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id, iste dolore,
-							illum possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet assumenda voluptates.
-						</p>
-					</div>
-					<div class="col-12 col-md-6">
-						<h2 class=""><span class="hvj-text fw-bold">Prós</span> e Contras</h2>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id, iste dolore,
-							illum possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet assumenda voluptates.
-						</p>
-					</div>
-				</div>
-			</section>
 
-			<section class="container my-3 my-md-5">
-				<div class="row justify-content-evenly g-3">
+				<div class="col-12 col-md-2 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+					<figure class="mb-3 h-50 d-flex justify-content-center align-itens-center">
+						<img src="./assets/img/fundeletroeletronica/sensor-giro.png"
+							class="img-fluid object-fit-contain mb-2" alt="">
+					</figure>
+					<h3 class="fs-4"><span class="hvj-text">Sensor de Giro</span></h3>
+				</div>
+
+				<div class="col-12 col-md-2 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+					<figure class="mb-3 h-50 d-flex justify-content-center align-itens-center">
+						<img src="./assets/img/fundeletroeletronica/sensor-movimento.png"
+							class="img-fluid object-fit-contain mb-2" alt="">
+					</figure>
+					<h3 class="fs-4"><span class="hvj-text">Sensor de Movimento</span></h3>
+				</div>
+			</div>
+		</section>
+
+		<!-- arduinos -->
+		<section class="container my-3 my-md-5">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-6">
+					<img src="./assets/img/fundeletroeletronica/arduino.png" alt="" class="img-fluid" />
+				</div>
+				<div class="col-12 col-md-6">
+					<h2>O que é e como funciona um Arduíno?</h2>
+					<p>
+						O Arduino é uma plataforma de prototipagem eletrônica que permite a criação de diversos projetos
+						e sistemas automatizados de maneira simples. Ele é composto por uma placa com um
+						microcontrolador que pode ser programada para interagir com sensores e atuar em dispositivos
+						como LEDs e motores. Utilizando a linguagem de programação C/C++, os usuários podem escrever
+						código para ler entradas (sensores) e controlar saídas (atuadores) com base em condições
+						definidas no programa.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<h2 class="">Para que serve?</h2>
+					<p>
+						O Arduino é usado em diversas aplicações, como automação residencial, robótica,
+						sistemas de monitoramento, controle de dispositivos e protótipos eletrônicos. Pode ser utilizado
+						para projetos que envolvem desde o simples controle de LEDs até sistemas complexos, oferecendo
+						uma solução prática para desenvolvedores e hobbyistas que querem criar dispositivos interativos
+						e inteligentes.
+					</p>
+				</div>
+				<div class="col-12 col-md-6">
+					<h2 class=""><span class="hvj-text fw-bold">Prós</span> e Contras</h2>
+					<p>
+						<span class="hvj-text">Prós:</span> O Arduino é fácil de aprender, acessível e ideal para
+						iniciantes em eletrônica e programação. Sua comunidade ativa oferece muitos recursos, tutoriais
+						e bibliotecas prontas, tornando o desenvolvimento de projetos mais rápido e simples.
+					</p>
+					<p><span class="hvj-text">Contras:</span> Embora seja versátil, o Arduino pode ter limitações em
+						termos de capacidade de processamento e memória, o que pode restringir o uso em projetos que
+						demandam grande desempenho.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="container my-3 my-md-5">
+			<div class="row justify-content-evenly g-3">
+				<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+					<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
+						<img src="./assets/img/fundeletroeletronica/cpp.png" class="img-fluid object-fit-contain w-50 mb-2" alt="">
+					</figure>
+					<h3 class="fs-4 hvj-text">Qual Linguagem é Usada?</h3>
+					<p>O Arduino é programado principalmente em C/C++ através do Arduino IDE. A plataforma oferece uma
+						versão simplificada da linguagem, com uma biblioteca que facilita a interação com os pinos de
+						entrada e saída./p>
+					</div>
+					
 					<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
 						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
+							<img src="./assets/img/fundeletroeletronica/pcbs.png" class="img-fluid object-fit-contain w-50 mb-2" alt="">
 						</figure>
-						<h3 class="fs-4">Qual Linguagem é Usada?</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
-
-					<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
-						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
-						</figure>
-						<h3 class="fs-4">Eletrônica Embarcada</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
+						<h3 class="fs-4 hvj-text">Eletrônica Embarcada</h3>
+					<p>Eletrônica embarcada é a integração de sistemas dentro de dispositivos para executar funções
+						específicas de forma autônoma. Esses sistemas combinam sensores e atuadores com software
+						programado, permitindo que carros, smartphones e equipamentos médicos realizem
+						tarefas  automatizadas. 
+					</p>
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<!-- saidas em circuitos integrados -->
-			<section class="container my-3 my-md-5">
-				<div class="row align-items-center">
-					<div class="col-12 col-md-6">
-						<h2>Saídas em Circuitos Integrados</h2>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus minus. Vero quam sint illo quis cupiditate amet
-							magnam accusantium temporibus aliquam cumque ratione error at.
-						</p>
-					</div>
+		<!-- saidas em circuitos integrados -->
+		<section class="container my-3 my-md-5">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-6">
+					<h2>Saídas em Circuitos Integrados</h2>
+					<p>
+						As saídas de circuitos integrados são interfaces que permitem controlar dispositivos externos. Elas podem ser digitais, enviando sinais binários (ligado/desligado), ou analógicas, fornecendo níveis variáveis de tensão para controle preciso de equipamentos.
+					</p>
 				</div>
+			</div>
 
-				<div class="row justify-content-evenly g-3">
-					<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
-						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
-						</figure>
-						<h3 class="fs-4">Saídas Digitais</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
-
-					<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
-						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
-						</figure>
-						<h3 class="fs-4">Saídas Analógicas</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
-				</div>
-			</section>
-
-			<section class="container my-3 my-md-5">
-				<div class="row align-items-center">
-					<div class="col-12 col-md-6">
-						<h2>Calculadoras de Eletroeletrônica</h2>
-						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, minus? Vero quam sint, illo quis cupiditate
-							amet magnam accusantium temporibus, aliquam, cumque ratione error at! Vero ab ullam pariatur ex?
-						</p>
-					</div>
+			<div class="row justify-content-evenly g-3">
+				<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+					<h3 class="fs-4 hvj-text">Saídas Digitais</h3>
+					<p>Controlam dispositivos como relés, LEDs e motores com sinais binários (1's e 0's)</p>
 				</div>
 
-				<div class="row g-4 mt-2">
-					<div class="col-12 col-md-6">
-						<div class="p-3 p-md-4 hvj-outline rounded-4">
-							<h3 class="fs-4 hvj-text">Lei de Ohm</h3>
-							<p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+					<h3 class="fs-4 hvj-text">Saídas Analógicas</h3>
+					<p>Fornecem sinais de tensão variável para controle gradual dos componentes.</p>
+				</div>
+			</div>
+		</section>
 
-							<div>
-								<span class="hvj-text small d-block mb-2">Corrente × Resistência = Tensão</span>
-								<div class="d-flex align-items-center gap-2">
-									<input type="number" class="form-control" id="input1a" placeholder="I (A)" />
-									<i class="fa-solid fa-xmark hvj-text"></i>
-									<input type="number" class="form-control" id="input1b" placeholder="R (Ω)" />
-									<i class="fa-solid fa-equals hvj-text"></i>
-									<span class="hvj-text fw-bold text-nowrap" id="resTensao">0 V</span>
-								</div>
+		<section class="container my-3 my-md-5">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-6">
+					<h2>Entradas em Circuitos Integrados</h2>
+					<p>
+						As entradas de circuitos integrados permitem que o microcontrolador receba informações do ambiente externo através de sensores e dispositivos. Assim como as saídas, elas podem ser digitais, detectando apenas estados ligado/desligado, ou analógicas, medindo valores variáveis de tensão.
+					</p>
+				</div>
+			</div>
+
+			<div class="row justify-content-evenly g-3">
+				<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+					<h3 class="fs-4 hvj-text">Entradas Digitais</h3>
+					<p>Detecta o estado binário (HIGH / LOW) de botões, chaves e sensores digitais para tomada de decisões no programa.</p>
+				</div>
+
+				<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+					<h3 class="fs-4 hvj-text">Entradas Analógicas</h3>
+					<p>Le valores variáveis de tensão vindos de sensores analógicos, convertendo-os em dados para processamento.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="container my-3 my-md-5">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-6">
+					<h2>Calculadoras de Eletroeletrônica</h2>
+				</div>
+			</div>
+
+			<div class="row g-4 mt-2">
+				<div class="col-12 col-md-6">
+					<div class="p-3 p-md-4 hvj-outline rounded-4">
+						<h3 class="fs-4 hvj-text">Lei de Ohm</h3>
+						<p class="mb-4">Calcula a relação entre tensão, corrente e resistência em um circuito elétrico através das três fórmulas fundamentais.</p>
+
+						<div>
+							<span class="hvj-text small d-block mb-2">Corrente × Resistência = Tensão</span>
+							<div class="d-flex align-items-center gap-2">
+								<input type="number" class="form-control" id="input1a" placeholder="I (A)" />
+								<i class="fa-solid fa-xmark hvj-text"></i>
+								<input type="number" class="form-control" id="input1b" placeholder="R (Ω)" />
+								<i class="fa-solid fa-equals hvj-text"></i>
+								<span class="hvj-text fw-bold text-nowrap" id="resTensao">0 V</span>
 							</div>
+						</div>
 
-							<div>
-								<span class="hvj-text small d-block mb-2">Tensão ÷ Resistência = Corrente</span>
-								<div class="d-flex align-items-center gap-2">
-									<input type="number" class="form-control" id="input2a" placeholder="V (V)" />
-									<i class="fa-solid fa-divide hvj-text"></i>
-									<input type="number" class="form-control" id="input2b" placeholder="R (Ω)" />
-									<i class="fa-solid fa-equals hvj-text"></i>
-									<span class="hvj-text fw-bold text-nowrap" id="resCorrente">0 A</span>
-								</div>
+						<div>
+							<span class="hvj-text small d-block mb-2">Tensão ÷ Resistência = Corrente</span>
+							<div class="d-flex align-items-center gap-2">
+								<input type="number" class="form-control" id="input2a" placeholder="V (V)" />
+								<i class="fa-solid fa-divide hvj-text"></i>
+								<input type="number" class="form-control" id="input2b" placeholder="R (Ω)" />
+								<i class="fa-solid fa-equals hvj-text"></i>
+								<span class="hvj-text fw-bold text-nowrap" id="resCorrente">0 A</span>
 							</div>
+						</div>
 
-							<div>
-								<span class="hvj-text small d-block mb-2">Tensão ÷ Corrente = Resistência</span>
-								<div class="d-flex align-items-center gap-2">
-									<input type="number" class="form-control" id="input3a" placeholder="V (V)" />
-									<i class="fa-solid fa-divide hvj-text"></i>
-									<input type="number" class="form-control" id="input3b" placeholder="I (A)" />
-									<i class="fa-solid fa-equals hvj-text"></i>
-									<span class="hvj-text fw-bold text-nowrap" id="resResistencia">0 Ω</span>
-								</div>
+						<div>
+							<span class="hvj-text small d-block mb-2">Tensão ÷ Corrente = Resistência</span>
+							<div class="d-flex align-items-center gap-2">
+								<input type="number" class="form-control" id="input3a" placeholder="V (V)" />
+								<i class="fa-solid fa-divide hvj-text"></i>
+								<input type="number" class="form-control" id="input3b" placeholder="I (A)" />
+								<i class="fa-solid fa-equals hvj-text"></i>
+								<span class="hvj-text fw-bold text-nowrap" id="resResistencia">0 Ω</span>
 							</div>
+						</div>
 
-							<button id="btnCalc1" class="btn hvj-outline hvj-text rounded-pill w-100 mt-3">Calcular</button>
+						<button id="btnCalc1" class="btn hvj-outline hvj-text rounded-pill w-100 mt-3">Calcular</button>
 
-							<details class="w-100 mt-3">
-								<summary class="hvj-text fw-bold cursor-pointer">Ver Código</summary>
-								<div class="mt-2">
-									<pre><code class="small">// ohm.js - cálculos da Lei de Ohm
+						<details class="w-100 mt-3">
+							<summary class="hvj-text fw-bold cursor-pointer">Ver Código</summary>
+							<div class="mt-2">
+								<pre><code class="small">// ohm.js - cálculos da Lei de Ohm
 let btnCalc1 = document.getElementById('btnCalc1');
 
 let input1a = document.getElementById('input1a');
@@ -378,57 +397,57 @@ btnCalc1.addEventListener('click', () => {
     const resistencia = Number(input3a.value) / Number(input3b.value);
     resResistencia.innerHTML = filtrarNaN(Number(resistencia.toFixed(2))) + ' Ω';
 });</code></pre>
-								</div>
-							</details>
-						</div>
+							</div>
+						</details>
 					</div>
+				</div>
 
-					<div class="col-12 col-md-6">
-						<div class="p-3 p-md-4 hvj-outline rounded-4">
-							<h3 class="fs-4 hvj-text">Cálculo de Potência</h3>
-							<p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<div class="col-12 col-md-6">
+					<div class="p-3 p-md-4 hvj-outline rounded-4">
+						<h3 class="fs-4 hvj-text">Cálculo de Potência</h3>
+						<p class="mb-4">Determina a potência elétrica consumida ou dissipada por componentes utilizando diferentes combinações de tensão, corrente e resistência.</p>
 
-							<div>
-								<span class="hvj-text small d-block mb-2">Tensão × Corrente = Potência</span>
-								<div class="d-flex align-items-center gap-2">
-									<input type="number" class="form-control" id="input4a" placeholder="V (V)" />
-									<i class="fa-solid fa-xmark hvj-text"></i>
-									<input type="number" class="form-control" id="input4b" placeholder="I (A)" />
-									<i class="fa-solid fa-equals hvj-text"></i>
-									<span class="hvj-text fw-bold text-nowrap" id="resPotencia1">0 W</span>
-								</div>
+						<div>
+							<span class="hvj-text small d-block mb-2">Tensão × Corrente = Potência</span>
+							<div class="d-flex align-items-center gap-2">
+								<input type="number" class="form-control" id="input4a" placeholder="V (V)" />
+								<i class="fa-solid fa-xmark hvj-text"></i>
+								<input type="number" class="form-control" id="input4b" placeholder="I (A)" />
+								<i class="fa-solid fa-equals hvj-text"></i>
+								<span class="hvj-text fw-bold text-nowrap" id="resPotencia1">0 W</span>
 							</div>
+						</div>
 
-							<div>
-								<span class="hvj-text small d-block mb-2">Corrente² × Resistência = Potência</span>
-								<div class="d-flex align-items-center gap-2">
-									<input type="number" class="form-control" id="input5a" placeholder="I (A)" />
-									<sup class="hvj-text">2</sup>
-									<i class="fa-solid fa-xmark hvj-text"></i>
-									<input type="number" class="form-control" id="input5b" placeholder="R (Ω)" />
-									<i class="fa-solid fa-equals hvj-text"></i>
-									<span class="hvj-text fw-bold text-nowrap" id="resPotencia2">0 W</span>
-								</div>
+						<div>
+							<span class="hvj-text small d-block mb-2">Corrente² × Resistência = Potência</span>
+							<div class="d-flex align-items-center gap-2">
+								<input type="number" class="form-control" id="input5a" placeholder="I (A)" />
+								<sup class="hvj-text">2</sup>
+								<i class="fa-solid fa-xmark hvj-text"></i>
+								<input type="number" class="form-control" id="input5b" placeholder="R (Ω)" />
+								<i class="fa-solid fa-equals hvj-text"></i>
+								<span class="hvj-text fw-bold text-nowrap" id="resPotencia2">0 W</span>
 							</div>
+						</div>
 
-							<div>
-								<span class="hvj-text small d-block mb-2">Tensão² ÷ Resistência = Potência</span>
-								<div class="d-flex align-items-center gap-2">
-									<input type="number" class="form-control" id="input6a" placeholder="V (V)" />
-									<sup class="hvj-text">2</sup>
-									<i class="fa-solid fa-divide hvj-text"></i>
-									<input type="number" class="form-control" id="input6b" placeholder="R (Ω)" />
-									<i class="fa-solid fa-equals hvj-text"></i>
-									<span class="hvj-text fw-bold text-nowrap" id="resPotencia3">0 W</span>
-								</div>
+						<div>
+							<span class="hvj-text small d-block mb-2">Tensão² ÷ Resistência = Potência</span>
+							<div class="d-flex align-items-center gap-2">
+								<input type="number" class="form-control" id="input6a" placeholder="V (V)" />
+								<sup class="hvj-text">2</sup>
+								<i class="fa-solid fa-divide hvj-text"></i>
+								<input type="number" class="form-control" id="input6b" placeholder="R (Ω)" />
+								<i class="fa-solid fa-equals hvj-text"></i>
+								<span class="hvj-text fw-bold text-nowrap" id="resPotencia3">0 W</span>
 							</div>
+						</div>
 
-							<button id="btnCalc2" class="btn hvj-outline hvj-text rounded-pill w-100 mt-3">Calcular</button>
+						<button id="btnCalc2" class="btn hvj-outline hvj-text rounded-pill w-100 mt-3">Calcular</button>
 
-							<details class="w-100 mt-3">
-								<summary class="hvj-text fw-bold cursor-pointer">Ver Código</summary>
-								<div class="mt-2">
-									<pre><code class="small">// potencia.js - cálculos de potência
+						<details class="w-100 mt-3">
+							<summary class="hvj-text fw-bold cursor-pointer">Ver Código</summary>
+							<div class="mt-2">
+								<pre><code class="small">// potencia.js - cálculos de potência
 let btnCalc2 = document.getElementById('btnCalc2');
 
 let input4a = document.getElementById('input4a');
@@ -463,50 +482,80 @@ btnCalc2.addEventListener('click', () => {
     const potencia3 = (Number(input6a.value) ** 2) / Number(input6b.value);
     if (resPotencia3) resPotencia3.innerHTML = filtrarNaN(Number(potencia3.toFixed(2))) + ' W';
 });</code></pre>
-								</div>
-							</details>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- leitura de dados s/analogica acionando s/digitais -->
-			<section class="container my-3 my-md-5">
-				<div class="row align-items-center">
-					<div class="col-12">
-						<img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid" />
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-12 col-md-6 p-3 rounded-4">
-						<h2>Leitura de dados de um sensor analógico, acionando saídas digitais</h2>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur voluptates deleniti, hic id, iste dolore,
-							illum possimus quae maxime quod adipisci culpa quos officia. Quod aspernatur eveniet assumenda voluptates.
-						</p>
-					</div>
-					<div class="col-12 col-md-6 d-flex align-items-start">
-						<details class="w-100 p-3 mb-3 mb-md-4 hvj-outline rounded-4">
-							<summary class="accordion-button fs-4 hvj-text">
-								<div class="d-flex w-100 align-items-center justify-content-between">
-									<h2 class="fs-4 hvj-text">Ver Código</h2>
-									<i class="fas fa-chevron-down"></i>
-								</div>
-							</summary>
-							<div class="accordion-body">
-								<pre><code>// colocar codigo aqui</code></pre>
 							</div>
 						</details>
 					</div>
 				</div>
-			</section>
-		</main>
-
-		<footer class="bg-blur p-2 p-md-3">
-			<div class="d-flex align-items-center justify-content-evenly">
-				<span class="d-none d-md-block"></span>
-				<p class="m-0 hvj-text">2025 &copy; Henrique Justus</p>
 			</div>
-		</footer>
-	</body>
+		</section>
+
+		<!-- leitura de dados s/analogica acionando s/digitais -->
+		<section class="container my-3 my-md-5">
+			<div class="row align-items-center">
+				<div class="col-12">
+					<img src="./assets/img/hvj-logo.svg" alt="" class="img-fluid" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-6 p-3 rounded-4">
+					<h2>Leitura de dados de um sensor analógico, acionando saídas digitais</h2>
+					<p>
+						O código lê a saída do potênciometro e aciona as saídas digitais correspondentes aos LEDs dependendo do nível.
+					</p>
+					<img src="./assets/img/fundeletroeletronica/diagnivelpotenciomentro.png" alt="" class="img-fluid rounded-4" />
+				</div>
+				<div class="col-12 col-md-6 d-flex align-items-start">
+					<details class="w-100 p-3 mb-3 mb-md-4 hvj-outline rounded-4 ">
+						<summary class="accordion-button fs-4 hvj-text" >
+							<div class="d-flex w-100 align-items-center justify-content-between">
+								<h2 class="fs-4 hvj-text">Ver Código</h2>
+								<i class="fas fa-chevron-down"></i>
+							</div>
+						</summary>
+						<div class="accordion-body">
+							<pre><code>// C++ code
+
+void setup()
+{
+  pinMode(A0, INPUT);
+  pinMode(2, OUTPUT);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+}
+
+void loop()
+{
+  Serial.println(analogRead(A0));
+  if (analogRead(A0) <= 921) {
+    digitalWrite(2, HIGH);
+    digitalWrite(3, LOW);
+    digitalWrite(4, LOW);
+  }
+  if (analogRead(A0) <= 716) {
+    digitalWrite(2, LOW);
+    digitalWrite(3, HIGH);
+    digitalWrite(4, LOW);
+  }
+  if (analogRead(A0) <= 307) {
+    digitalWrite(2, LOW);
+    digitalWrite(3, LOW);
+    digitalWrite(4, HIGH);
+  }
+  delay(10);
+}</code></pre>
+						</div>
+					</details>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="bg-blur p-2 p-md-3">
+		<div class="d-flex align-items-center justify-content-evenly">
+			<span class="d-none d-md-block"></span>
+			<p class="m-0 hvj-text">2025 &copy; Henrique Justus</p>
+		</div>
+	</footer>
+</body>
+
 </html>
