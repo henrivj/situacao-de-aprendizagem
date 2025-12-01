@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/scripts-logica-prog/1ordenarCresDec.js" defer></script>
-    <script src="./assets/js/scripts-logica-prog/2bubbleSort.js" defer></script>
-    <script src="./assets/js/scripts-logica-prog/3somarArr.js" defer></script>
-    <script src="./assets/js/scripts-logica-prog/4matrizFixa.js" defer></script>
-    <script src="./assets/js/scripts-logica-prog/5calcularIMC.js" defer></script>
-    <script src="./assets/js/scripts-logica-prog/6conversorTemperatura.js" defer></script>
-    <script src="./assets/js/scripts-logica-prog/7buscaLinear.js" defer></script>
+
+    <script src="./assets/js/scripts-logica-prog/1ordenarCresDec.js" async></script>
+    <script src="./assets/js/scripts-logica-prog/2bubbleSort.js" async></script>
+    <script src="./assets/js/scripts-logica-prog/3somarArr.js" async></script>
+    <script src="./assets/js/scripts-logica-prog/4matrizFixa.js" async></script>
+    <script src="./assets/js/scripts-logica-prog/5calcularIMC.js" async></script>
+    <script src="./assets/js/scripts-logica-prog/6conversorTemperatura.js" async></script>
+    <script src="./assets/js/scripts-logica-prog/7buscaLinear.js" async></script>
 
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -63,8 +64,7 @@
 
     <main>
         <section class="container d-flex vh-75 align-items-center justify-content-between">
-            <h1 class="display-3 fw-bold hvj-text">Lógica de Programação</h1>
-            <img src="./assets/img/hvj-logo.svg" alt="" class="d-none d-md-block img-fluid w-50">
+            <h1 class="col-12 col-md-6 display-3 fw-bold hvj-text">Lógica de Programação</h1>
         </section>
 
         <!-- linguagens -->
@@ -84,46 +84,58 @@
             </div>
 
             <div class="row justify-content-evenly g-3">
-                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">C++</h2>
+                <div class="col-12 col-md-3 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+                    <figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
+                        <img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
+                    </figure>
+                    <h3 class="fs-4">C++</h3>
                     <p>Uma linguagem com alto desempenho, amplamente usada no desenvolvimento de sistemas, jogos
                         e softwares que precisam de performance avançada.</p>
                 </div>
 
-                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">JavaScript</h2>
+                <div class="col-12 col-md-3 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+                    <figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
+                        <img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
+                    </figure>
+                    <h3 class="fs-4">JavaScript</h3>
                     <p>Usada principalmente no desenvolvimento web para criar páginas interativas e dinâmicas, sendo a
                         linguagem principal para o front-end e também muito usada no back-end com Node.js.</p>
                 </div>
 
-                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Java</h2>
+                <div class="col-12 col-md-3 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+                    <figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
+                        <img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
+                    </figure>
+                    <h3 class="fs-4">Java</h3>
                     <p>Uma linguagem robusta e de plataforma independente, conhecida por sua segurança e portabilidade,
                         amplamente utilizada em sistemas corporativos, aplicações móveis e servidores.</p>
                 </div>
             </div>
 
-            <div class="row justify-content-evenly g-3 mt-0 mt-md-3">
-                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Python</h2>
+                <div class="row justify-content-evenly g-3 mt-0 mt-md-3">
+                <div class="col-12 col-md-3 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+                    <figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
+                        <img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
+                    </figure>
+                    <h3 class="fs-4">Python</h3>
                     <p>Uma linguagem de programação simples e versátil, popular para automação, análise de dados e
                         inteligência artificial e desenvolvimento web.</p>
                 </div>
 
-                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">PHP</h2>
+                <div class="col-12 col-md-3 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+                    <figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
+                        <img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
+                    </figure>
+                    <h3 class="fs-4">PHP</h3>
                     <p>Usada principalmente no desenvolvimento web, especialmente para criar sites
                         dinâmicos e interativos, sendo a base de plataformas como WordPress.</p>
                 </div>
 
-                <div class="col-12 col-md-3 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">Assembly</h2>
+                <div class="col-12 col-md-3 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+                    <figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
+                        <img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
+                    </figure>
+                    <h3 class="fs-4">Assembly</h3>
                     <p>Uma linguagem de baixo nível que é quase diretamente compreendida pela máquina, utilizada para
                         desenvolvimento de sistemas onde o controle de hardware é necessário.</p>
                 </div>
@@ -154,17 +166,21 @@
         <!-- html e css -->
         <section class="container my-3 my-md-5">
             <div class="row justify-content-evenly g-3">
-                <div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">HTML</h2>
+                <div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+                    <figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
+                        <img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
+                    </figure>
+                    <h3 class="fs-4">HTML</h3>
                     <p> O HTML (HyperText Markup Language) é uma linguagem de marcação usada para estruturar o conteúdo
                         da web. Ele define a disposição e organização dos elementos em uma página, como cabeçalhos,
                         parágrafos, imagens e links. O HTML cria a estrutura básica para o conteúdo.</p>
                 </div>
 
-                <div class="col-12 col-md-4 px-2 px-md-4 text-center text-light bg-grey rounded-4">
-                    <img src="./assets/img/hvj-logo.svg" class="img-fluid w-50 mb-2">
-                    <h2 class="fs-4">CSS</h2>
+                <div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+                    <figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
+                        <img src="./assets/img/hvj-logo.svg" class="img-fluid object-fit-contain w-50 mb-2" alt="">
+                    </figure>
+                    <h3 class="fs-4">CSS</h3>
                     <p>O CSS (Cascading Style Sheets) é a linguagem responsável por dar estilo ao conteúdo definido pelo
                         HTML. Com o CSS, é possível aplicar cores, fontes, tamanhos, margens e outros estilos aos
                         elementos da página. Enquanto o HTML organiza o conteúdo, o CSS o torna visualmente atraente e
@@ -271,7 +287,7 @@
                                         20 em ordem crescente ou decrescente usando o método sort().</p>
                                 </div>
                                 <div class="col-12 col-md-6">
-                                    <details class="w-100 p-3 hvj-outline rounded-4">
+                                    <details class="w-100 p-3 mb-3 mb-md-4 hvj-outline rounded-4">
                                         <summary class="accordion-button fs-4 hvj-text">
                                             <div class="d-flex w-100 align-items-center justify-content-between">
                                                 <h2 class="fs-4 hvj-text m-0">Ver Código</h2>
@@ -350,7 +366,7 @@ let resArrNumeros1 = document.getElementById('resArrNumeros1')
                                         até o array estar ordenado.</p>
                                 </div>
                                 <div class="col-12 col-md-6">
-                                    <details class="w-100 p-3 hvj-outline rounded-4">
+                                    <details class="w-100 p-3 mb-3 mb-md-4 hvj-outline rounded-4">
                                         <summary class="accordion-button fs-4 hvj-text">
                                             <div class="d-flex w-100 align-items-center justify-content-between">
                                                 <h2 class="fs-4 hvj-text m-0">Ver Código</h2>
@@ -433,7 +449,7 @@ btnOrdenar2.addEventListener('click', () => {
                                         220 e calcula a soma de todos os valores usando um loop.</p>
                                 </div>
                                 <div class="col-12 col-md-6">
-                                    <details class="w-100 p-3 hvj-outline rounded-4">
+                                    <details class="w-100 p-3 mb-3 mb-md-4 hvj-outline rounded-4">
                                         <summary class="accordion-button fs-4 hvj-text">
                                             <div class="d-flex w-100 align-items-center justify-content-between">
                                                 <h2 class="fs-4 hvj-text m-0">Ver Código</h2>
@@ -506,7 +522,7 @@ if (btnCriarArray3 && btnSomar3) {
                                         colunas.</p>
                                 </div>
                                 <div class="col-12 col-md-6">
-                                    <details class="w-100 p-3 hvj-outline rounded-4">
+                                    <details class="w-100 p-3 mb-3 mb-md-4 hvj-outline rounded-4">
                                         <summary class="accordion-button fs-4 hvj-text">
                                             <div class="d-flex w-100 align-items-center justify-content-between">
                                                 <h2 class="fs-4 hvj-text m-0">Ver Código</h2>
@@ -597,7 +613,7 @@ btnGerarMatriz4.addEventListener('click', () => {
                                         usando as fórmulas: °C = (°F - 32) × 5/9 e °F = (°C × 9/5) + 32.</p>
                                 </div>
                                 <div class="col-12 col-md-6">
-                                    <details class="w-100 p-3 hvj-outline rounded-4">
+                                    <details class="w-100 p-3 mb-3 mb-md-4 hvj-outline rounded-4">
                                         <summary class="accordion-button fs-4 hvj-text">
                                             <div class="d-flex w-100 align-items-center justify-content-between">
                                                 <h2 class="fs-4 hvj-text m-0">Ver Código</h2>
@@ -650,7 +666,7 @@ if (inputTemp5 && switchConversao5 && btnConverter5) {
                                             class="d-flex gap-2 flex-wrap mb-2 justify-content-between align-items-end">
                                             <button class="btn btn-sm hvj-outline hvj-text" id="btnCriarArray6">Criar
                                                 Array</button>
-                                            <div class="d-flex gap-2" style="max-width: 300px;">
+                                            <div class="d-flex gap-2">
                                                 <input type="number" class="form-control form-control-sm"
                                                     id="inputBusca6" placeholder="Número para buscar">
                                                 <button class="btn btn-sm hvj-outline hvj-text"
@@ -675,7 +691,7 @@ if (inputTemp5 && switchConversao5 && btnConverter5) {
                                         array.</p>
                                 </div>
                                 <div class="col-12 col-md-6">
-                                    <details class="w-100 p-3 hvj-outline rounded-4">
+                                    <details class="w-100 p-3 mb-3 mb-md-4 hvj-outline rounded-4">
                                         <summary class="accordion-button fs-4 hvj-text">
                                             <div class="d-flex w-100 align-items-center justify-content-between">
                                                 <h2 class="fs-4 hvj-text m-0">Ver Código</h2>
@@ -775,7 +791,7 @@ if (btnCriarArray6 && btnBuscar6) {
                                     </p>
                                 </div>
                                 <div class="col-12 col-md-6">
-                                    <details class="w-100 p-3 hvj-outline rounded-4">
+                                    <details class="w-100 p-3 mb-3 mb-md-4 hvj-outline rounded-4">
                                         <summary class="accordion-button fs-4 hvj-text">
                                             <div class="d-flex w-100 align-items-center justify-content-between">
                                                 <h2 class="fs-4 hvj-text m-0">Ver Código</h2>
