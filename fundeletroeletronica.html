@@ -240,26 +240,24 @@
 
 		<section class="container my-3 my-md-5">
 			<div class="row justify-content-evenly g-3">
-				<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
-					<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-						<img src="./assets/img/fundeletroeletronica/cpp.png" class="img-fluid object-fit-contain w-50 mb-2" alt="">
-					</figure>
-					<h3 class="fs-4 hvj-text">Qual Linguagem é Usada?</h3>
-					<p>O Arduino é programado principalmente em C/C++ através do Arduino IDE. A plataforma oferece uma
-						versão simplificada da linguagem, com uma biblioteca que facilita a interação com os pinos de
-						entrada e saída./p>
-					</div>
-					
-					<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
-						<figure class="mb-3 h-25 d-flex justify-content-center align-itens-center">
-							<img src="./assets/img/fundeletroeletronica/pcbs.png" class="img-fluid object-fit-contain w-50 mb-2" alt="">
-						</figure>
-						<h3 class="fs-4 hvj-text">Eletrônica Embarcada</h3>
-					<p>Eletrônica embarcada é a integração de sistemas dentro de dispositivos para executar funções
-						específicas de forma autônoma. Esses sistemas combinam sensores e atuadores com software
-						programado, permitindo que carros, smartphones e equipamentos médicos realizem
-						tarefas  automatizadas. 
+				<div class="col-12 col-md-5 p-2 p-md-4 text-center text-light bg-grey rounded-4 mx-2">
+					<h3 class="fs-4 hvj-text">Arduino com Request/Response</h3>
+					<p>
+						O vídeo mostra um Arduino recebendo instruções de uma API feita com Express, ligando e
+						desligando um LED conforme o input enviado pelo usuário.
 					</p>
+					<video src="./assets/video/ledarduino1.mp4" controls muted
+						class="rounded-3 object-fit-cover"></video>
+				</div>
+
+				<div class="col-12 col-md-5 p-2 p-md-4 text-center text-light bg-grey rounded-4">
+					<h3 class="fs-4 hvj-text">Arduino com Interface Gráfica</h3>
+					<p>
+						Neste exemplo, um site simples é utilizado para enviar requests, permitindo que um
+						clique no botão da página ligue ou desligue o LED no Arduino.
+					</p>
+					<video src="./assets/video/ledarduino2.mp4" controls muted
+						class="rounded-3 object-fit-cover"></video>
 				</div>
 			</div>
 		</section>
@@ -270,7 +268,9 @@
 				<div class="col-12 col-md-6">
 					<h2>Saídas em Circuitos Integrados</h2>
 					<p>
-						As saídas de circuitos integrados são interfaces que permitem controlar dispositivos externos. Elas podem ser digitais, enviando sinais binários (ligado/desligado), ou analógicas, fornecendo níveis variáveis de tensão para controle preciso de equipamentos.
+						As saídas de circuitos integrados são interfaces que permitem controlar dispositivos externos.
+						Elas podem ser digitais, enviando sinais binários (ligado/desligado), ou analógicas, fornecendo
+						níveis variáveis de tensão para controle preciso de equipamentos.
 					</p>
 				</div>
 			</div>
@@ -293,7 +293,10 @@
 				<div class="col-12 col-md-6">
 					<h2>Entradas em Circuitos Integrados</h2>
 					<p>
-						As entradas de circuitos integrados permitem que o microcontrolador receba informações do ambiente externo através de sensores e dispositivos. Assim como as saídas, elas podem ser digitais, detectando apenas estados ligado/desligado, ou analógicas, medindo valores variáveis de tensão.
+						As entradas de circuitos integrados permitem que o microcontrolador receba informações do
+						ambiente externo através de sensores e dispositivos. Assim como as saídas, elas podem ser
+						digitais, detectando apenas estados ligado/desligado, ou analógicas, medindo valores variáveis
+						de tensão.
 					</p>
 				</div>
 			</div>
@@ -301,12 +304,14 @@
 			<div class="row justify-content-evenly g-3">
 				<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
 					<h3 class="fs-4 hvj-text">Entradas Digitais</h3>
-					<p>Detecta o estado binário (HIGH / LOW) de botões, chaves e sensores digitais para tomada de decisões no programa.</p>
+					<p>Detecta o estado binário (HIGH / LOW) de botões, chaves e sensores digitais para tomada de
+						decisões no programa.</p>
 				</div>
 
 				<div class="col-12 col-md-4 p-2 p-md-4 text-center text-light bg-grey rounded-4">
 					<h3 class="fs-4 hvj-text">Entradas Analógicas</h3>
-					<p>Le valores variáveis de tensão vindos de sensores analógicos, convertendo-os em dados para processamento.</p>
+					<p>Le valores variáveis de tensão vindos de sensores analógicos, convertendo-os em dados para
+						processamento.</p>
 				</div>
 			</div>
 		</section>
@@ -322,7 +327,8 @@
 				<div class="col-12 col-md-6">
 					<div class="p-3 p-md-4 hvj-outline rounded-4">
 						<h3 class="fs-4 hvj-text">Lei de Ohm</h3>
-						<p class="mb-4">Calcula a relação entre tensão, corrente e resistência em um circuito elétrico através das três fórmulas fundamentais.</p>
+						<p class="mb-4">Calcula a relação entre tensão, corrente e resistência em um circuito elétrico
+							através das três fórmulas fundamentais.</p>
 
 						<div>
 							<span class="hvj-text small d-block mb-2">Corrente × Resistência = Tensão</span>
@@ -405,7 +411,8 @@ btnCalc1.addEventListener('click', () => {
 				<div class="col-12 col-md-6">
 					<div class="p-3 p-md-4 hvj-outline rounded-4">
 						<h3 class="fs-4 hvj-text">Cálculo de Potência</h3>
-						<p class="mb-4">Determina a potência elétrica consumida ou dissipada por componentes utilizando diferentes combinações de tensão, corrente e resistência.</p>
+						<p class="mb-4">Determina a potência elétrica consumida ou dissipada por componentes utilizando
+							diferentes combinações de tensão, corrente e resistência.</p>
 
 						<div>
 							<span class="hvj-text small d-block mb-2">Tensão × Corrente = Potência</span>
@@ -495,13 +502,15 @@ btnCalc2.addEventListener('click', () => {
 				<div class="col-12 col-md-6 p-3 rounded-4">
 					<h2>Leitura de dados de um sensor analógico, acionando saídas digitais</h2>
 					<p>
-						O código lê a saída do potênciometro e aciona as saídas digitais correspondentes aos LEDs dependendo do nível.
+						O código lê a saída do potênciometro e aciona as saídas digitais correspondentes aos LEDs
+						dependendo do nível.
 					</p>
-					<img src="./assets/img/fundeletroeletronica/diagnivelpotenciomentro.png" alt="" class="img-fluid rounded-4" />
+					<img src="./assets/img/fundeletroeletronica/diagnivelpotenciomentro.png" alt=""
+						class="img-fluid rounded-4" />
 				</div>
 				<div class="col-12 col-md-6 d-flex align-items-start">
 					<details class="w-100 p-3 mb-3 mb-md-4 hvj-outline rounded-4 ">
-						<summary class="accordion-button fs-4 hvj-text" >
+						<summary class="accordion-button fs-4 hvj-text">
 							<div class="d-flex w-100 align-items-center justify-content-between">
 								<h2 class="fs-4 hvj-text">Ver Código</h2>
 								<i class="fas fa-chevron-down"></i>
