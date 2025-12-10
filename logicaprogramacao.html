@@ -302,36 +302,36 @@ let btnOrdenar1 = document.getElementById('btnOrdenar1')
 let resArrOrdenado1 = document.getElementById('resArrOrdenado1')
 let resArrNumeros1 = document.getElementById('resArrNumeros1')
 
-    let arrNumeros1 = []
+let arrNumeros1 = []
 
-    function gerarArrayAleatorio1() {
-        let arr = []
-        for (let i = 0; i < 10; i++) {
-            arr.push(Math.floor(Math.random() * 20) + 1)
-        }
-        return arr
+function gerarArrayAleatorio1() {
+    let arr = []
+    for (let i = 0; i < 10; i++) {
+        arr.push(Math.floor(Math.random() * 20) + 1)
+    }
+    return arr
+}
+
+btnCriarArray1.addEventListener('click', () => {
+    arrNumeros1 = gerarArrayAleatorio1()
+    resArrNumeros1.innerText = arrNumeros1.join(', ')
+    resArrOrdenado1.innerText = 'Clique em "Ordenar" após criar o array'
+})
+
+btnOrdenar1.addEventListener('click', () => {
+    if (!arrNumeros1.length) {
+        resArrOrdenado1.innerText = 'Primeiro crie um array.'
+        return
     }
 
-    btnCriarArray1.addEventListener('click', () => {
-        arrNumeros1 = gerarArrayAleatorio1()
-        resArrNumeros1.innerText = arrNumeros1.join(', ')
-        resArrOrdenado1.innerText = 'Clique em "Ordenar" após criar o array'
-    })
+    let arrOrdenado1 = arrNumeros1.sort((a, b) => a - b)
 
-    btnOrdenar1.addEventListener('click', () => {
-        if (!arrNumeros1.length) {
-            resArrOrdenado1.innerText = 'Primeiro crie um array.'
-            return
-        }
+    if (!switchCrescente1.checked) {
+        arrOrdenado1.reverse()
+    }
 
-        let arrOrdenado = arrOrdenado.sort((a, b) => a - b)
-
-        if (!switchCrescente1.checked) {
-            arrOrdenado1.reverse()
-        }
-
-        resArrOrdenado1.innerText = arrOrdenado.join(', ')
-    })</code></pre>
+    resArrOrdenado1.innerText = arrOrdenado1.join(', ')
+})</code></pre>
                                         </div>
                                     </details>
                                 </div>
@@ -464,41 +464,39 @@ let btnSomar3 = document.getElementById('btnSomar3')
 let resArrNumeros3 = document.getElementById('resArrNumeros3')
 let resSoma3 = document.getElementById('resSoma3')
 
-if (btnCriarArray3 && btnSomar3) {
-    let arrNumeros3 = []
+let arrNumeros3 = []
 
-    function gerarArrayAleatorio3() {
-        let arr = []
-        for (let i = 0; i < 10; i++) {
-            arr.push(Math.floor(Math.random() * 220) + 1)
-        }
-        return arr
+function gerarArrayAleatorio3() {
+    let arr = []
+    for (let i = 0; i < 10; i++) {
+        arr.push(Math.floor(Math.random() * 220) + 1)
+    }
+    return arr
+}
+
+function somarArray3(arr) {
+    let soma = 0
+    for (let i = 0; i < arr.length; i++) {
+        soma += arr[i]
+    }
+    return soma
+}
+
+btnCriarArray3.addEventListener('click', () => {
+    arrNumeros3 = gerarArrayAleatorio3()
+    resArrNumeros3.innerText = arrNumeros3.join(', ')
+    resSoma3.innerText = 'Clique em "Somar" para ver o resultado'
+})
+
+btnSomar3.addEventListener('click', () => {
+    if (!arrNumeros3.length) {
+        resSoma3.innerText = 'Primeiro crie um array.'
+        return
     }
 
-    function somarArray3(arr) {
-        let soma = 0
-        for (let i = 0; i < arr.length; i++) {
-            soma += arr[i]
-        }
-        return soma
-    }
-
-    btnCriarArray3.addEventListener('click', () => {
-        arrNumeros3 = gerarArrayAleatorio3()
-        resArrNumeros3.innerText = arrNumeros3.join(', ')
-        resSoma3.innerText = 'Clique em "Somar" para ver o resultado'
-    })
-
-    btnSomar3.addEventListener('click', () => {
-        if (!arrNumeros3.length) {
-            resSoma3.innerText = 'Primeiro crie um array.'
-            return
-        }
-
-        let soma = somarArray3(arrNumeros3)
-        resSoma3.innerText = 'Soma total: ' + soma
-    })
-}</code></pre>
+    let soma = somarArray3(arrNumeros3)
+    resSoma3.innerText = 'Soma total: ' + soma
+})</code></pre>
                                         </div>
                                     </details>
                                 </div>
@@ -553,7 +551,7 @@ function gerarMatriz4() {
 
 btnGerarMatriz4.addEventListener('click', () => {
     let matriz = gerarMatriz4()
-    
+
     resMatriz4.innerHTML = `
         <table class="table table-dark table-bordered text-center mb-0">
             <tr>
@@ -628,31 +626,29 @@ let switchConversao5 = document.getElementById('switchConversao5')
 let btnConverter5 = document.getElementById('btnConverter5')
 let resConversao5 = document.getElementById('resConversao5')
 
-if (inputTemp5 && switchConversao5 && btnConverter5) {
-    function paraCelsius(valor) {
-        return ((valor - 32) * 5) / 9
+function paraCelsius(valor) {
+    return ((valor - 32) * 5) / 9
+}
+
+function paraFahrenheit(valor) {
+    return (valor * 9) / 5 + 32
+}
+
+btnConverter5.addEventListener('click', () => {
+    let valor = Number(inputTemp5.value)
+    if (isNaN(valor)) {
+        resConversao5.innerText = 'Digite uma temperatura válida.'
+        return
     }
 
-    function paraFahrenheit(valor) {
-        return (valor * 9) / 5 + 32
+    if (switchConversao5.checked) {
+        let resultado = paraFahrenheit(valor).toFixed(1)
+        resConversao5.innerText = valor + '°C = ' + resultado + '°F'
+    } else {
+        let resultado = paraCelsius(valor).toFixed(1)
+        resConversao5.innerText = valor + '°F = ' + resultado + '°C'
     }
-
-    btnConverter5.addEventListener('click', () => {
-        let valor = Number(inputTemp5.value)
-        if (isNaN(valor)) {
-            resConversao5.innerText = 'Digite uma temperatura válida.'
-            return
-        }
-
-        if (switchConversao5.checked) {
-            let resultado = paraFahrenheit(valor).toFixed(1)
-            resConversao5.innerText = valor + '°C = ' + resultado + '°F'
-        } else {
-            let resultado = paraCelsius(valor).toFixed(1)
-            resConversao5.innerText = valor + '°F = ' + resultado + '°C'
-        }
-    })
-}</code></pre>
+})</code></pre>
                                         </div>
                                     </details>
                                 </div>
@@ -702,58 +698,34 @@ if (inputTemp5 && switchConversao5 && btnConverter5) {
                                             </div>
                                         </summary>
                                         <div class="accordion-body pt-3">
-                                            <pre><code>let btnCriarArray6 = document.getElementById('btnCriarArray6')
-let btnBuscar6 = document.getElementById('btnBuscar6')
-let inputBusca6 = document.getElementById('inputBusca6')
-let resArrNumeros6 = document.getElementById('resArrNumeros6')
-let resBusca6 = document.getElementById('resBusca6')
+                                            <pre><code>let inputTemp5 = document.getElementById('inputTemp5')
+let switchConversao5 = document.getElementById('switchConversao5')
+let btnConverter5 = document.getElementById('btnConverter5')
+let resConversao5 = document.getElementById('resConversao5')
 
-if (btnCriarArray6 && btnBuscar6) {
-    let arrNumeros6 = []
+function paraCelsius(valor) {
+    return ((valor - 32) * 5) / 9
+}
 
-    function gerarArrayAleatorio6() {
-        let arr = []
-        for (let i = 0; i < 8; i++) {
-            arr.push(Math.floor(Math.random() * 30) + 1)
-        }
-        return arr
+function paraFahrenheit(valor) {
+    return (valor * 9) / 5 + 32
+}
+
+btnConverter5.addEventListener('click', () => {
+    let valor = Number(inputTemp5.value)
+    if (isNaN(valor)) {
+        resConversao5.innerText = 'Digite uma temperatura válida.'
+        return
     }
 
-    function buscaLinear6(arr, valor) {
-        for (let i = 0; i < arr.length; i++) {
-            if (arr[i] === valor) {
-                return i
-            }
-        }
-        return -1
+    if (switchConversao5.checked) {
+        let resultado = paraFahrenheit(valor).toFixed(1)
+        resConversao5.innerText = valor + '°C = ' + resultado + '°F'
+    } else {
+        let resultado = paraCelsius(valor).toFixed(1)
+        resConversao5.innerText = valor + '°F = ' + resultado + '°C'
     }
-
-    btnCriarArray6.addEventListener('click', () => {
-        arrNumeros6 = gerarArrayAleatorio6()
-        resArrNumeros6.innerText = arrNumeros6.join(', ')
-        resBusca6.innerText = 'Digite um número e clique em "Buscar"'
-    })
-
-    btnBuscar6.addEventListener('click', () => {
-        if (!arrNumeros6.length) {
-            resBusca6.innerText = 'Primeiro crie um array.'
-            return
-        }
-
-        let valor = Number(inputBusca6.value)
-        if (isNaN(valor)) {
-            resBusca6.innerText = 'Digite um número válido.'
-            return
-        }
-
-        let indice = buscaLinear6(arrNumeros6, valor)
-        if (indice === -1) {
-            resBusca6.innerText = 'Valor não encontrado.'
-        } else {
-            resBusca6.innerText = 'Valor encontrado na posição ' + indice + '.'
-        }
-    })
-}</code></pre>
+})</code></pre>
                                         </div>
                                     </details>
                                 </div>
@@ -807,25 +779,25 @@ let inputAltura7 = document.getElementById('inputAltura7')
 let btnCalcular7 = document.getElementById('btnCalcular7')
 let resIMC7 = document.getElementById('resIMC7')
 
-    function calcularIMC7(peso, altura) {
-        if (!altura) {
-            return 0
-        }
-        return (peso / (altura * altura)).toFixed(2)
+function calcularIMC7(peso, altura) {
+    if (!altura) {
+        return 0
+    }
+    return (peso / (altura * altura)).toFixed(2)
+}
+
+btnCalcular7.addEventListener('click', () => {
+    let peso = Number(inputPeso7.value)
+    let altura = Number(inputAltura7.value)
+
+    if (peso <= 0 || altura <= 0) {
+        resIMC7.innerText = 'Informe peso e altura válidos.'
+        return
     }
 
-    btnCalcular7.addEventListener('click', () => {
-        let peso = Number(inputPeso7.value)
-        let altura = Number(inputAltura7.value)
-
-        if (peso <= 0 || altura <= 0) {
-            resIMC7.innerText = 'Informe peso e altura válidos.'
-            return
-        }
-
-        let imc = calcularIMC7(peso, altura)
-        resIMC7.innerText = 'IMC: ' + imc
-    })</code></pre>
+    let imc = calcularIMC7(peso, altura)
+    resIMC7.innerText = 'IMC: ' + imc
+})</code></pre>
                                         </div>
                                     </details>
                                 </div>
